@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Multi Monitor Manager</title>
+  </head>
+  <body>
+    <div class="menu">
+   
+      <h3><b></b>Multi Monitor Manager</b></h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="compatibilidad.html">Compatibilidad</a></li>
+        <li><a href="descarga.html">Descarga</a></li>
+        <li><a href="guia.html">Guía de Uso</a></li>
+        <li><a href="soporte.html">Soporte</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <img src="img/logo.png" id="logo" />
+      <p></p>
+    </div>
+<fieldset class="fieldset-comp">
+    <div id="parrafosNoInicio">
+      <ul>
+
+        <li>
+          La herramienta está desarrollada en <span class="span-comp">Java, versión 10 o superior</span>, por lo que necesitarás tener
+          Java instalado en tu sistema.
+        </li><br>
+
+        <li>
+          El programa no dispone de firma digital aún, por lo que a la hora de la descarga o primera ejecución, tanto el navegador web como el antivirus pueden dar un falso positivo.<br>
+          Este problema se resolverá en futuras versiones, cuando la herramienta esté más avanzada, agradezco tu comprensión y paciencia mientras trabajo en mejorar y optimizar la herramienta para brindarte la mejor experiencia posible.
+        </li>
+              
+        <br />
+        <li class="listaSinPunto"><img src="img/mensaje_error.jpg" /></li>
+        <br />
+        <li>
+          Si al intentar cambiar la entrada salta esta ventana de la imagen superior, indica
+          que tu monitor no cuenta con DDC, por lo que no se puede controlar
+          mediantes codigos VCP, unicamente podras apagarlo desde el programa.
+        </li><br>
+     
+                 <li>
+            Es importante que Java tenga permisos de administrador, ya que se
+            utiliza la API User32 de Windows para comunicarse con el monitor. Los
+            comandos VCP (Virtual Control Panel) hacen uso de JNA (Java Native
+            Access) para interactuar directamente con User32.
+          </li><br>
+          <li>
+            Si encuentras algún problema o tienes alguna pregunta sobre la
+            compatibilidad de tu monitor, no dudes en ponerte en <a href="soporte.html">contacto</a>.
+          </li>
+        
+      </ul>
+    </div>
+  </fieldset>
+   <br><br>
+    
+    <p class="copyright">Copyright ©2024 jwo1991<br>Todos los derechos reservados.</p>
+  </body>
+</html>
