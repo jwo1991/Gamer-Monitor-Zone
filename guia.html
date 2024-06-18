@@ -1,106 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Multi Monitor Manager</title>
-  </head>
-  <body>
-    <div class="menu">
-  
-      <h3><b></b>Multi Monitor Manager</b></h3>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="compatibilidad.html">Compatibilidad</a></li>
-        <li><a href="descarga.html">Descarga</a></li>
-        <li><a href="guia.html">Guía de Uso</a></li>
-        <li><a href="soporte.html">Soporte</a></li>
-        <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
-      </ul>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Multi Monitor Manager</title>
+</head>
+<body>
+  <div class="menu">
+    <h3><b>Multi Monitor Manager</b></h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="compatibilidad.html">Compatibility</a></li>
+      <li><a href="descarga.html">Download</a></li>
+      <li><a href="guia.html">User Guide</a></li>
+      <li><a href="soporte.html">Support</a></li>
+      <li><a href="acerca.html">About</a></li>
+      <li><a href="donaciones.html">Donate</a></li>
+    </ul>
+  </div>
 
-<div class="content">
-      <img src="img/logo.png" id="logo"/><br /><br />
-      <p></p>
-    </div>
-      <fieldset class="fieldsetGuia">
-       <h2>VENTANA PRINCIPAL</h2>
-      <img src="img/guia1.png" class="imgMonitor" /><br /><br />
-        <ol>
-          <li>Apague los monitores.</li>
-          <li>Cambie entre las distintas entradas.</li>
-        </ol>
-    </fieldset><br><br>
-    <fieldset class="fieldsetGuia">
-   <h2>VENTANA DE AJUSTES Y VCP</h2>
-      <img src="img/guia2.png" class="imgMonitores" /><br /><br />
-      
-      <ol>
-        <p><b>Settings:</b></p>
-        <li>
-          Inicia el programa seleccionando el monitor deseado (donde se iniciara
-          el programa).
-        </li>
-        <br />
-        <li>
-          Personaliza los nombres de las entradas y añade iconos para
-          distinguirlas.
-        </li>
-        <br>
-        <li>
-          Cambia la imagen de la tira principal.
-        </li>
-        <br>
-        <p><b>VCP:</b></p>
-        <li>
-        <b>Botón Extract VCP Codes:</b> la primera vez que se use el programa, para sacar los códigos del monitor y establecerlos sera necesario clicar el botón. Si salta la ventana de error, tu  monitor no es compatible con DDC ni códigos de control VCP.(Es posible que alguna vez de fallo, es cosa de la comunicación con el monitor, intentar varias veces en caso de fallo, pulsar solo una vez, el monitor entre consulta y consulta puede demorarse y si pulsas muchas veces se pueden producir errores en la extracción.)
-        </li><br>
-       
-          <li>
-            <b>Botón View string capabilities:</b> podras ver toda la cadena de capacidades de tu monitor, esta en formato hexadecimal.
-         <br><br><img src="img/mcs.jpg" id="img-guia">
-          </li><br>
-          <li>
-Al iniciar la aplicación por primera vez se crea en la raíz del ejecutable un archivo de configuración que no se debe borrar.
-        </li>
-        <br />
-      </ol>
-      <br /><br />
-      </fieldset><br><br>
-      <fieldset class="fieldsetGuia">
-      <h2>USO FINAL</h2>
-      <img src="img/2monitores.png" class="imgMonitores" /><br /><br />
-      <ol style="list-style-position: inside">
-        <li>
-          El monitor sobre el que se producira el cambio de entrada sera el
-          principal en Windows.
-        </li>
-        <br />
-        <li>
-          Puedes comprobarlo en Configuración de pantalla, el que aparezca con
-          el número 1.
-        </li>
-        <br />
-        <li>El apagado si funciona en todos los monitores a la vez.</li>
-        <br />
-      </ol>
-   
-    </fieldset>
-<br><br>
-    <fieldset class="centered-fieldsetGuia">
-      <p>
-       <b> Para que el programa funcione correctamente, es ideal tener más de un monitor, ya que está diseñado para funcionar con configuraciones de varios monitores.
-        Si solo tienes uno, al cambiar la entrada, deberás volver a cambiar manualmente la entrada desde los botones físicos, lo cual es lo que se quiere evitar con esta herramienta.
-        Imagina estar realizando tareas en tu ordenador, como conversión de datos, descargas o renderización de video, y utilizando tu monitor principal.
-        En ese caso, podrías tener conectada una consola o un dispositivo Android TV al mismo monitor, y cambiar la entrada directamente desde el segundo.
-        Así podrías seguir controlando lo que haces en el ordenador en el monitor secundario y volver a cambiar a la entrada principal cuando lo desees, olvida los botones físicos traseros o laterales, especialmente en posiciones de difícil acceso cuando ambos monitores están juntos o cuando están montados en la pared o en brazos de escritorio.
-      <br><br>También se pueden tener dos torres en un mismo monitor y tener en cada PC la herramienta para ir cambiando la entrada o apagarlo.</b>
+  <div class="content">
+    <img src="img/logo.png" id="logo"/><br /><br />
+    <p></p>
+  </div>
+
+  <fieldset class="fieldsetGuia">
+    <h2>MAIN WINDOW</h2>
+    <img src="img/guia1.png" class="imgMonitor" /><br /><br />
+    <ol>
+      <li>Turn off the monitors.</li>
+      <li>Switch between different inputs.</li>
+    </ol>
+  </fieldset><br><br>
+
+  <fieldset class="fieldsetGuia">
+    <h2>SETTINGS AND VCP WINDOW</h2>
+    <img src="img/guia2.png" class="imgMonitores" /><br /><br />
+    <ol>
+      <p><b>Settings:</b></p>
+      <li>Start the program by selecting the desired monitor (where the program will start).</li><br />
+      <li>Customize input names and add icons to distinguish them.</li><br>
+      <li>Change the main strip image.</li><br>
+      <p><b>VCP:</b></p>
+      <li><b>Extract VCP Codes button:</b> the first time you use the program, click the button to extract the monitor codes and set them up. If an error window pops up, your monitor is not compatible with DDC or VCP control codes. (It may fail sometimes due to communication issues with the monitor. Try multiple times in case of failure, but click only once. The monitor might take time between queries, and multiple clicks can cause extraction errors.)</li><br>
+      <li><b>View string capabilities button:</b> you can see the entire capabilities string of your monitor, which is in hexadecimal format. <br><br><img src="img/mcs.jpg" id="img-guia"></li><br>
+      <li>The first time the application is launched, a configuration file is created in the executable root, which should not be deleted.</li><br />
+    </ol>
+    <br /><br />
+  </fieldset><br><br>
+
+  <fieldset class="fieldsetGuia">
+    <h2>FINAL USE</h2>
+    <img src="img/2monitores.png" class="imgMonitores" /><br /><br />
+    <ol style="list-style-position: inside">
+      <li>The monitor where the input change will occur will be the primary one in Windows.</li><br />
+      <li>You can check this in Display Settings; the one labeled with the number 1.</li><br />
+      <li>Turning off works for all monitors at once.</li><br />
+    </ol>
+  </fieldset><br><br>
+
+  <fieldset class="centered-fieldsetGuia">
+    <p>
+      <b>For the program to work correctly, it is ideal to have more than one monitor, as it is designed to work with multi-monitor setups. If you have only one, you will need to manually change the input using physical buttons after switching inputs, which this tool aims to avoid. Imagine performing tasks on your computer, such as data conversion, downloads, or video rendering, and using your main monitor. In that case, you could have a console or an Android TV device connected to the same monitor and switch the input directly from the second one. This way, you can keep controlling what you do on the computer on the secondary monitor and switch back to the main input whenever you want, avoiding rear or side physical buttons, especially in hard-to-reach positions when both monitors are together or when they are wall-mounted or on desk arms.
+      <br><br>You can also have two towers on the same monitor and use the tool on each PC to switch the input or turn it off.</b>
     </p><br>
-    
   </fieldset>
-    <br>  
-    <p class="copyright">Copyright ©2024 jwo1991<br>Todos los derechos reservados.</p>
-  </body>
+
+  <br>  
+  <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
+</body>
 </html>
