@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Multi Monitor Manager</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="menu">
-   
-      <h3><b></b>Multi Monitor Manager</b></h3>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="compatibilidad.html">Compatibilidad</a></li>
-        <li><a href="descarga.html">Descarga</a></li>
-        <li><a href="guia.html">Guía de Uso</a></li>
-        <li><a href="soporte.html">Soporte</a></li>
-        <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="donaciones.html">Donaciones</a></li>
-      </ul>
+        <h3><b>Multi Monitor Manager</b></h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="compatibilidad.html">Compatibility</a></li>
+            <li><a href="descarga.html">Download</a></li>
+            <li><a href="guia.html">User Guide</a></li>
+            <li><a href="soporte.html">Support</a></li>
+            <li><a href="acerca.html">About</a></li>
+            <li><a href="donaciones.html">Donate</a></li>
+        </ul>
     </div>
 
     <div class="content">
-      <img src="img/logo.png" id="logo" />
-      <p></p>
+        <img src="img/logo.png" id="logo" />
+        <p></p>
     </div>
-<fieldset class="fieldset-comp">
-    <div id="parrafosNoInicio">
-      <ul>
-
-        <li>
-          La herramienta está desarrollada en <span class="span-comp">Java, versión 10 o superior</span>, por lo que necesitarás tener
-          Java instalado en tu sistema.
-        </li><br>
-
-        <li>
-         Los drivers de la tarjeta gráfica se recomiendan, estén actualizados. Tanto la extracción de la cadena de capacidades del monitor como el envio de señales se realizan desde la gpu,<br> una tarjeta gráfica antigua o desactualizada puede no ser compatible.
-        </li>
-              
-        <br />
-        
-        <li>
-          Si al extraer la cadena de capacidades, salta mensaje de error, o en ver cadena de capacidades se muestra que el monitor no es soportado, este no será compatible.
-        </li><br>
-     
-                 <li>
-            Es importante que Java tenga permisos de administrador, ya que se
-            utiliza la API User32 de Windows para comunicarse con el monitor. Los
-            comandos VCP (Virtual Control Panel) hacen uso de JNA (Java Native
-            Access) para interactuar directamente con User32.
-          </li><br>
-          <li>
-            Si encuentras algún problema o tienes alguna pregunta sobre la
-            compatibilidad de tu monitor, no dudes en ponerte en <a href="soporte.html">contacto</a>.
-          </li>
-        
-      </ul>
-    </div>
-  </fieldset>
-   <br><br>
     
-    <p class="copyright">Copyright ©2024 jwo1991<br>Todos los derechos reservados.</p>
-  </body>
+    <fieldset class="fieldset-comp">
+        <div id="parrafosNoInicio">
+            <ul>
+                <li>
+                    The tool is developed in <span class="span-comp">Java, version 10 or higher</span>, so you will need to have Java installed on your system.
+                </li><br>
+
+                <li>
+                    It is recommended that your graphics card drivers are up to date. Both the extraction of the monitor's capabilities string and the sending of signals are performed from the GPU. An outdated or old graphics card may not be compatible.
+                </li>
+                <br />
+
+                <li>
+                    If an error message appears while extracting the capabilities string, or if it shows that the monitor is not supported, then the monitor will not be compatible.
+                </li><br>
+
+                <li>
+                    It is important that Java has administrator privileges, as the Windows User32 API is used to communicate with the monitor. The VCP (Virtual Control Panel) commands use JNA (Java Native Access) to directly interact with User32.
+                </li><br>
+                
+                <li>
+                    If you encounter any problems or have any questions about the compatibility of your monitor, please do not hesitate to <a href="soporte.html">contact us</a>.
+                </li>
+            </ul>
+        </div>
+    </fieldset>
+
+    <br><br>
+    <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
+</body>
 </html>
