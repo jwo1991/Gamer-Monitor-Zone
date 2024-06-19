@@ -389,6 +389,11 @@ textarea {
   height: 60%;
 }
 
+.imgMonitores2 {
+  width: 80%;
+  height: 80%;
+}
+
 .fieldsetGuia::before {
   content: "";
   position: absolute;
