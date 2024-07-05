@@ -1,59 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Multi Monitor Manager</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="menu">
-        <h3><b>Multi Monitor Manager</b></h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="compatibilidad.html">Compatibility</a></li>
-            <li><a href="descarga.html">Download</a></li>
-            <li><a href="guia.html">User Guide</a></li>
-            <li><a href="soporte.html">Support</a></li>
-            <li><a href="acerca.html">About</a></li>
-            <li><a href="donaciones.html">Donate</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="compatibilidad.html">Compatibility</a></li>
+        <li><a href="guia.html">User Guide</a></li>
+        <li><a href="soporte.html">Support</a></li>
+        <li><a href="acerca.html">About</a></li>
+      </ul>
     </div>
 
     <div class="content">
-        <img src="img/logo.png" id="logo" />
-        <p></p>
+      <img src="img/logo.png" id="logo" />
+      <p></p>
     </div>
-    
+
     <fieldset class="fieldset-comp">
-        <div id="parrafosNoInicio">
-            <ul>
-                <li>
-                    The tool is developed in <span class="span-comp">Java, version 10 or higher</span>, so you will need to have Java installed on your system.
-                </li><br>
+      <div id="parrafosNoInicio">
+        <h2>About the tool</h2>
+        <ul>
+          <li>
+            The tool is developed in
+            <span class="span-comp">Java, version 10 or higher</span>, so you
+            will need to have Java installed on your system.
+          </li>
+          <br />
 
-                <li>
-                    It is recommended that your graphics card drivers are up to date. Both the extraction of the monitor's capabilities string and the sending of signals are performed from the GPU. An outdated or old graphics card may not be compatible.
-                </li>
-                <br />
+          <li>
+            It is recommended that your graphics card drivers are up to date.
+            Both the extraction of the monitor's capabilities string and the
+            sending of signals are performed from the GPU. An outdated or old
+            graphics card may not be compatible.
+          </li>
+          <br />
+          <li>
+            In the purchase section you can find a free tool to check your
+            monitor's compatibility with DDC and VCP codes, please do not
+            purchase the tool without being sure of compatibility.
+          </li>
+          <br />
+          <li>
+            If you get an error message when extracting the capability string,
+            or if it says the monitor is not supported, then the monitor is not
+            supported. The same goes for the brightness level label, if it says
+            it is not supported. Sometimes the brightness level may not start
+            properly on the selected running monitor, try restarting the tool,
+            it is also possible that on first initialization, when you press the
+            button to extract the codes, it gives an error, try several times,
+            this problem is identified with the connection to the monitor and
+            not with the program code, we apologize for the inconvenience for
+            this error, for more information about the DDC communication
+            protocol read the information provided below. <br />
+            If the brightness level selector and its value can be read but you
+            cannot apply changes, this is because the factory monitor software
+            only has read permissions enabled, not write permissions.
+          </li>
+          <br />
 
-                <li>
-                    If an error message appears while extracting the capabilities string, or if it shows that the monitor is not supported, then the monitor will not be compatible, the same goes for the brightness level label, if it says not supported.<br>
-                    The brightness level selector and its value may be read but you cannot apply changes, this is because the factory monitor software only has reading permissions enabled, not writing permissions.
-                </li><br>
+          <li>
+            It is important that Java has administrator privileges, as the
+            Windows User32 API is used to communicate with the monitor. The VCP
+            (Virtual Control Panel) commands use JNA (Java Native Access) to
+            directly interact with User32.
+          </li>
+          <br />
 
-                <li>
-                    It is important that Java has administrator privileges, as the Windows User32 API is used to communicate with the monitor. The VCP (Virtual Control Panel) commands use JNA (Java Native Access) to directly interact with User32.
-                </li><br>
-                
-                <li>
-                    If you encounter any problems or have any questions about the compatibility of your monitor, please do not hesitate to <a href="soporte.html">contact us</a>.
-                </li>
-            </ul>
-        </div>
+          <li>
+            If you encounter any problems or have any questions about the
+            compatibility of your monitor, please do not hesitate to
+            <a href="soporte.html">contact us</a>.
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <br /><br />
+
+    <fieldset class="fieldset-comp">
+      <div id="parrafosNoInicio">
+        <h2>Information about DDC (Display Data Channel)</h2>
+        <ul>
+          <li>
+            <span>Monitor Response Time:</span> Some monitors may have variable
+            response times for processing DDC/CI or VCP commands. This can be
+            due to the monitor's firmware implementation, the speed of the
+            communication bus, the current load on the monitor's internal
+            processor, among other factors.
+          </li>
+          <br />
+          <li>
+            <span> Communication Delays:</span> Communication between the
+            application and the monitor via DDC/CI or VCP can experience delays
+            due to data transmission speed, congestion on the communication bus
+            (especially if multiple queries are being made in short intervals),
+            or even environmental factors that could affect the signal.
+          </li>
+          <br />
+          <li>
+            <span>Wait Between Queries:</span> To mitigate issues related to
+            monitor recovery times, it is advisable to have adequate pauses
+            between queries. For example, after sending a brightness adjustment
+            command, it is prudent to wait a brief period before making another
+            query or adjustment to give the monitor time to process the previous
+            command and prepare for the next.
+          </li>
+          <br />
+          <li>
+            <span>Physical Connection or Hardware Configuration:</span>
+            Intermittent issues may be related to the configuration or physical
+            connection of the monitors. This includes issues like loose cables,
+            electrical power problems, hardware issues in the monitors
+            themselves, etc.
+          </li>
+          <br />
+          <li>
+            <span> Communication with the Monitor:</span> Communication with
+            monitors via interfaces like DXVA2 and JNA depends on several
+            external factors, such as the stability of hardware drivers, the
+            API's compatibility with the driver version, and possibly the
+            operating system configuration.
+          </li>
+          <br />
+          <li>
+            <span> External Interference:</span> External factors such as
+            electromagnetic interference, electrical network issues, or even
+            other connected devices can affect communication and monitor
+            detection.
+          </li>
+          <br />
+          <li>
+            <span> Operating System Behavior:</span> Sometimes, the behavior of
+            the operating system, such as resource management or application
+            concurrency, can influence your application's ability to properly
+            interact with hardware devices like monitors.
+          </li>
+          <br />
+        </ul>
+      </div>
     </fieldset>
 
-    <br><br>
-    <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
-</body>
+    <br /><br />
+    <p class="copyright">Copyright ©2024 jwo1991<br />All rights reserved.</p>
+  </body>
 </html>

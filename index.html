@@ -10,150 +10,159 @@
   <body>
     <div id="particles-js" class="particles-neon"></div>
     <div class="menu">
-      <h3><b>Multi Monitor Manager</b></h3>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="compatibilidad.html">Compatibility</a></li>
-        <li><a href="descarga.html">Download</a></li>
         <li><a href="guia.html">User Guide</a></li>
         <li><a href="soporte.html">Support</a></li>
         <li><a href="acerca.html">About</a></li>
-        <li><a href="donaciones.html">Donate</a></li>
       </ul>
     </div>
-    <div class="content">
-      <img src="img/logo.png" /><br />
-    </div>
+    <div class="content"><img src="img/logo.png" /><br /></div>
     <fieldset class="fieldsetPrincipal">
       <div class="imagen"></div>
       <div class="contenido">
         <h1><b>TAKE CONTROL</b></h1>
         <p>
-         Managing your monitors becomes more intuitive than ever. From turning them off, switching between different inputs and adjusting the brightness level, Multi Monitor Manager simplifies the handling of your screens so you can focus on what really matters: your work or your hobbies in your free time. Discover how MMM can transform your monitor usage experience.
+          Managing your monitors becomes intuitive with Multi Monitor Manager.
+          Easily turn them off, switch inputs, and adjust brightness levels,
+          refresh rate, and orientation, all so you can focus on your work or
+          hobbies.
         </p>
       </div>
     </fieldset>
-    <br><br>
+    <br /><br />
     <fieldset class="fieldsetPrincipal">
       <div class="imagen2"></div>
       <div class="contenido">
         <h1><b>DO IT YOUR WAY</b></h1>
         <p>
-          At Multi Monitor Manager, customization is key. From personalizing input names and icons to configuring buttons to your liking, you have the power to tailor every detail to your style.
+          Customize input names, icons, and button configurations to match your
+          unique style and preferences with Multi Monitor Manager.
         </p>
       </div>
     </fieldset>
-    <br>  
-    <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
-  
+    <br /><br />
+    <fieldset class="fieldsetPrincipal">
+      <div class="imagen3"></div>
+      <div class="contenido">
+        <h1><b>DISCOVER THE DIFFERENCE</b></h1>
+        <p>
+          Explore how Multi Monitor Manager can transform your monitor-using
+          experience today. Whether for work or leisure, experience the
+          convenience and efficiency of managing multiple monitors with ease.
+        </p>
+      </div>
+    </fieldset>
+    <br />
+    <p class="copyright">Copyright ©2024 jwo1991<br />All rights reserved.</p>
 
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 90,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 90,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: ["#2196f3", "#FF69B4", "#8A2BE2"],
+          },
+          shape: {
+            type: "polygon",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: "#d3d3d3",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
         },
-        "color": {
-        "value": ["#2196f3","#FF69B4","#8A2BE2"]
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
         },
-        "shape": {
-          "type": "polygon",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": false,
-          "distance": 150,
-          "color": "#d3d3d3",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 1,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
-
+        retina_detect: true,
+      });
+    </script>
   </body>
 </html>
