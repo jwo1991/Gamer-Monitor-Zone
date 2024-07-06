@@ -26,12 +26,12 @@ body {
 .menu {
   background: linear-gradient(
     to right,
-    #333333,
-    #3a3a3a 20%,
-    #424242 40%,
-    #4b4b4b 60%,
-    #535353 80%,
-    #5c5c5c
+    rgb(33, 150, 243),
+    rgb(33, 165, 235) 20%,
+    rgb(33, 180, 227) 40%,
+    rgb(16, 205, 172) 60%,
+    rgb(8, 218, 145) 80%,
+    rgb(0, 230, 118)
   );
   color: #e6e4e4;
   padding: 10px 0;
@@ -78,7 +78,7 @@ body {
 }
 
 .menu ul li a:hover {
-  color: #2196f3;
+  color: #959494;
 }
 
 .menu ul li a::after {
@@ -96,10 +96,15 @@ body {
 
 .menu ul li a:hover::after {
   opacity: 1;
-  background-color: #2196f3;
-  box-shadow: 0 0 5px #2196f3, 0 0 10px #2196f3, 0 0 15px #2196f3,
-    0 0 20px #2196f3, 0 0 35px #2196f3, 0 0 40px #2196f3, 0 0 50px #2196f3,
-    0 0 75px #2196f3;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 5px #FFFFFF, 
+  0 0 10px #F0F0F0, 
+  0 0 15px #E0E0E0, 
+  0 0 20px #D0D0D0, 
+  0 0 35px #C0C0C0, 
+  0 0 40px #B0B0B0, 
+  0 0 50px #A0A0A0, 
+  0 0 75px #909090;
 }
 
 /*/////////////////////////////////////////*/
