@@ -96,29 +96,15 @@ body {
 
 .menu ul li a:hover::after {
   opacity: 1;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 5px #FFFFFF, 
-  0 0 10px #F0F0F0, 
-  0 0 15px #E0E0E0, 
-  0 0 20px #D0D0D0, 
-  0 0 35px #C0C0C0, 
-  0 0 40px #B0B0B0, 
-  0 0 50px #A0A0A0, 
-  0 0 75px #909090;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #f0f0f0, 0 0 15px #e0e0e0,
+    0 0 20px #d0d0d0, 0 0 35px #c0c0c0, 0 0 40px #b0b0b0, 0 0 50px #a0a0a0,
+    0 0 75px #909090;
 }
 
 /*/////////////////////////////////////////*/
-.content {
-  margin-top: 70px;
-  padding: 20px;
-}
 
-.content img {
-  width: 9%;
-  height: 9%;
-}
-
-.fieldsetPrincipal {
+.fieldsetPrincipalAbout {
   position: relative;
   border: none;
   padding: 20px;
@@ -132,71 +118,101 @@ body {
   z-index: 1;
 }
 
-.fieldsetPrincipal::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(51, 51, 61);
-  opacity: 0.4;
-  border-radius: 20px;
-  z-index: -1;
-}
-
-.fieldsetPrincipal .imagen {
-  flex: 1;
-  background-image: url("img/gamergirl.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 400px;
-
-  max-width: 600px;
-  border-radius: 20px;
-  margin-right: 20px;
-}
-
-.fieldsetPrincipal .imagen2 {
-  flex: 1;
-  background-image: url("img/salavacia.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 400px;
-
-  max-width: 600px;
-  border-radius: 20px;
-  margin-right: 20px;
-}
-
-.fieldsetPrincipal .imagen3 {
-  flex: 1;
-  background-image: url("img/nuevasala.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 400px;
-
-  max-width: 600px;
-  border-radius: 20px;
-  margin-right: 20px;
-}
-
-.fieldsetPrincipal .contenido {
+.fieldsetPrincipalAbout .contenido {
   flex: 1;
   padding: 20px;
   color: #d3d3d3;
   text-align: justify;
+  height: 100%;
+  margin-left: 15px;
 }
 
-.fieldsetPrincipal .contenido h3 {
+.content {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.content img {
+  width: 9%;
+  height: 9%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  align-items: center;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  overflow: hidden;
+  background: none;
+  height: 500px;
+}
+.fieldsetPrincipal {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.imagen {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+.imagen1 {
+  background-image: url("img/gamergirl.jpg");
+}
+.imagen2 {
+  background-image: url("img/salavacia.jpg");
+}
+.imagen3 {
+  background-image: url("img/nuevasala.jpg");
+}
+.imagen4 {
+  background-image: url("img/salablanca.jpg");
+}
+
+.contenido {
+  padding: 20px;
+  color: #d3d3d3;
+  text-align: justify;
+  border: #009cde, 2px, solid;
+  background-color: rgba(51, 51, 61,0.6);
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 175px;
+  overflow: hidden;
+}
+.contenido h1 {
   margin-top: 0;
-}
-
-.fieldsetPrincipal .contenido h1 {
   color: #2196f3;
+}
+.contenido p {
+  margin-top: 10px;
 }
 
 #parrafosNoInicio {
@@ -247,32 +263,6 @@ body {
   color: #2196f3;
 }
 
-.centered-fieldset .download-link {
-  text-align: center;
-  color: #d3d3d3;
-  text-decoration: none;
-}
-
-.centered-fieldset .download-link img {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.centered-fieldsetAviso {
-  display: flex;
-  text-align: justify;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 50%;
-  max-width: 80%;
-  margin: auto;
-  padding: 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(231, 71, 71, 0.4);
-}
-
 .centered-fieldsetGuia {
   display: flex;
   text-align: justify;
@@ -286,13 +276,6 @@ body {
   border: none;
   border-radius: 10px;
   background-color: rgba(51, 51, 61, 0.4);
-}
-
-.download-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
 }
 
 .fieldset-container {
@@ -331,53 +314,6 @@ body {
   z-index: -1;
 }
 
-.fieldsetSoporte {
-  border: none;
-  border-radius: 20px;
-  max-width: 700px;
-  margin: auto;
-  background-image: url(img/soporte.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #2a2a2a;
-  z-index: 1;
-}
-
-textarea {
-  width: 300px;
-  height: 150px;
-  vertical-align: top;
-}
-
-.botonTransparente {
-  background: url(img/envio.png) no-repeat center center;
-  background-size: contain;
-  border: none;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.botonTransparente:hover {
-  opacity: 0.8;
-}
-
-#img-guia {
-  text-align: center;
-  width: 250px;
-  height: 250px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
 .form-column {
   display: flex;
   flex-direction: column;
@@ -408,41 +344,6 @@ textarea {
 .fieldsetGuia li {
   margin-bottom: 10px;
   max-width: 100%;
-}
-
-.imgMonitor {
-  width: 30%;
-  height: 30%;
-}
-
-.imgMonitores {
-  width: 60%;
-  height: 60%;
-}
-
-.imgMonitores2 {
-  width: 80%;
-  height: 80%;
-}
-
-.fieldsetGuia::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(51, 51, 61);
-  opacity: 0.4;
-  border-radius: 20px;
-  z-index: -1;
-}
-
-.fieldsetPrincipal .contenido {
-  padding: 20px;
-  color: #d3d3d3;
-  min-width: 300px;
-  text-align: justify;
 }
 
 /*animacion 3d*/
