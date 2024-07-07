@@ -146,7 +146,7 @@ body {
   height: 90%;
   margin: auto;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
