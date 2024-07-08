@@ -215,6 +215,10 @@ body {
   margin-top: 10px;
 }
 
+.contenido a{
+  text-decoration: none;
+}
+
 #parrafosNoInicio {
   margin-top: 50px;
   text-align: justify;
