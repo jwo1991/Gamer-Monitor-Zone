@@ -8,180 +8,248 @@
     <title>Multi Monitor Manager</title>
   </head>
   <body>
-    <div id="particles-js" class="particles-neon"></div>
     <div class="menu">
-      <img src="img/logo.png" width="3.2%" style="padding-left: 30px" />
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="compatibilidad.html">Compatibility</a></li>
-        <li><a href="guia.html">User Guide</a></li>
-        <li><a href="acerca.html">About</a></li>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Compatibility</a></li>
+        <li><a href="#section3">Display Data Channel</a></li>
+        <li><a href="#section4">User Guide</a></li>
+        <li><a href="#section5">About</a></li>
       </ul>
     </div>
-    <div class="container">
-      <div class="box">
-        <fieldset class="fieldsetPrincipal">
-          <div class="imagen imagen1"></div>
-          <div class="contenido">
-             <a href="https://jwo1991.itch.io/multi-monitor-manager"> <h1><b>TAKE CONTROL</b></h1></a>
-            <p>
-              Managing your monitors becomes intuitive with Multi Monitor
-              Manager. Easily turn them off, switch inputs, and adjust
-              brightness levels, refresh rate, and orientation, all so you can
-              focus on your work or hobbies, say goodbye to the annoying access
-              to the physical buttons of the monitor.
-            </p>
+    <div class="section" id="section1">
+      <div class="contenedorPrincipal">
+        <div class="left">
+          <img src="img/Sin título-1.png" />
+          <p>DISCOVER THE TOOL FOR MONITORS CONTROL</p><br>
+          <button class="botonCompra" onclick="window.location.href='https://jwo1991.itch.io/multi-monitor-manager';">BUY NOW</button><br><br><br>
+          <button class="botonCompra" onclick="window.location.href='https://jwo1991.itch.io/multi-monitor-manager-ddc-tool-test';">DOWNLOAD DDC TEST TOOL</button>
+        </div>
+        <div class="right">
+          <div class="slider">
+            <div class="slider-images">
+              <div class="box">
+                <div class="imagen imagen1"></div>
+                <div class="contenido">
+                  <a href="https://jwo1991.itch.io/multi-monitor-manager">
+                    <h1><b>TAKE CONTROL</b></h1>
+                  </a>
+                  <p>
+                    Managing your monitors becomes intuitive with Multi Monitor
+                    Manager. Easily turn them off, switch inputs, and adjust
+                    brightness levels, refresh rate, and orientation, all so you
+                    can focus on your work or hobbies, say goodbye to the
+                    annoying access to the physical buttons of the monitor.
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imagen imagen2"></div>
+                <div class="contenido">
+                  <a href="https://jwo1991.itch.io/multi-monitor-manager">
+                    <h1><b>DO IT YOUR WAY</b></h1>
+                  </a>
+                  <p>
+                    Customize input names, icons, and button configurations to
+                    match your unique style and preferences with Multi Monitor
+                    Manager.
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imagen imagen3"></div>
+                <div class="contenido">
+                  <a href="https://jwo1991.itch.io/multi-monitor-manager">
+                    <h1><b>DISCOVER THE DIFFERENCE</b></h1>
+                  </a>
+                  <p>
+                    Explore how Multi Monitor Manager can transform your
+                    monitor-using experience today. Whether for work or comfort,
+                    experience the convenience and efficiency of managing
+                    multiple monitors with ease.
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imagen imagen4"></div>
+                <div class="contenido">
+                  <a href="https://jwo1991.itch.io/multi-monitor-manager">
+                    <h1><b>FOR YOU</b></h1>
+                  </a>
+                  <p>
+                    Aimed at professionals and all types of general public with
+                    more than one monitor seeking efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </fieldset>
-      </div>
-      <div class="box">
-        <fieldset class="fieldsetPrincipal">
-          <div class="imagen imagen2"></div>
-          <div class="contenido">
-        <a href="https://jwo1991.itch.io/multi-monitor-manager"> <h1><b>DO IT YOUR WAY</b></h1></a>
-            <p>
-              Customize input names, icons, and button configurations to match
-              your unique style and preferences with Multi Monitor Manager.
-            </p>
-          </div>
-        </fieldset>
-      </div>
-      <div class="box">
-        <fieldset class="fieldsetPrincipal">
-          <div class="imagen imagen3"></div>
-          <div class="contenido">
-           <a href="https://jwo1991.itch.io/multi-monitor-manager"> <h1><b>DISCOVER THE DIFFERENCE</b></h1></a>
-            <p>
-              Explore how Multi Monitor Manager can transform your monitor-using
-              experience today. Whether for work or comfort, experience the
-              convenience and efficiency of managing multiple monitors with
-              ease.
-            </p>
-          </div>
-        </fieldset>
-      </div>
-      <div class="box">
-        <fieldset class="fieldsetPrincipal">
-          <div class="imagen imagen4"></div>
-          <div class="contenido">
-        <a href="https://jwo1991.itch.io/multi-monitor-manager"> <h1><b>FOR YOU</b></h1></a>
-            <p>
-              Aimed at professionals and all types of general public with more
-              than one monitor seeking efficiency.
-            </p>
-          </div>
-        </fieldset>
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          <script src="scripts.js"></script>
+        </div>
       </div>
     </div>
-    <br />
-    <p class="copyright">Copyright ©2024 jwo1991<br />All rights reserved.</p>
 
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 90,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: ["#2196f3", "#00E676"],
-          },
-          shape: {
-            type: "polygon",
-            stroke: {
-              width: 0,
-              color: "#000000",
-            },
-            polygon: {
-              nb_sides: 5,
-            },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false,
-            },
-          },
-          size: {
-            value: 5,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: false,
-            distance: 150,
-            color: "#d3d3d3",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 1,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 400,
-              line_linked: {
-                opacity: 1,
-              },
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-            push: {
-              particles_nb: 4,
-            },
-            remove: {
-              particles_nb: 2,
-            },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
+    <div class="section" id="section2">
+      <fieldset id="comp" class="fieldset-comp">
+        <div id="parrafosNoInicio">
+          <h2>Compatibility</h2>
+          <ul>
+            <li>
+              The tool is developed in
+              <span class="span-comp">Java, version 10 or higher</span>, so you
+              will need to have Java installed on your system.
+            </li>
+            <br />
+            <li>
+              Support for up to four monitors, maximum three inputs for the
+              parameters, if you have more the first three will be used.
+            </li>
+            <br />
+            <li>
+              The tool does not have a digital signature, as it is a personal
+              project and the licenses have a high price.
+            </li>
+            <br />
+            <li>
+              It is recommended that your graphics card drivers are up to date.
+              Both the extraction of the monitor's capabilities string and the
+              sending of signals are performed from the GPU. An outdated or old
+              graphics card may not be compatible.
+            </li>
+            <br />
+            <li>
+              In the shopping section you can find a
+              <a
+                href="https://jwo1991.itch.io/multi-monitor-manager-ddc-tool-test"
+              >
+                free tool</a
+              >
+              to check your monitor's compatibility with DDC and VCP codes,
+              please do not buy the tool without being sure of compatibility,
+              the codes are used to change inputs and brightness, without
+              compatibility you will only be able to turn off the monitors,
+              change the orientation and refresh rate.
+            </li>
+            <br />
+            <li>
+              It is possible that extractions may fail occasionally, please
+              restart the tool or press the button again, this may occur due to
+              other processes or monitor delay, the rate of these failures is
+              very low, it is recommended to read the information about DDC in
+              its section below. <br />
+              If the brightness level selector and its value can be read but
+              changes cannot be applied, this is because the monitor's factory
+              software only has read permissions enabled, not write permissions.
+            </li>
+            <br />
+
+            <li>
+              It is important that Java has administrator privileges, as the
+              Windows User32 API is used to communicate with the monitor. The
+              VCP (Virtual Control Panel) commands use JNA (Java Native Access)
+              to directly interact with User32.
+            </li>
+            <br />
+          </ul>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="section" id="section3">
+      <fieldset class="fieldset-comp">
+        <div id="parrafosNoInicio">
+          <h2>Information about DDC (Display Data Channel)</h2>
+          <ul>
+            <li>
+              <span>Monitor Response Time:</span> Some monitors may have
+              variable response times for processing DDC/CI or VCP commands.
+              This can be due to the monitor's firmware implementation, the
+              speed of the communication bus, the current load on the monitor's
+              internal processor, among other factors.
+            </li>
+            <br />
+            <li>
+              <span> Communication Delays:</span> Communication between the
+              application and the monitor via DDC/CI or VCP can experience
+              delays due to data transmission speed, congestion on the
+              communication bus (especially if multiple queries are being made
+              in short intervals), or even environmental factors that could
+              affect the signal.
+            </li>
+            <br />
+            <li>
+              <span>Wait Between Queries:</span> To mitigate issues related to
+              monitor recovery times, it is advisable to have adequate pauses
+              between queries. For example, after sending a brightness
+              adjustment command, it is prudent to wait a brief period before
+              making another query or adjustment to give the monitor time to
+              process the previous command and prepare for the next.
+            </li>
+            <br />
+            <li>
+              <span>Physical Connection or Hardware Configuration:</span>
+              Intermittent issues may be related to the configuration or
+              physical connection of the monitors. This includes issues like
+              loose cables, electrical power problems, hardware issues in the
+              monitors themselves, etc.
+            </li>
+            <br />
+            <li>
+              <span> Communication with the Monitor:</span> Communication with
+              monitors via interfaces like DXVA2 and JNA depends on several
+              external factors, such as the stability of hardware drivers, the
+              API's compatibility with the driver version, and possibly the
+              operating system configuration.
+            </li>
+            <br />
+            <li>
+              <span> External Interference:</span> External factors such as
+              electromagnetic interference, electrical network issues, or even
+              other connected devices can affect communication and monitor
+              detection.
+            </li>
+            <br />
+            <li>
+              <span> Operating System Behavior:</span> Sometimes, the behavior
+              of the operating system, such as resource management or
+              application concurrency, can influence your application's ability
+              to properly interact with hardware devices like monitors.
+            </li>
+            <br />
+          </ul>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="section" id="section5">
+      <fieldset id="about" class="centered-fieldsetGuia">
+        <ul>
+          <li>
+            This application utilizes Java Native Access (JNA) to access native
+            libraries in the underlying operating system. I thank the JNA
+            developers for their contribution to the functionality of the
+            application.
+          </li>
+          <br /><br />
+
+          <li>
+            Video Music:<br />
+            Work: Cénit Digital<br />
+            Music by https://www.fiftysounds.com/es/
+          </li>
+          <br /><br />
+          <li>
+            The use of Multi Monitor Manager and any manipulation of its
+            associated source code is done at the user's own risk. I do not take
+            responsibility for any damage or harm resulting from the use or
+            manipulation of this tool's source code. By using it, the user
+            agrees to do so at their own risk and responsibility.
+          </li>
+          <br /><br />
+        </ul>
+      </fieldset>
+    </div>
   </body>
 </html>
