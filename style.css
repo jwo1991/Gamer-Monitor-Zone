@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #d3d3d3;
   text-align: center;
 }
@@ -38,7 +39,7 @@ body {
 }
 
 #section4 {
-  background: url("img/fondo2.jpg") no-repeat center center/cover;
+  background: url("img/fondo1.jpg") no-repeat center center/cover;
 }
 
 #section5 {
@@ -163,9 +164,9 @@ body {
 }
 
 .left img {
-  width: 110%; 
+  width: 110%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
   margin-left: 18%;
   margin-bottom: -90px;
@@ -185,16 +186,16 @@ body {
   padding: 10px;
   position: relative;
   margin-right: 10px;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 
 .slider {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 60px; 
+  border-radius: 60px;
+  border: 2px solid #d3d3d3;
 }
 
 .slider-images {
@@ -210,9 +211,8 @@ body {
   position: relative;
   flex-shrink: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
-
 
 .imagen1,
 .imagen2,
@@ -223,31 +223,27 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px 20px 0 0; 
+  border-radius: 20px 20px 0 0;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-
 .contenido {
-  padding: 25px;
-  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
   color: #ffffff;
   background-color: rgba(51, 51, 51, 0.7);
   position: relative;
   width: 100%;
   box-sizing: border-box;
   border-radius: 0 0 20px 20px;
-  margin-top: auto; 
-  overflow: hidden; 
+  margin-top: auto;
+  overflow: hidden;
 }
 
 .contenido h1 {
   color: rgb(33, 150, 243);
-}
-
-.contenido a {
-  text-decoration: none;
 }
 
 .imagen1 {
@@ -366,7 +362,6 @@ body {
   background-color: rgba(51, 51, 61, 0.8);
 }
 
-
 /*///////////////////////////////////////////////////////////////*/
 .botonCompra {
   background: linear-gradient(
@@ -379,33 +374,33 @@ body {
     rgb(233, 30, 99)
   );
   border-radius: 60px;
-  position: relative; 
-  display: inline-block; 
-  padding: 15px 30px; 
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
   color: #e6e6e3;
   text-align: center;
   font-size: 1.2em;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  overflow: hidden; 
-  transition: color 0.3s, background 0.3s; 
+  overflow: hidden;
+  transition: color 0.3s, background 0.3s;
 }
 
 .botonCompra p::before {
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
 
 .botonCompra:hover p::before {
-  background-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .botonCompra:hover {
@@ -418,7 +413,34 @@ body {
     rgb(72, 61, 139) 60%,
     rgb(120, 48, 134) 80%,
     rgb(192, 12, 76)
-  ); 
+  );
 }
 
+.videoPromo {
+  margin-top: 125px;
+  border-radius: 30px;
+  border: 2px solid #d3d3d3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-right: 50px;
+}
 
+.videoTexto {
+  color: #e6e6e3;
+}
+
+.listaVideo {
+  color: #e6e6e3;
+  list-style-position: inside;
+  margin: 15px;
+  text-align: left;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(51, 51, 61, 0.6);
+}
