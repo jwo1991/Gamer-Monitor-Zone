@@ -175,11 +175,11 @@ body {
 
 /* Ajustes para el párrafo */
 .left p {
-  font-size: 2vw; 
+  font-size: 2vw;
   font-weight: bold;
   text-align: center;
   color: #e6e6e3;
-  margin-top: 2vh; 
+  margin-top: 2vh;
 }
 
 /* Contenedor Right */
@@ -307,7 +307,8 @@ body {
   border: none;
   padding: 20px;
   border-radius: 80px;
-  max-width: 90%;
+  height: 70vh;
+  width: 90vw;
   margin: 10px auto 0 auto;
   display: flex;
   align-items: center;
@@ -331,6 +332,7 @@ body {
 }
 
 #parrafosNoInicio {
+  font-size: 2vh;
   margin-top: 50px;
   text-align: justify;
   margin-left: 10px;
@@ -358,12 +360,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 90vw;
+  height: 70vh;
   margin: auto;
   padding: 20px;
   border: none;
   border-radius: 80px;
   background-color: rgba(51, 51, 61, 0.8);
+  font-size: 2vh;
 }
 
 /*///////////////////////////////////////////////////////////////*/
@@ -421,6 +425,8 @@ body {
 }
 
 .videoPromo {
+  width:60vw;
+  height:60vh;
   margin-top: 125px;
   border-radius: 30px;
   border: 2px solid #d3d3d3;
@@ -434,6 +440,7 @@ body {
 
 .listaVideo {
   color: #e6e6e3;
+  font-size: 2vh;
   list-style-position: inside;
   margin: 15px;
   text-align: left;
