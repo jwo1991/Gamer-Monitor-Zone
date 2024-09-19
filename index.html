@@ -3,343 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Multi Monitor Manager</title>
+    <link rel="stylesheet" href="stylePrin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Gamer Monitor Zone</title>
   </head>
   <body>
-    <div class="menu">
-      <ul translate="no">
-        <li><a href="#section1">Main Section</a></li>
-        <li><a href="#section2">Compatibility</a></li>
-        <li><a href="#section3">Display Data Channel</a></li>
-        <li><a href="#section4">User Guide</a></li>
-        <li><a href="#section5">About</a></li>
-      </ul>
-    </div>
-    <div class="section" id="section1">
-      <div class="contenedorPrincipal">
-        <div class="left">
-          <img src="img/Sin título-1.png" />
-          <p translate="no">DISCOVER THE TOOL FOR MONITORS CONTROL</p>
-          <button
-            class="botonCompra"
-            onclick="window.location.href='https://jwo1991.itch.io/multi-monitor-manager';"
-          >
-            BUY NOW</button
-          ><br /><br /><br />
-          <button
-            class="botonCompra"
-            onclick="window.location.href='https://jwo1991.itch.io/multi-monitor-manager-ddc-tool-test';"
-          >
-            DOWNLOAD DDC TEST TOOL
-          </button>
+
+    <video class="background-video" autoplay loop muted>
+      <source src="video/videoPrin.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+  </video>
+  <div class="overlay"></div>
+    <div class="container">
+      <div class="left-column" translate="no">
+
+        <div class="logoPrin"></div>
+
+        <div class="titulo">
+          GAMER MONITOR ZONE
+<div class="separador">
+          <p>
+            ENHANCE EFFICIENCY WITH AN INTEGRATED ECOSYSTEM THAT UNIFIES DISPLAY CONTROL AND SYSTEM MONITORING</p><p><span>CUSTOMIZATION AND
+            IMPROVED PERFORMANCE ARE ACHIEVED THROUGH THIS COMPREHENSIVE
+            PLATFORM</span></p>
+          </p>
         </div>
-        <div class="right">
-          <div class="slider">
-            <div class="slider-images">
-              <div class="box">
-                <div class="imagen imagen1"></div>
-                <div class="contenido">
-                  <h1><b>TAKE CONTROL</b></h1>
 
-                  <p>
-                    Managing your monitors becomes intuitive with Multi Monitor
-                    Manager. Easily turn them off, switch inputs, and adjust
-                    brightness levels, refresh rate, and orientation, all so you
-                    can focus on your work or hobbies, say goodbye to the
-                    annoying access to the physical buttons of the monitor.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="imagen imagen2"></div>
-                <div class="contenido">
-                  <h1><b>DO IT YOUR WAY</b></h1>
-
-                  <p>
-                    Customize input names, icons, and button configurations to
-                    match your unique style and preferences with Multi Monitor
-                    Manager.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="imagen imagen3"></div>
-                <div class="contenido">
-                  <h1><b>DISCOVER THE DIFFERENCE</b></h1>
-
-                  <p>
-                    Explore how Multi Monitor Manager can transform your
-                    monitor-using experience today. Whether for work or comfort,
-                    experience the convenience and efficiency of managing
-                    multiple monitors with ease.
-                  </p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="imagen imagen4"></div>
-                <div class="contenido">
-                  <h1><b>FOR YOU</b></h1>
-
-                  <p>
-                    Aimed at professionals and all types of general public with
-                    more than one monitor seeking efficiency.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
-          <script src="scripts.js"></script>
+        <button class="botonCompra">BUY NOW</button>
+        <button class="botonCompra" id="separadorBoton">DDC TEST FREE TOOL</button>
+      </div>
+        <div class="copy">
+            Copyright&reg; 2024 jwo1991
+    
         </div>
+      </div> 
+
+      <div class="right-column" translate="no">
+        <h3>EXPLORE THE TOOLS</h3>
+        <div class="botones">
+            
+        <button class="boton" id="boton1" onclick="window.location.href='MMM.html';">MULTI MONITOR MANAGER</button> <br />
+
+        <button class="boton" id="boton2" onclick="window.location.href='SMM.html';">SYSTEM MONITOR MANAGER</button>
       </div>
     </div>
-
-    <div class="section" id="section2">
-      <fieldset id="comp" class="fieldset-comp">
-        <div id="parrafosNoInicio">
-          <h2>Compatibility</h2>
-          <ul>
-            <li>
-              The tool is developed in
-              <span class="span-comp">Java, version 10 or higher</span>, so you
-              will need to have Java installed on your system.
-            </li>
-            <br />
-            <li>
-              Support for up to four monitors, maximum three inputs for the
-              parameters, if you have more the first three will be used.
-            </li>
-            <br />
-            <li>
-              The tool does not have a digital signature, as it is a personal
-              project and the licenses have a high price.
-            </li>
-            <br />
-            <li>
-              It is recommended that your graphics card drivers are up to date.
-              Both the extraction of the monitor's capabilities string and the
-              sending of signals are performed from the GPU. An outdated or old
-              graphics card may not be compatible.
-            </li>
-            <br />
-            <li>
-              In the shopping section you can find a
-              <a
-                href="https://jwo1991.itch.io/multi-monitor-manager-ddc-tool-test"
-              >
-                free tool</a
-              >
-              to check your monitor's compatibility with DDC and VCP codes,
-              please do not buy the tool without being sure of compatibility,
-              the codes are used to change inputs and brightness, without
-              compatibility you will only be able to turn off the monitors,
-              change the orientation and refresh rate.
-            </li>
-            <br />
-            <li>
-              It is possible that extractions may fail occasionally, please
-              restart the tool or press the button again, this may occur due to
-              other processes or monitor delay, the rate of these failures is
-              very low, it is recommended to read the information about DDC in
-              its section below. <br />
-              If the brightness level selector and its value can be read but
-              changes cannot be applied, this is because the monitor's factory
-              software only has read permissions enabled, not write permissions.
-            </li>
-            <br />
-
-            <li>
-              It is important that Java has administrator privileges, as the
-              Windows User32 API is used to communicate with the monitor. The
-              VCP (Virtual Control Panel) commands use JNA (Java Native Access)
-              to directly interact with User32.
-            </li>
-            <br />
-          </ul>
-        </div>
-      </fieldset>
     </div>
-
-    <div class="section" id="section3">
-      <fieldset class="fieldset-comp">
-        <div id="parrafosNoInicio">
-          <h2>Information about DDC (Display Data Channel)</h2>
-          <ul>
-            <li>
-              <span>Monitor Response Time:</span> Some monitors may have
-              variable response times for processing DDC/CI or VCP commands.
-              This can be due to the monitor's firmware implementation, the
-              speed of the communication bus, the current load on the monitor's
-              internal processor, among other factors.
-            </li>
-            <br />
-            <li>
-              <span> Communication Delays:</span> Communication between the
-              application and the monitor via DDC/CI or VCP can experience
-              delays due to data transmission speed, congestion on the
-              communication bus (especially if multiple queries are being made
-              in short intervals), or even environmental factors that could
-              affect the signal.
-            </li>
-            <br />
-            <li>
-              <span>Wait Between Queries:</span> To mitigate issues related to
-              monitor recovery times, it is advisable to have adequate pauses
-              between queries. For example, after sending a brightness
-              adjustment command, it is prudent to wait a brief period before
-              making another query or adjustment to give the monitor time to
-              process the previous command and prepare for the next.
-            </li>
-            <br />
-            <li>
-              <span>Physical Connection or Hardware Configuration:</span>
-              Intermittent issues may be related to the configuration or
-              physical connection of the monitors. This includes issues like
-              loose cables, electrical power problems, hardware issues in the
-              monitors themselves, etc.
-            </li>
-            <br />
-            <li>
-              <span> Communication with the Monitor:</span> Communication with
-              monitors via interfaces like DXVA2 and JNA depends on several
-              external factors, such as the stability of hardware drivers, the
-              API's compatibility with the driver version, and possibly the
-              operating system configuration.
-            </li>
-            <br />
-            <li>
-              <span> External Interference:</span> External factors such as
-              electromagnetic interference, electrical network issues, or even
-              other connected devices can affect communication and monitor
-              detection.
-            </li>
-            <br />
-            <li>
-              <span> Operating System Behavior:</span> Sometimes, the behavior
-              of the operating system, such as resource management or
-              application concurrency, can influence your application's ability
-              to properly interact with hardware devices like monitors.
-            </li>
-            <br />
-          </ul>
-        </div>
-      </fieldset>
-    </div>
-    <div class="section" id="section4">
-      <div>
-        <h1 class="videoTexto">HOW TO USE<br /></h1>
-        <h1 translate="no">MULTI MONITOR MANAGER</h1>
-        <br />
-        <ul class="listaVideo">
-          <li>
-            The program is specifically designed to manage multi-monitor
-            configurations.
-          </li>
-          <br />
-          <li>
-            With a single monitor, you would need to manually switch inputs
-            using physical buttons after changing the input, which this program
-            aims to eliminate.
-          </li>
-          <br />
-          <li>
-            Imagine performing various tasks on your computer, such as data
-            conversion, downloads, or video rendering, all while using your
-            primary monitor.
-          </li>
-          <br />
-          <li>
-            In this scenario, you could have a console or an Android TV device
-            connected to the same monitor and switch the input directly from the
-            secondary device.
-          </li>
-          <br />
-          <li>
-            This way, you can continue to monitor your computer activities on a
-            secondary screen and switch back to the primary input whenever you
-            want, thus avoiding the hassle of using physical buttons located at
-            the back or side of the monitor.
-          </li>
-          <br />
-          <li>
-            This is especially beneficial in setups where monitors are
-            positioned close together or are mounted on walls or desk arms,
-            making physical buttons difficult to access.
-          </li>
-          <br />
-          <li>
-            Additionally, if you have two computer towers connected to the same
-            monitor, you can use the tool on each PC to seamlessly switch inputs
-            or turn the monitor off.
-          </li>
-          <br />
-          <li>
-            This provides an effortless way to manage multiple devices with a
-            single monitor, enhancing your workflow and reducing the need for
-            manual intervention.
-          </li>
-        </ul>
-      </div>
-      <video
-        class="videoPromo"
-        width="854"
-        height="480"
-        controls
-        poster="img/poster.jpg"
-      >
-        <source src="video/video.mp4" type="video/mp4" />
-
-        Tu navegador no soporta la etiqueta de video.
-      </video>
-    </div>
-    <div class="section" id="section5">
-      <fieldset id="about" class="centered-fieldsetGuia">
-        <ul>
-          <li>
-            This application utilizes Java Native Access (JNA) to access native
-            libraries in the underlying operating system. I thank the JNA
-            developers for their contribution to the functionality of the
-            application.
-          </li>
-          <br /><br />
-
-          <li>
-            Video Music:<br />
-            Work: Cénit Digital<br />
-            Music by https://www.fiftysounds.com/es/
-          </li>
-          <br /><br />
-          <li>
-            The use of Multi Monitor Manager and any manipulation of its
-            associated source code is done at the user's own risk. I do not take
-            responsibility for any damage or harm resulting from the use or
-            manipulation of this tool's source code. By using it, the user
-            agrees to do so at their own risk and responsibility.
-          </li>
-          <br />
-          <li>
-            I have used artificial intelligence (AI) to generate many of the
-            images you see here. However, AI is just a tool to help me realize
-            my creative vision. Every idea, every artistic direction, and every
-            detail has been carefully conceptualized and refined by me. Writing
-            and adjusting the prompts, selecting the best results, making the
-            necessary edits, and having a clear idea of ​​what you want requires
-            not only technical skills, but also a dose of creativity and
-            personal effort. I respect and consider essential the work of
-            creative teams in large business projects. However, I want to
-            emphasize that this is a personal project, trying to capture the
-            emotion and effort of a first project, and carried out with a clear
-            vision and an honest approach. I hope that by sharing my process and
-            the dedication behind my work, I can earn your trust,
-            differentiating my project from those who seek to sell smoke through
-            the generic use of AI.
-          </li>
-          <br /><br />
-        </ul>
-      </fieldset>
-    </div>
+        
   </body>
 </html>

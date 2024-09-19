@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+  color: #d3d3d3;
+  text-align: center;
+}
+
+/* scrollbar /////////////////////////////////////////////////////*/
+::-webkit-scrollbar {
+  width: 0.75vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 3vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+#section1 {
+  background: url("") no-repeat center center/cover;
+  background-image: url(img/fondoSMM.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#section2 {
+  background: url("") no-repeat center center/cover;
+}
+
+#section3 {
+  background: url("") no-repeat center center/cover;
+}
+
+#section4 {
+  background: url("") no-repeat center center/cover;
+}
+
+#section5 {
+  background: url("") no-repeat center center/cover;
+}
+
+.menu {
+  color: #d3d3d3;
+  font-size: clamp(1.5vh, 2vw, 1.9vh);
+  padding-top: 2vh;
+  position: fixed;
+  width: 100%;
+  height: 13vh;
+  top: 0;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  flex-grow: 1;
+  margin-top: -8vh;
+}
+
+.menu ul li {
+  display: inline;
+  margin-left: 12vh;
+}
+
+.menu ul li a {
+  color: #d3d3d3;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.menu ul li a:hover {
+  color: #2196f3;
+  transform: scale(1.23);
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+.container {
+  height: 100vh;
+}
+
+.titulo {
+  margin-top: 13vh;
+  margin-right: 70vh;
+}
+
+.titulo p {
+  font-size: 2.6vw;
+  font-weight: bold;
+}
+
+.titulo p span {
+  font-size: 1vw;
+  font-weight: bold;
+  background-color: #c51162;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3),
+    3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+/*/////////////////////////////////////////////////////////////////////*/
+
+.principalImagenes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 90vh;
+  margin-right: 5vh;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30vh;
+}
+
+.left-column .fila,
+.right-column .fila {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen1,
+.imagen2,
+.imagen3,
+.imagen4 {
+  width: 38vh;
+  height: 19vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 2.5vh;
+  border-bottom-left-radius: 2.5vh;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.imagen1 {
+  background-image: url("img/SMM/cpu.jpg");
+}
+
+.imagen2 {
+  background-image: url("img/SMM/ram.jpg");
+}
+
+.imagen3 {
+  background-image: url("img/SMM/gpu.jpg");
+}
+
+.imagen4 {
+  background-image: url("img/SMM/hdd.jpg");
+}
+
+.izquierda {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.derecha {
+  flex: 1;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 2.5vh;
+  border-bottom-right-radius: 2.5vh;
+  color: #d3d3d3;
+  text-align: left;
+  font-size: 2vh;
+  width: 100%;
+  height: 19vh;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6.9vh;
+}
+
+.derecha p {
+  margin: 0;
+  padding: 2vh;
+}

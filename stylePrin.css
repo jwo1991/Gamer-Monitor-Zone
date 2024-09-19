@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  color: #d3d3d3;
+  text-align: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.background-video {
+  position: fixed;
+  top: -25vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: -1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("img/Sin\ título-2.png") no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 1;
+}
+
+.logoPrin {
+  background-image: url(img/logoPrin.png);
+  width: 12vh;
+  height: 14vh;
+  margin-left: 2vh;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  margin-top: 0vh;
+}
+
+.left-column {
+  width: 110vh;
+  padding: 20px;
+  word-spacing: 0.3vh;
+  z-index: 2;
+}
+
+.titulo {
+  font-size: 9vh;
+  font-weight: bold;
+  text-shadow: #d3d3d3;
+  margin-top: 27vh;
+  /*animation: parpadeo 0.5s ease-in-out 3, sombraFija 5s forwards;*/
+}
+
+@keyframes parpadeo {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 2px rgb(33, 150, 243), 0 0 4px rgb(33, 150, 243),
+      0 0 6px rgb(33, 150, 243), 0 0 8px rgb(33, 150, 243),
+      0 0 10px rgb(33, 150, 243);
+  }
+}
+
+/* Efecto de sombra permanente */
+@keyframes sombraFija {
+  100% {
+    text-shadow: 0 0 2px rgb(33, 150, 243), 0 0 4px rgb(33, 150, 243),
+      0 0 6px rgb(33, 150, 243), 0 0 8px rgb(33, 150, 243),
+      0 0 10px rgb(33, 150, 243);
+  }
+}
+
+.titulo p {
+  font-size: 3vh;
+  color: #d3d3d3;
+  margin-top: 2vh;
+  text-shadow: none;
+}
+
+.titulo p span {
+  font-size: 1.8vh;
+  margin-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  color: #d3d3d3;
+  text-shadow: none;
+}
+
+.separador {
+  margin-top: 4vh;
+}
+
+.right-column {
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 18vh;
+  z-index: 2;
+}
+
+.botones {
+  margin-left: 12vh;
+}
+
+.right-column h3 {
+  margin-top: 40vh;
+  margin-left: 12vh;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.boton {
+  width: 60vh;
+  height: 12vh;
+  border-radius: 2vh;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #d3d3d3;
+  text-align: center;
+  border: none;
+  font-size: 3.5vh;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8),
+    inset 0 0 2px rgba(255, 255, 255, 0.2), inset 0 -1px 2px rgba(0, 0, 0, 0.6),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin-bottom: 8vh;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
+}
+
+.boton:hover {
+  border: 0.4vh solid #d3d3d3;
+  animation: bounce 0.5s ease-in-out infinite;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
+    inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
+    inset 0 6px 12px rgba(0, 0, 0, 0.6);
+  filter: brightness(0.7);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+#boton1 {
+  background-image: url(img/boton1.jpg);
+  background-size: cover;
+}
+
+#boton2 {
+  background-image: url(img/boton2.jpg);
+  background-size: cover;
+}
+
+.copy {
+  text-align: left;
+  color: rgb(141, 140, 140);
+  font-size: 1.7vh;
+  margin-top: 9vh;
+}
+
+/*/////////////////////////////////////////////////*/
+.botonCompra {
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+
+    rgb(233, 30, 99) 100%
+  );
+
+  border-radius: 2.5vh;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #d3d3d3;
+  text-align: center;
+  border: none;
+  font-size: 2.5vh;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.2), inset 0 -4px 5px rgba(0, 0, 0, 0.6),
+    inset 0 4px 7px rgba(255, 255, 255, 0.5);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
+
+  margin-top: 2vh;
+}
+
+.botonCompra p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+  transition: background-color 0.3s;
+}
+
+.botonCompra:hover p::before {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.botonCompra:hover {
+  background: linear-gradient(to right, #0d47a1, #c51162);
+  border: 0.4vh solid #d3d3d3;
+  animation: bounce 0.5s ease-in-out infinite;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
+    inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
+    inset 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+#separadorBoton {
+  margin-left: 5vh;
+}
