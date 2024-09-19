@@ -63,7 +63,7 @@ body {
   font-weight: bold;
   text-shadow: #d3d3d3;
   margin-top: 27vh;
-  /*animation: parpadeo 0.5s ease-in-out 3, sombraFija 5s forwards;*/
+  /* animation: parpadeo 0.5s ease-in-out 3, sombraFija 5s forwards;*/
 }
 
 @keyframes parpadeo {
@@ -117,11 +117,21 @@ body {
 
 .botones {
   margin-left: 12vh;
+margin-top: 3vh;
 }
 
 .right-column h3 {
-  margin-top: 40vh;
+  margin-top: 43vh;
   margin-left: 12vh;
+  display: inline-block;
+  padding: 1vh 4vh;
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+
+    rgb(233, 30, 99) 100%
+  );
+  border-radius: 2vh;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -146,7 +156,6 @@ body {
   transform: translateZ(0);
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
-  margin-bottom: 8vh;
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
 }
 
@@ -194,10 +203,9 @@ body {
 
     rgb(233, 30, 99) 100%
   );
-
+  display: inline-block;
   border-radius: 2.5vh;
   position: relative;
-  display: inline-block;
   padding: 15px 30px;
   color: #d3d3d3;
   text-align: center;
@@ -213,8 +221,9 @@ body {
   transform: translateZ(0);
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
-
   margin-top: 2vh;
+  overflow: hidden;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
 .botonCompra p::before {
@@ -255,3 +264,29 @@ body {
 #separadorBoton {
   margin-left: 5vh;
 }
+
+#iconoCompra {
+  background-image: url(img/iconCompra.png);
+  background-size: cover;
+  width: 4vh;
+  height: 3vh;
+  float: left;
+  margin-right: 0.5vh;
+  margin-left: -1.8vh;
+
+ 
+
+}
+#iconoCompra2 {
+  background-image: url(img/iconDes.png);
+  background-size: cover;
+  width: 1.7vh;
+  height: 2.6vh;
+  float: left;
+  margin-right: 0.7vh;
+  margin-left: -1vh;
+
+ 
+
+}
+
