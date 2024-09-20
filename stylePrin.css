@@ -61,9 +61,13 @@ body {
 .titulo {
   font-size: 9vh;
   font-weight: bold;
-  text-shadow: #d3d3d3;
   margin-top: 27vh;
-  /* animation: parpadeo 0.5s ease-in-out 3, sombraFija 5s forwards;*/
+  margin-bottom: 3vh;
+  background: linear-gradient(to right, rgb(33, 150, 243) 0%, rgb(233, 30, 99) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Asegúrate de que sea compatible con todos los navegadores */
+  text-shadow: #d3d3d3;
 }
 
 @keyframes parpadeo {
@@ -87,20 +91,30 @@ body {
   }
 }
 
-.titulo p {
-  font-size: 3vh;
-  color: #d3d3d3;
-  margin-top: 2vh;
+.tituloMediano {
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  font-size: 2.5vh;
+  margin-top: 0vh;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+  border-radius: 1vh;
   text-shadow: none;
+  background: linear-gradient(135deg, #b0b0b0 0%, #d3d3d3 50%, #e5e5e5 100%);
 }
 
-.titulo p span {
+.tituloMenor {
   font-size: 1.8vh;
-  margin-top: 2vh;
+  margin-top: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
   color: #d3d3d3;
+  font-weight: bold;
   text-shadow: none;
+  background: none;
+  margin-bottom: 4vh;
+  
 }
 
 .separador {
@@ -121,14 +135,14 @@ body {
 
 .botones {
   margin-left: 12vh;
-margin-top: 3vh;
+  margin-top: 3vh;
 }
 
 .right-column h3 {
   margin-top: 43vh;
   margin-left: 12vh;
   display: inline-block;
-  padding: 1vh 4vh;
+  padding: 0.3vh 3vh;
   background: linear-gradient(
     to right,
     rgb(33, 150, 243) 0%,
@@ -193,11 +207,15 @@ margin-top: 3vh;
 }
 
 .copy {
-  text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   color: rgb(141, 140, 140);
-  font-size: 1.7vh;
-  margin-top: 9vh;
+  font-size: 1.5vh;
+  margin: 0;
+  padding: 2vh;
 }
+
 
 /*/////////////////////////////////////////////////*/
 .botonCompra {
@@ -226,6 +244,7 @@ margin-top: 3vh;
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
   margin-top: 2vh;
+  margin-left: 5vh;
   overflow: hidden;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
@@ -277,9 +296,6 @@ margin-top: 3vh;
   float: left;
   margin-right: 0.5vh;
   margin-left: -1.8vh;
-
- 
-
 }
 #iconoCompra2 {
   background-image: url(img/iconDes.png);
@@ -289,8 +305,4 @@ margin-top: 3vh;
   float: left;
   margin-right: 0.7vh;
   margin-left: -1vh;
-
- 
-
 }
-
