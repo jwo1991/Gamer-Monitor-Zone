@@ -988,16 +988,13 @@ color: #c51162;
   height: 8vh;
   background: linear-gradient(to right, #2196f3, #e91e63);
 border: none;
-  border-radius: 3vh;
+  border-radius: 1vh;
   color: #d3d3d3;
   font-weight: bold;
   margin-left: -117vh;
   margin-top: 13vh;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8),
-  inset 0 0 10px rgba(255, 255, 255, 0.2),
-  inset 0 -8px 10px rgba(0, 0, 0, 0.6),
-  inset 0 8px 15px rgba(255, 255, 255, 0.5);
-  transform: translateZ(0);
+
+  transform: translateZ(0) rotate(-10deg) skewX(-20deg);
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
   display: flex;
@@ -1009,10 +1006,11 @@ border: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
 .open-popup-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(-10deg) skewX(-20deg);
   border: 0.4vh solid #d3d3d3;
   background: linear-gradient(to right, #0b528d, #7c0f33);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9), 
