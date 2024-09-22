@@ -42,8 +42,8 @@ body {
 
 .logoPrin {
   background-image: url(img/logoPrin.png);
-  width: 12vh;
-  height: 14vh;
+  width: 16vh;
+  height: 18vh;
   margin-left: 2vh;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
@@ -62,12 +62,12 @@ body {
 .titulo {
   font-size: 9vh;
   font-weight: bold;
-  margin-top: 27vh;
+  margin-top: 23vh;
   margin-bottom: 3vh;
   background: linear-gradient(to right, rgb(33, 150, 243) 0%, rgb(233, 30, 99) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* Asegúrate de que sea compatible con todos los navegadores */
+  background-clip: text; 
   text-shadow: #d3d3d3;
 }
 
@@ -232,7 +232,7 @@ body {
   padding: 15px 30px;
   color: #d3d3d3;
   text-align: center;
-  border: none;
+  border: 0.4vh solid #d3d3d3;
   font-size: 2.5vh;
   cursor: pointer;
   font-weight: bold;
@@ -265,7 +265,7 @@ body {
 
 .botonCompra:hover {
   background: linear-gradient(to right, #0d47a1, #c51162);
-  border: 0.4vh solid #d3d3d3;
+  border: 0.6vh solid #d3d3d3;
   animation: bounce 0.5s ease-in-out infinite;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
     inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
