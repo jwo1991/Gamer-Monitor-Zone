@@ -20,6 +20,7 @@ body {
   height: 100vh;
   object-fit: contain;
   z-index: -1;
+  
 }
 .overlay {
   position: fixed;
@@ -150,7 +151,7 @@ body {
     rgb(233, 30, 99) 100%
   );
   border-radius: 4vh;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0, 0.3);
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .boton {
@@ -179,14 +180,14 @@ body {
 
 .boton:hover {
   border: 0.4vh solid #d3d3d3;
-  animation: bounce 0.5s ease-in-out infinite;
+  animation: bounce2 0.5s ease-in-out infinite;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
     inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
     inset 0 6px 12px rgba(0, 0, 0, 0.6);
   filter: brightness(0.7);
 }
 
-@keyframes bounce {
+@keyframes bounce2 {
   0%,
   100% {
     transform: translateY(0);
@@ -226,7 +227,7 @@ body {
     rgb(233, 30, 99) 100%
   );
   display: inline-block;
-  border-radius: 2.5vh;
+  border-radius: 1vh;
   position: relative;
   padding: 15px 30px;
   color: #d3d3d3;
@@ -236,18 +237,15 @@ body {
   cursor: pointer;
   font-weight: bold;
   overflow: hidden;
-  transition: box-shadow 0.3s;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8),
-    inset 0 0 5px rgba(255, 255, 255, 0.2), inset 0 -4px 5px rgba(0, 0, 0, 0.6),
-    inset 0 4px 7px rgba(255, 255, 255, 0.5);
-  transform: translateZ(0);
+  transform: translateZ(0) rotate(-10deg) skewX(-20deg);
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-left: 5vh;
   overflow: hidden;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
+
 
 .botonCompra p::before {
   content: "";
@@ -272,17 +270,18 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
     inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
     inset 0 6px 12px rgba(0, 0, 0, 0.6);
+    transform: rotate(-10deg) skewX(-20deg);
 }
 
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
+  0%, 100% {
+    transform: rotate(-10deg) skewX(-20deg) translateY(0);
   }
   50% {
-    transform: translateY(-7px);
+    transform: rotate(-10deg) skewX(-20deg) translateY(-7px); 
   }
 }
+
 
 #separadorBoton {
   margin-left: 5vh;
