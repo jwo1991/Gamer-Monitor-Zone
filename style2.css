@@ -34,26 +34,29 @@ body {
 }
 
 #section1 {
-  background: url("") no-repeat center center/cover;
   background-image: url(img/fondoSMM.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #section2 {
-  background: url("") no-repeat center center/cover;
+  background: url("img/fondo4.webp") no-repeat center center/cover;
+ 
 }
 
 #section3 {
-  background: url("") no-repeat center center/cover;
+  background: url("img/fondoF.png") no-repeat center center/cover;
+  
 }
 
 #section4 {
-  background: url("") no-repeat center center/cover;
+  background: url("img/mant.jpg") no-repeat center center/cover;
+  background-size: 100% 100%;
 }
 
 #section5 {
-  background: url("") no-repeat center center/cover;
+  background: url("img/fondo4.webp") no-repeat center center/cover;
+
 }
 
 .menu {
@@ -76,11 +79,11 @@ body {
 
 .menu ul {
   list-style-type: none;
- margin-left: -35vh;
+  margin-left: -35vh;
   padding: 0;
   text-align: center;
   flex-grow: 1;
-  margin-top: -8vh;
+  margin-top: -5vh;
 }
 
 .menu ul li {
@@ -123,7 +126,7 @@ body {
 }
 
 .titulo p span {
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: bold;
   background-color: #c51162;
   padding-left: 1vh;
