@@ -20,7 +20,6 @@ body {
   height: 100vh;
   object-fit: contain;
   z-index: -1;
-  
 }
 .overlay {
   position: fixed;
@@ -64,10 +63,14 @@ body {
   font-weight: bold;
   margin-top: 23vh;
   margin-bottom: 3vh;
-  background: linear-gradient(to right, rgb(33, 150, 243) 0%, rgb(233, 30, 99) 100%);
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+    rgb(233, 30, 99) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; 
+  background-clip: text;
   text-shadow: #d3d3d3;
 }
 
@@ -115,7 +118,6 @@ body {
   text-shadow: none;
   background: none;
   margin-bottom: 4vh;
-  
 }
 
 .separador {
@@ -157,7 +159,7 @@ body {
 .boton {
   width: 60vh;
   height: 12vh;
-  border-radius: 7vh;
+  border-radius: 5vh;
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -217,7 +219,6 @@ body {
   padding: 2vh;
 }
 
-
 /*/////////////////////////////////////////////////*/
 .botonCompra {
   background: linear-gradient(
@@ -229,11 +230,11 @@ body {
   display: inline-block;
   border-radius: 1vh;
   position: relative;
-  padding: 15px 30px;
+  padding: 1.2vh 1.8vh 1.2vh 1.8vh;
   color: #d3d3d3;
   text-align: center;
   border: 0.4vh solid #d3d3d3;
-  font-size: 2.5vh;
+  font-size: 1.9vh;
   cursor: pointer;
   font-weight: bold;
   overflow: hidden;
@@ -241,11 +242,10 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
   margin-top: 4vh;
-  margin-left: 5vh;
+  margin-left: 1vh;
   overflow: hidden;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
-
 
 .botonCompra p::before {
   content: "";
@@ -270,21 +270,21 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
     inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
     inset 0 6px 12px rgba(0, 0, 0, 0.6);
-    transform: rotate(-10deg) skewX(-20deg);
+  transform: rotate(-10deg) skewX(-20deg);
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(-10deg) skewX(-20deg) translateY(0);
   }
   50% {
-    transform: rotate(-10deg) skewX(-20deg) translateY(-7px); 
+    transform: rotate(-10deg) skewX(-20deg) translateY(-7px);
   }
 }
 
-
 #separadorBoton {
-  margin-left: 5vh;
+  margin-left: 2vh;
 }
 
 #iconoCompra {

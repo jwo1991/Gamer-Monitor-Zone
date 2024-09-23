@@ -76,7 +76,7 @@ body {
 
 .menu ul {
   list-style-type: none;
-  margin: 0;
+ margin-left: -35vh;
   padding: 0;
   text-align: center;
   flex-grow: 1;
@@ -100,6 +100,12 @@ body {
 .menu ul li a:hover {
   color: #2196f3;
   transform: scale(1.23);
+}
+
+.menu img {
+  width: 16vh;
+  height: 100%;
+  margin-left: 10vh;
 }
 /*/////////////////////////////////////////////////////////////////////////*/
 .container {
