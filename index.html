@@ -32,14 +32,9 @@
           COMPREHENSIVE PLATAFORM
         </p>
 
-        <button class="botonCompra">
+        <button class="botonCompra" onclick="abrirPopup()">
           <div id="iconoCompra"></div>
-         MULTI MONITOR MANAGER
-        </button>
-       
-        <button class="botonCompra" id="separadorBoton">
-          <div id="iconoCompra2"></div>
-          DDC TEST FREE TOOL
+          MULTI MONITOR MANAGER
         </button>
 
         <button class="botonCompra" id="separadorBoton">
@@ -72,5 +67,29 @@
         </div>
       </div>
     </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <h2>REMINDER</h2>
+        <p>
+          Before purchasing Multi Monitor Manager, it is recommended to download
+          and test the free DDC Test Tool to verify the compatibility of your
+          monitor(s) with the software.<br />For more information, please refer
+          to the compatibility section on the official tool website.
+        </p>
+        <div class="link">
+          <a href="">BUY NOW</a><a href="">Download DDC Test Tool</a></div>
+      </div>
+    </div>
   </body>
 </html>
+
+<script>
+  function abrirPopup() {
+    document.getElementById("popup").style.display = "flex"; // Muestra el popup y lo centra
+  }
+
+  function cerrarPopup() {
+    document.getElementById("popup").style.display = "none"; // Cierra el popup
+  }
+</script>
