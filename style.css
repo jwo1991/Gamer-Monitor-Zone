@@ -661,6 +661,7 @@ font-weight: bold;
 .popupInfo {
   display: none; 
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1; 
   left: 0;  
   top: 0;   
@@ -671,7 +672,8 @@ font-weight: bold;
 }
 
 .popupInfo-content {
-  background-color: rgba(15, 15, 15, 0.95); 
+  background-color: rgba(229,229,229, 0.95);
+  color: rgb(28,28,28); 
     margin: 15% auto;
   padding: 2vh;
   border-radius: 5vh;
@@ -682,8 +684,9 @@ font-weight: bold;
  opacity: 0; 
   transform: scale(0.3); 
   animation: popupAnimation1 1.5s forwards; 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8),
-  inset 0 0 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.9), 
+    inset 0 0 15px rgba(0, 0, 0, 0.5);
 
 transform-style: preserve-3d;
 transition: transform 0.5s, box-shadow 0.5s;
@@ -729,7 +732,7 @@ margin-left: 2vh;
 
 
 .closepopupInfo {
-  color:#d3d3d3;
+  color:rgb(28,28,28);
   float: right;
   font-size: 5vh;
   font-weight: bold;
