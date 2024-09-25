@@ -345,14 +345,14 @@
                  <div id="popupInfo" class="popupInfo">
     <div class="popupInfo-content">
         <span class="closepopupInfo" onclick="closePopup()">×</span>
-        <p>The adaptive mode is based on the detection of full-screen windows and the analysis of GPU usage. This system differentiates between games, which typically use more than 50% of the GPU capacity during their initial load, and movie playback, by identifying the names of video players. Although it is not an extremely advanced system, it is functional and allows for efficient management of graphic resources. Having the updated drivers from the GPU manufacturer should be enough, in case it doesn't work, please follow these steps and checks.</p>
+        <p>The adaptive mode is designed to detect full-screen windows and analyze GPU usage. This system differentiates between games, which typically use more than 50% of GPU capacity during their initial load, and movie playback, by recognizing specific video player names. Although not an extremely complex system, it is efficient enough to manage graphic resources effectively. Having the latest GPU drivers from the manufacturer is generally sufficient. If the application doesn't work as expected, please follow these steps and checks.</p>
         <ul>
             <li>
                 <strong>Driver Installation:</strong>
                 <ul>
                     <li>- Ensure that the appropriate NVIDIA or AMD drivers are installed.</li>
                     <li>- For NVIDIA, install the driver that includes <code>nvidia-smi</code>.</li>
-                    <li>- For AMD, install the driver that includes <code>amdgpu-pro</code>.</li>
+                    <li>- The application integrates AMD's ADLX library for GPU monitoring, so no additional action is needed by the user. Compatibility begins with AMD Radeon graphics cards.</li>
                 </ul>
             </li>
             <li>
@@ -369,12 +369,13 @@
             <li>
                 <strong>Verification of Installation:</strong>
                 <ul>
-                    <li>- Open a command prompt (CMD) and type <code>nvidia-smi</code> for NVIDIA or <code>amdgpu-pro</code> for AMD.</li>
-                    <li>- If the commands execute successfully, you will see the GPU information in the console.</li>
+                    <li>- Open a command prompt (CMD) and type <code>nvidia-smi</code> for NVIDIA or verify that AMD ADLX monitoring is active.</li>
+                    <li>- If the <code>nvidia-smi</code> command executes successfully, you will see the GPU information in the console.</li>
                     <li>- If you receive an error, verify that the paths are correctly configured in the PATH variable.</li>
                 </ul>
             </li>
         </ul>
+        
     </div>
 </div>
 
