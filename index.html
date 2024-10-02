@@ -47,26 +47,35 @@
 
       <div class="right-column" translate="no">
         <h3>EXPLORE THE TOOLS</h3>
-        <div class="botones">
-          <button
-            class="boton"
-            id="boton1"
-            onclick="window.location.href='MMM.html';"
-          >
-            MULTI MONITOR MANAGER
-          </button>
-          <br />
-          <div class="separador2"></div>
-          <button
-            class="boton"
-            id="boton2"
-            onclick="window.location.href='SMM.html';"
-          >
-            SYSTEM MONITOR MANAGER
-          </button>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <button
+                class="boton"
+                id="boton1"
+                onclick="window.location.href='MMM.html';"
+              >
+                MULTI MONITOR MANAGER
+              </button>
+            </div>
+            <div class="slide">
+              <button
+                class="boton"
+                id="boton2"
+                onclick="window.location.href='SMM.html';"
+              >
+                SYSTEM MONITOR MANAGER
+              </button>
+            </div>
+          </div>
+                    <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
         </div>
       </div>
     </div>
+
     <div id="popup" class="popup">
       <div class="popup-content">
         <span class="cerrar" onclick="cerrarPopup()">&times;</span>
@@ -78,18 +87,47 @@
           to the compatibility section on the official tool website.
         </p>
         <div class="link">
-          <a href="" translate="no">BUY NOW</a><a href="" translate="no">Download DDC Test Tool</a></div>
+          <a href="" translate="no">BUY NOW</a
+          ><a href="" translate="no">Download DDC Test Tool</a>
+        </div>
       </div>
     </div>
+
+    <script>
+      function abrirPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function cerrarPopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
+    <script>
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        if (index >= slides.length) currentIndex = 0;
+        if (index < 0) currentIndex = slides.length - 1;
+
+        slides.forEach((slide, i) => {
+          slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+          dots[i].classList.remove("active");
+        });
+
+        dots[currentIndex].classList.add("active");
+      }
+
+      function currentSlide(index) {
+        currentIndex = index - 1;
+        showSlide(currentIndex);
+      }
+
+      // Inicializa el primer slide y el punto activo
+      showSlide(currentIndex);
+    </script>
   </body>
 </html>
-
-<script>
-  function abrirPopup() {
-    document.getElementById("popup").style.display = "flex"; // Muestra el popup y lo centra
-  }
-
-  function cerrarPopup() {
-    document.getElementById("popup").style.display = "none"; // Cierra el popup
-  }
-</script>

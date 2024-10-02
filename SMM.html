@@ -40,54 +40,44 @@
           </p>
         </div>
 
-        <img
-          src="img/torre.png"
-          alt="Torre Gaming"
-          usemap="#towermap"
-          class="imagenTorre"
-        />
+        <div class="imagen-con-botones">
+        
+        
 
-        <!-- Contenedor de hover que incluye imagen y texto -->
+         
+          <button translate="no"
+            class="boton-circular"
+            style="top: 13vh; left: 102vh"
+            onclick="showHover('CPU', 'cpu.jpg', 'cpuContent');"
+            
+          >CPU</button>
+
+          <button translate="no"
+            class="boton-circular"
+            style="top: 11vh; left: 117vh"
+            onclick="showHover('RAM', 'ram.jpg', 'ramContent');"
+          >RAM</button>
+
+          <button translate="no"
+            class="boton-circular"
+            style="top: 22vh; left: 115vh"
+            onclick="showHover('GPU', 'gpu.jpg', 'gpuContent');"
+          >GPU</button>
+
+          <button translate="no"
+            class="boton-circular"
+            style="top: 40vh; left: 112vh"
+            onclick="showHover('Disco', 'hdd.jpg', 'diskContent');"
+          >HDD</button>
+        </div>
+
+      
         <div class="hover-container" id="hoverContainer" style="display: none">
           <img src="" id="hoverImage" class="hover-image" />
           <div class="hover-text" id="hoverText"></div>
         </div>
 
-        <map name="towermap">
-          <area
-            shape="rect"
-            coords="100,320,160,360"
-            href="#"
-            alt="CPU"
-            onmouseover="showHover('CPU', 'cpu.jpg', 'cpuContent');"
-            onmouseout="hideHover();"
-          />
-          <area
-            shape="rect"
-            coords = "204,253,265,304"
-            href="#"
-            alt="RAM"
-            onmouseover="showHover('RAM', 'ram.jpg', 'ramContent');"
-            onmouseout="hideHover();"
-          />
-          <area
-            shape="rect"
-            coords="337,300,440,440"
-            href="#"
-            alt="GPU"
-            onmouseover="showHover('GPU', 'gpu.jpg', 'gpuContent');"
-            onmouseout="hideHover();"
-          />
-          <area
-            shape="rect"
-            coords="50,400,200,500"
-            href="#"
-            alt="Disco"
-            onmouseover="showHover('Disco', 'hdd.jpg', 'diskContent');"
-            onmouseout="hideHover();"
-          />
-        </map>
-
+      
         <div id="cpuContent" class="content" style="display: none">
           <p>
             Provides detailed real-time data on CPU usage, including core
@@ -404,33 +394,28 @@
       }
     </script>
 
-    <script>
-      function showContent(contentId) {
-        var contents = document.querySelectorAll(".content");
-        contents.forEach(function (content) {
-          content.style.display = "none";
-        });
+<script>
+ function showHover(componentName, imageSrc, contentId) {
+  var hoverContainer = document.getElementById("hoverContainer");
+  var hoverImage = document.getElementById("hoverImage");
+  var hoverText = document.getElementById("hoverText");
 
-        var selectedContent = document.getElementById(contentId);
-        if (selectedContent) {
-          selectedContent.style.display = "block";
-        }
-      }
 
-      function showHover(componentName, imageSrc, contentId) {
-        var hoverContainer = document.getElementById("hoverContainer");
-        var hoverImage = document.getElementById("hoverImage");
-        var hoverText = document.getElementById("hoverText");
+  if (hoverContainer.style.display === "flex") {
+    // Si está visible, lo ocultamos
+    hoverContainer.style.display = "none";
+  } else {
+   
+    hoverImage.src = "img/SMM/" + imageSrc;
+    hoverText.innerHTML = document.getElementById(contentId).innerHTML;
+    hoverContainer.style.display = "flex";
+  }
+}
 
-        hoverImage.src = "img/SMM/" + imageSrc;
-        hoverText.innerHTML = document.getElementById(contentId).innerHTML; // Copia el texto correspondiente
-        hoverContainer.style.display = "flex";
-      }
-
-      function hideHover() {
-        var hoverContainer = document.getElementById("hoverContainer");
-        hoverContainer.style.display = "none";
-      }
-    </script>
+  function hideHover() {
+    var hoverContainer = document.getElementById("hoverContainer");
+    hoverContainer.style.display = "none";
+  }
+</script>
   </body>
 </html>

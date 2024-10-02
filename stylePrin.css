@@ -41,8 +41,8 @@ body {
 
 .logoPrin {
   background-image: url(img/logoPrin.png);
-  width: 16vh;
-  height: 18vh;
+  width: 11vh;
+  height: 13vh;
   margin-left: 2vh;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
@@ -52,14 +52,14 @@ body {
 }
 
 .left-column {
-  width: 110vh;
+  width: 90vh;
   padding: 20px;
   word-spacing: 0.3vh;
   z-index: 2;
 }
 
 .titulo {
-  font-size: 9vh;
+  font-size: 7.5vh;
   font-weight: bold;
   margin-top: 23vh;
   margin-bottom: 3vh;
@@ -99,7 +99,7 @@ body {
   display: inline-block;
   color: black;
   font-weight: bold;
-  font-size: 2.5vh;
+  font-size: 2vh;
   margin-top: 0vh;
   padding-left: 0.5vh;
   padding-right: 0.5vh;
@@ -109,7 +109,7 @@ body {
 }
 
 .tituloMenor {
-  font-size: 1.8vh;
+  font-size: 1.5vh;
   margin-top: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
@@ -142,8 +142,7 @@ body {
 }
 
 .right-column h3 {
-  margin-top: 45vh;
-  margin-left: 12vh;
+  margin-top: 37vh;
   display: inline-block;
   padding: 0.3vh 3vh;
   background: linear-gradient(
@@ -153,12 +152,17 @@ body {
     rgb(233, 30, 99) 100%
   );
   border-radius: 4vh;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .boton {
-  width: 60vh;
-  height: 12vh;
+  width: 80vh;
+  height: 40vh;
   border-radius: 5vh;
   position: relative;
   display: inline-block;
@@ -166,37 +170,18 @@ body {
   color: #d3d3d3;
   text-align: center;
   border: none;
-  font-size: 3.5vh;
+  font-size: 4.5vh;
   cursor: pointer;
   font-weight: bold;
   overflow: hidden;
-  transition: box-shadow 0.3s;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5);
-  transform: translateZ(0);
-  transform-style: preserve-3d;
-  transition: transform 0.5s, box-shadow 0.5s;
+  border: 0.2vh solid #d3d3d3;
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
 }
 
 .boton:hover {
-  border: 0.5vh solid #d3d3d3;
-  animation: bounce2 0.5s ease-in-out infinite;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5);
+  border: 0.3vh solid #d3d3d3;
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
   filter: brightness(0.7);
-}
-
-@keyframes bounce2 {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
 }
 
 #boton1 {
@@ -219,6 +204,43 @@ body {
   padding: 2vh;
 }
 
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(233, 30, 99);
+}
+
 /*/////////////////////////////////////////////////*/
 .botonCompra {
   background: linear-gradient(
@@ -230,7 +252,10 @@ body {
   display: inline-block;
   border-radius: 1vh;
   position: relative;
-  padding: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 0.8vh;
+  padding-left: 1.8vh;
+  padding-right: 1vh;
   color: #d3d3d3;
   text-align: center;
   border: 0.4vh solid #d3d3d3;
@@ -291,7 +316,7 @@ body {
   background-image: url(img/iconCompra.png);
   background-size: cover;
   width: 4vh;
-  height: 3vh;
+  height: 2.7vh;
   float: left;
   margin-right: 0.5vh;
   margin-left: -1.8vh;
@@ -322,16 +347,14 @@ body {
 }
 
 .popup-content {
-  background-color: rgba(229, 229, 229,0.9);
+  background-color: rgba(229, 229, 229, 0.9);
   padding: 2vh;
   border-radius: 2vh;
   width: 60vh;
   text-align: left;
   position: relative;
-  color: rgb(28,28,28);
-  box-shadow: 
-  0 20px 40px rgba(0, 0, 0, 0.9), 
-  inset 0 0 15px rgba(0, 0, 0, 0.5);
+  color: rgb(28, 28, 28);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
 }
 
@@ -359,14 +382,14 @@ body {
     rgb(233, 30, 99) 100%
   );
   padding: 1vh;
-  border-radius: 1vh;
-  border: 0.3vh solid rgb(28,28,28);
+  border-radius: 2.5vh;
+  border: 0.3vh solid rgb(51, 51, 51);
 }
 
 .link a:hover {
   background: linear-gradient(to right, #0d47a1, #c51162);
   color: #bbb9b9;
-  border: 0.5vh solid rgb(28,28,28);
+  border: 0.4vh solid rgb(51, 51, 51);
 }
 
 .cerrar {
