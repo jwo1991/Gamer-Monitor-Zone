@@ -175,22 +175,29 @@ body {
   font-weight: bold;
   overflow: hidden;
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
+  transition: filter 0.3s ease;
 }
 
 .boton:hover {
   text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
-  filter: brightness(0.7);
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5);
-  transform: translateZ(0);
-  transform-style: preserve-3d;
+  filter: brightness(0.8);
+ 
+}
+
+.boton span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.boton:hover span {
+  transform: scale(1.1);
 }
 
 #boton1 {
   background-image: url(img/boton1.jpg);
   background-size: cover;
 }
+
 
 #boton2 {
   background-image: url(img/boton2.jpg);
@@ -231,8 +238,8 @@ body {
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 1vh;
+  width: 1vh;
   margin: 0 5px;
   background-color: #d3d3d3;
   border-radius: 50%;
@@ -242,6 +249,7 @@ body {
 
 .active {
   background-color: rgb(233, 30, 99);
+  transform: scale(1.8); 
 }
 
 /*/////////////////////////////////////////////////*/
