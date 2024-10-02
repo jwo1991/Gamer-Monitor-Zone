@@ -31,7 +31,8 @@
             <span>
               EASILY TRACK YOUR PC’S PERFORMANCE, CPU, RAM, GPU, AND HARD DRIVE
             </span>
-            <br />
+          </p>
+          <p translate="no">
             <span>
               USAGE WITH CLEAR, REAL-TIME INSIGHTS. SIMPLE, EFFICIENT, AND
               USER-FRIENDLY.
@@ -39,63 +40,83 @@
           </p>
         </div>
 
-        <div class="principalImagenes">
-          <div class="left-column">
-            <div class="fila">
-              <div class="izquierda">
-                <div class="imagen1"></div>
-              </div>
-              <div class="derecha">
-                <p>
-                  Provides detailed real-time data on CPU usage, including core
-                  performance, clock speeds, and temperature levels. Tracks
-                  individual core utilization, allowing for monitoring of total
-                  CPU consumption and identification of resource-intensive
-                  processes.
-                </p>
-              </div>
-            </div>
+        <img
+          src="img/torre.png"
+          alt="Torre Gaming"
+          usemap="#towermap"
+          class="imagenTorre"
+        />
 
-            <div class="fila">
-              <div class="izquierda">
-                <div class="imagen2"></div>
-              </div>
-              <div class="derecha">
-                <p>
-                  Displays memory usage with details on total capacity and
-                  available RAM.
-                </p>
-              </div>
-            </div>
-          </div>
+        <!-- Contenedor de hover que incluye imagen y texto -->
+        <div class="hover-container" id="hoverContainer" style="display: none">
+          <img src="" id="hoverImage" class="hover-image" />
+          <div class="hover-text" id="hoverText"></div>
+        </div>
 
-          <div class="right-column">
-            <div class="fila">
-              <div class="izquierda">
-                <div class="imagen3"></div>
-              </div>
-              <div class="derecha">
-                <p>
-                  Monitors GPU performance with insights into usage, clock
-                  speeds, and VRAM consumption.
-                </p>
-              </div>
-            </div>
+        <map name="towermap">
+          <area
+            shape="rect"
+            coords="100,320,160,360"
+            href="#"
+            alt="CPU"
+            onmouseover="showHover('CPU', 'cpu.jpg', 'cpuContent');"
+            onmouseout="hideHover();"
+          />
+          <area
+            shape="rect"
+            coords = "204,253,265,304"
+            href="#"
+            alt="RAM"
+            onmouseover="showHover('RAM', 'ram.jpg', 'ramContent');"
+            onmouseout="hideHover();"
+          />
+          <area
+            shape="rect"
+            coords="337,300,440,440"
+            href="#"
+            alt="GPU"
+            onmouseover="showHover('GPU', 'gpu.jpg', 'gpuContent');"
+            onmouseout="hideHover();"
+          />
+          <area
+            shape="rect"
+            coords="50,400,200,500"
+            href="#"
+            alt="Disco"
+            onmouseover="showHover('Disco', 'hdd.jpg', 'diskContent');"
+            onmouseout="hideHover();"
+          />
+        </map>
 
-            <div class="fila">
-              <div class="izquierda">
-                <div class="imagen4"></div>
-              </div>
-              <div class="derecha">
-                <p>
-                  Provides detailed information on hard drive usage, total
-                  capacity, and available space. Includes tools for
-                  defragmentation, TRIM for SSDs, and clearing temporary files
-                  to optimize system performance.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div id="cpuContent" class="content" style="display: none">
+          <p>
+            Provides detailed real-time data on CPU usage, including core
+            performance, clock speeds, and temperature levels. Tracks individual
+            core utilization, allowing for monitoring of total CPU consumption
+            and identification of resource-intensive processes.
+          </p>
+        </div>
+
+        <div id="ramContent" class="content" style="display: none">
+          <p>
+            Displays memory usage with details on total capacity and available
+            RAM.
+          </p>
+        </div>
+
+        <div id="gpuContent" class="content" style="display: none">
+          <p>
+            Monitors GPU performance with insights into usage, clock speeds, and
+            VRAM consumption.
+          </p>
+        </div>
+
+        <div id="diskContent" class="content" style="display: none">
+          <p>
+            Provides detailed information on hard drive usage, total capacity,
+            and available space. Includes tools for defragmentation, TRIM for
+            SSDs, and clearing temporary files to optimize system performance.
+          </p>
         </div>
       </div>
     </div>
@@ -161,13 +182,14 @@
     </div>
 
     <div class="section" id="section3">
-          <div class="card-container">
-           <div class="titulo2">
-            <p translate="no">
-              ADVANCED MONITORING CAPABILITIES<br /><span>BOOST EFFICIENCY WITH REAL-TIME MONITORING
-              </span>
-            </p>
-           </div>
+      <div class="card-container">
+        <div class="titulo2">
+          <p translate="no">
+            ADVANCED MONITORING CAPABILITIES<br /><span
+              >BOOST EFFICIENCY WITH REAL-TIME MONITORING
+            </span>
+          </p>
+        </div>
         <div class="contenedorF">
           <img src="img/11.png" />
           <img src="img/12.png" />
@@ -352,13 +374,7 @@
       </div>
     </div>
 
-    <div class="section" id="section5">
-
-
-
-
-
-    </div>
+    <div class="section" id="section5"></div>
 
     <script>
       function openPopup(popupId) {
@@ -385,6 +401,35 @@
         setTimeout(() => {
           popup.style.display = "none";
         }, 500);
+      }
+    </script>
+
+    <script>
+      function showContent(contentId) {
+        var contents = document.querySelectorAll(".content");
+        contents.forEach(function (content) {
+          content.style.display = "none";
+        });
+
+        var selectedContent = document.getElementById(contentId);
+        if (selectedContent) {
+          selectedContent.style.display = "block";
+        }
+      }
+
+      function showHover(componentName, imageSrc, contentId) {
+        var hoverContainer = document.getElementById("hoverContainer");
+        var hoverImage = document.getElementById("hoverImage");
+        var hoverText = document.getElementById("hoverText");
+
+        hoverImage.src = "img/SMM/" + imageSrc;
+        hoverText.innerHTML = document.getElementById(contentId).innerHTML; // Copia el texto correspondiente
+        hoverContainer.style.display = "flex";
+      }
+
+      function hideHover() {
+        var hoverContainer = document.getElementById("hoverContainer");
+        hoverContainer.style.display = "none";
       }
     </script>
   </body>

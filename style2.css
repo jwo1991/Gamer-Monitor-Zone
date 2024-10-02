@@ -132,92 +132,67 @@ body {
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3),
     3px 3px 5px rgba(0, 0, 0, 0.5);
 }
+
+.titulo p:first-of-type {
+  margin-bottom: 0;
+}
+
+.titulo p:last-of-type {
+  margin-top: -2vh;
+}
+
 /*/////////////////////////////////////////////////////////////////////*/
 
-.principalImagenes {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  height: 90vh;
-  margin-right: 5vh;
-}
-
-.left-column,
-.right-column {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30vh;
-}
-
-.left-column .fila,
-.right-column .fila {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagen1,
-.imagen2,
-.imagen3,
-.imagen4 {
-  width: 38vh;
-  height: 19vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top-left-radius: 2.5vh;
-  border-bottom-left-radius: 2.5vh;
-  transition: transform 0.5s, box-shadow 0.5s;
-}
-
-.imagen1 {
-  background-image: url("img/SMM/cpu.jpg");
-}
-
-.imagen2 {
-  background-image: url("img/SMM/ram.jpg");
-}
-
-.imagen3 {
-  background-image: url("img/SMM/gpu.jpg");
-}
-
-.imagen4 {
-  background-image: url("img/SMM/hdd.jpg");
-}
-
-.izquierda {
-  flex: 1;
-  margin: 0;
+.hover-container {
+  display: none;
+  background-color: rgba(28, 28, 28, 0.8);
+  border-radius: 3vh;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: rgb(229,229,229);
+   z-index: 1000;
   align-items: center;
-}
-
-.derecha {
-  flex: 1;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-top-right-radius: 2.5vh;
-  border-bottom-right-radius: 2.5vh;
-  color: #d3d3d3;
-  text-align: left;
-  font-size: 2vh;
-  width: 100%;
-  height: 19vh;
-  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9);
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin-left: -6.9vh;
-}
-
-.derecha p {
+  display: flex;
+  margin-top: -55vh; 
+    margin-left: 1vh;
+    width: 80vh;
+    height:25vh ;
+    transform: scale(0); 
+    opacity: 0; 
+    animation: fadeInScale 1s forwards; 
+  }
+  
+  @keyframes fadeInScale {
+    to {
+      transform: scale(1); 
+      opacity: 1; 
+    }
+  }
+.hover-image {
+  width: 45vh;
+  height: 25vh;
+  object-fit: cover;
+  border-top-left-radius: 2vh;
+  border-bottom-left-radius: 2vh;
   margin: 0;
-  padding: 2vh;
+}
+
+.hover-text {
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 2vh;
+}
+
+.imagenTorre {
+  margin-top: -30vh;
+  margin-left: 90vh;
+  width: 60vh;
+  height: 100vh;
+  object-fit: contain;
+  overflow: hidden;
+  filter: brightness(1.1) contrast(1.1);
 }
 
 /*///////////////////////////////////////////////////////////*/
