@@ -18,14 +18,14 @@
     </video>
     <div class="overlay"></div>
     <div class="container">
-      <div class="left-column" translate="no">
+  
         <div class="logoPrin"></div>
 
         <div class="titulo">GAMER MONITOR ZONE</div>
 
         <p class="tituloMediano">
           ENHANCE EFFICIENCY WITH AN INTEGRATED ECOSYSTEM THAT UNIFIES
-        </p>
+        </p><br>
         <p class="tituloMediano">DISPLAY CONTROL AND SYSTEM MONITORING</p>
         <p class="tituloMenor">
           CUSTOMIZATION AND IMPROVED PERFORMANCE ARE ACHIEVED THROUGH THIS
@@ -42,11 +42,17 @@
           SYSTEM MONITOR MANAGER
         </button>
 
-        <div class="copy">Copyright&reg; 2024 jwo1991</div>
-      </div>
+        <button class="botonCompra" id="separadorBoton">
+          <div id="iconoCompra2"></div>
+          DDC TEST FREE TOOL
+        </button>
 
-      <div class="right-column" translate="no">
-        <h3>EXPLORE THE TOOLS</h3>
+        
+     
+
+    <div class="asd">
+        <h2>EXPLORE THE TOOLS</h2>
+      
         <div class="slider-container">
           <div class="slider">
             <div class="slide">
@@ -67,14 +73,59 @@
                 <span>SYSTEM MONITOR MANAGER</span>
               </button>
             </div>
+
+            <div class="slide">
+              <button
+                class="boton"
+                id="boton3"
+                onclick="window.location.href='';"
+              >
+                <span>DDC TEST TOOL</span>
+              </button>
+            </div>
+
           </div>
+        </div>
+        
           <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-        </div>
+        
       </div>
-    </div>
+    </div >
+
+    <div class="final">
+      <div class="column">
+        <h3 translate="no">Multi Monitor Manager</h3>
+          <ul>
+            <li>Full control over the monitor, adjusting all parameters available in the OSD menu.</li>
+            <li>Creation of color profiles and modes for optimal viewing experiences.</li>
+            <li>Game and movie detection to apply tailored settings automatically.</li>
+            <li>Keyboard shortcuts for efficient application control over the monitor.</li>
+            
+          </ul>
+      </div>
+      <div class="column">
+        <h3 translate="no">System Monitor Manager</h3>
+          <ul>
+            <li>System specifications with real-time graphs for CPU usage, including active processes with the ability to terminate them.</li>
+            <li>GPU monitoring with detailed performance metrics.</li>
+            <li>RAM usage overview and disk information with optimization options, including disk cleanup and defragmentation tools.</li>
+            
+          </ul>
+      </div>
+      <div class="column">
+        <h3 translate="no">Display Data Channel Test Tool</h3>
+          <ul>
+            <li>DDC test tool to assess monitor compatibility with DDC and VCP parameters.</li>
+            <li>Verifies capability string for accurate functionality and performance assessment of connected monitors.</li>
+            
+          </ul>
+      </div>
+  </div>
+  
 
     <div id="popup" class="popup">
       <div class="popup-content">
@@ -92,7 +143,7 @@
         </div>
       </div>
     </div>
-
+  </div>
     <script>
       function abrirPopup() {
         document.getElementById("popup").style.display = "flex";
