@@ -47,8 +47,21 @@
           DDC TEST FREE TOOL
         </button>
 
-        
-     
+        <div class="asd2">
+          <div class="column-1">
+              <div id="slideshow" class="image-slide"></div>
+          </div>
+          <div class="column-2">
+            <h3>FUTURE UPDATES</h3>
+              <ul>
+                <li>Voice command integration with Google Assistant</li><br>
+                <li>Developer mode, open your IDE's on the desired monitor with the screen orientation you prefer</li><br>
+               
+
+              </ul>
+          </div>
+      </div>
+      
 
     <div class="asd">
         <h2>EXPLORE THE TOOLS</h2>
@@ -177,8 +190,34 @@
         showSlide(currentIndex);
       }
 
-      // Inicializa el primer slide y el punto activo
+      
       showSlide(currentIndex);
+    </script>
+
+    <script>
+
+const images = ['img/file.png', 'img/file2.png', 'img/file3.png', 'img/file4.png'];
+let currentImageIndex = 0;
+const slideshow = document.getElementById('slideshow');
+let interval;
+
+function startSlideshow() {
+  interval = setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
+  }, 2000);
+}
+
+function stopSlideshow() {
+  clearInterval(interval);
+}
+
+slideshow.addEventListener('mouseover', stopSlideshow);
+slideshow.addEventListener('mouseout', startSlideshow);
+startSlideshow();
+
+
+
     </script>
   </body>
 </html>
