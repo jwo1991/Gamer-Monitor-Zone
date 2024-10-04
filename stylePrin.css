@@ -164,11 +164,8 @@ body {
 /*///////////////////////////////////////////////////////////*/
 
 .asd2 {
-  background: linear-gradient(
-    to right,
-    rgba(33, 150, 243, 0.7) 0%,
-    rgba(233, 30, 99, 0.7) 100%
-  );
+  background-image: url(img/fondoPrin.jpg);
+  background-size: contain;
   display: inline-block;
   margin-top: 25vh;
   width: 100vw;
@@ -194,27 +191,19 @@ body {
 }
 
 .column-2 {
-  background-color: black;
+  background: linear-gradient(
+    to right,
+    rgb(23, 105, 170) 0%,
+    rgb(163, 21, 69) 100%
+  );
 }
 
 .asd2 h3 {
   display: inline-block;
-  background: linear-gradient(
-    to right,
-    rgb(33, 150, 243) 0%,
-    rgb(233, 30, 99) 100%
-  );
   color: #d3d3d3;
   padding: 1vh;
   border-radius: 2vh;
   font-weight: bold;
-  transition: box-shadow 0.3s;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5);
-  transform: translateZ(0);
-  transform-style: preserve-3d;
-  transition: transform 0.5s, box-shadow 0.5s;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
 }
 
@@ -235,6 +224,16 @@ body {
 .asd2 ul li:hover {
   font-weight: bold;
   cursor: pointer;
+}
+
+#slideshow {
+  opacity: 0;
+  transition: filter 0.75s ease-in-out, transform 1s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  transform: scale(0.3);
 }
 
 /*/////////////////////////////////////////////////////////////*/
