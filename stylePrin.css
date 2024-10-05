@@ -198,7 +198,7 @@ body {
   );
 }
 
-.asd2 h3 {
+.asd2 h2 {
   display: inline-block;
   color: #d3d3d3;
   padding: 1vh;
@@ -212,12 +212,12 @@ body {
   list-style: none;
   text-align: left;
   padding: 2vh;
+  font-size: 2.2vh;
 }
 
 .asd2 ul li {
   color: #d3d3d3;
   padding: 1vh;
-
   margin-right: 2vh;
 }
 
@@ -228,12 +228,12 @@ body {
 
 #slideshow {
   opacity: 0;
-  transition: filter 0.75s ease-in-out, transform 1s ease-in-out;
+  transition: filter 0.80s ease-in-out, transform 1s ease-in-out;
 }
 
 .blur {
   filter: blur(10px);
-  transform: scale(0.3);
+  transform: scale(0.2);
 }
 
 /*/////////////////////////////////////////////////////////////*/

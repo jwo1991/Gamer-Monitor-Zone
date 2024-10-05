@@ -38,75 +38,105 @@
               USER-FRIENDLY.
             </span>
           </p>
+
+          <div class="textoOcultar" translate="no">
+            <p>
+              PRESS THE BUTTONS ON THE CPU<br />TO SEE THE FEATURES OF THE TOOL
+            </p>
+          </div>
         </div>
 
         <div class="imagen-con-botones">
-        
-        
-
-         
-          <button translate="no"
+          <button
+            translate="no"
             class="boton-circular"
             style="top: 13vh; left: 102vh"
             onclick="showHover('CPU', 'cpu.jpg', 'cpuContent');"
-            
-          >CPU</button>
+          >
+            CPU
+          </button>
 
-          <button translate="no"
+          <button
+            translate="no"
             class="boton-circular"
             style="top: 11vh; left: 117vh"
             onclick="showHover('RAM', 'ram.jpg', 'ramContent');"
-          >RAM</button>
+          >
+            RAM
+          </button>
 
-          <button translate="no"
+          <button
+            translate="no"
             class="boton-circular"
             style="top: 22vh; left: 115vh"
             onclick="showHover('GPU', 'gpu.jpg', 'gpuContent');"
-          >GPU</button>
+          >
+            GPU
+          </button>
 
-          <button translate="no"
+          <button
+            translate="no"
             class="boton-circular"
             style="top: 40vh; left: 112vh"
             onclick="showHover('Disco', 'hdd.jpg', 'diskContent');"
-          >HDD</button>
+          >
+            HDD
+          </button>
         </div>
 
-      
         <div class="hover-container" id="hoverContainer" style="display: none">
           <img src="" id="hoverImage" class="hover-image" />
           <div class="hover-text" id="hoverText"></div>
         </div>
 
-      
         <div id="cpuContent" class="content" style="display: none">
-          <p>
-            Provides detailed real-time data on CPU usage, including core
-            performance, clock speeds, and temperature levels. Tracks individual
-            core utilization, allowing for monitoring of total CPU consumption
-            and identification of resource-intensive processes.
-          </p>
+          <ul class="lista">
+            <li>Provides detailed real-time data on CPU usage.</li>
+            <br />
+            <li>
+              Includes core performance, clock speeds, and temperature levels.
+            </li>
+            <br />
+            <li>
+              Tracks individual core utilization for monitoring total CPU
+              consumption.
+            </li>
+            <br />
+            <li>Identifies resource-intensive processes.</li>
+          </ul>
         </div>
 
         <div id="ramContent" class="content" style="display: none">
-          <p>
-            Displays memory usage with details on total capacity and available
-            RAM.
-          </p>
+          <ul class="lista">
+            <li>Displays memory usage.</li>
+            <br />
+            <li>Provides details on total capacity and available RAM.</li>
+          </ul>
         </div>
 
         <div id="gpuContent" class="content" style="display: none">
-          <p>
-            Monitors GPU performance with insights into usage, clock speeds, and
-            VRAM consumption.
-          </p>
+          <ul class="lista">
+            <li>Monitors GPU performance.</li>
+            <br />
+            <li>Provides insights into usage and clock speeds.</li>
+            <br />
+            <li>Tracks VRAM consumption.</li>
+          </ul>
         </div>
 
         <div id="diskContent" class="content" style="display: none">
-          <p>
-            Provides detailed information on hard drive usage, total capacity,
-            and available space. Includes tools for defragmentation, TRIM for
-            SSDs, and clearing temporary files to optimize system performance.
-          </p>
+          <ul class="lista">
+            <li>Provides detailed information on hard drive usage.</li>
+            <br />
+            <li>Displays total capacity and available space.</li>
+            <br />
+            <li>Includes tools for defragmentation and TRIM for SSDs.</li>
+            <br />
+            <li>
+              Offers options for clearing temporary files to optimize system
+              performance.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -395,22 +425,20 @@
     </script>
 
 <script>
- function showHover(componentName, imageSrc, contentId) {
-  var hoverContainer = document.getElementById("hoverContainer");
-  var hoverImage = document.getElementById("hoverImage");
-  var hoverText = document.getElementById("hoverText");
+  function showHover(componentName, imageSrc, contentId) {
+    var hoverContainer = document.getElementById("hoverContainer");
+    var hoverImage = document.getElementById("hoverImage");
+    var hoverText = document.getElementById("hoverText");
 
-
-  if (hoverContainer.style.display === "flex") {
-    // Si está visible, lo ocultamos
-    hoverContainer.style.display = "none";
-  } else {
-   
-    hoverImage.src = "img/SMM/" + imageSrc;
-    hoverText.innerHTML = document.getElementById(contentId).innerHTML;
-    hoverContainer.style.display = "flex";
+    if (hoverContainer.style.display === "flex") {
+      
+      hoverContainer.style.display = "none";
+    } else {
+      hoverImage.src = "img/SMM/" + imageSrc;
+      hoverText.innerHTML = document.getElementById(contentId).innerHTML;
+      hoverContainer.style.display = "flex";
+    }
   }
-}
 
   function hideHover() {
     var hoverContainer = document.getElementById("hoverContainer");

@@ -141,23 +141,37 @@ body {
   margin-top: -2vh;
 }
 
+.textoOcultar {
+  z-index: 999;
+  position: absolute;
+    margin-top: 3vh;
+ 
+ 
+}
+
+.textoOcultar p {
+  font-size: 3.5vh;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
 /*/////////////////////////////////////////////////////////////////////*/
 
 .hover-container {
   display: none;
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 3vh;
-  padding: 0;
+  padding: 2vh;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  color: rgb(229, 229, 229);
   z-index: 1000;
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-left: -15vh;
-  width: 80vh;
-  height: 25vh;
+  width: 40vw;
+  height: auto;
   transform: scale(0);
   opacity: 0;
   animation: fadeInScale 1s forwards;
@@ -170,19 +184,22 @@ body {
   }
 }
 .hover-image {
-  width: 45vh;
-  height: 25vh;
+  max-width: 20vw;
+  max-height: 20vh;
   object-fit: cover;
-  border-top-left-radius: 2vh;
-  border-bottom-left-radius: 2vh;
-  margin: 0;
+  border-radius: 50%;
+  border: black 0.2vh solid;
+  text-shadow: 1px 1px 0 black;
 }
 
 .hover-text {
-  font-size: 2vh;
-  font-weight: bold;
+  font-size: 2.2vh;
   text-align: left;
-  margin-left: 2vh;
+  text-shadow: 1px 1px 0 black;
+}
+
+.lista {
+  list-style: none;
 }
 
 .imagenTorre {
@@ -200,7 +217,7 @@ body {
 
 .boton-circular {
   position: absolute;
-  width: 5.6vh;
+  width: 3vw;
   height: 5.6vh;
   background: linear-gradient(
     to right,
@@ -228,7 +245,7 @@ body {
   transform: scale(1.2);
   background: linear-gradient(to right, #0d47a1, #c51162);
   color: #aaa9a9;
-  border: 0.3vh #d3d3d3 solid;
+  border: 0.2vh #d3d3d3 solid;
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -458,8 +475,8 @@ body {
 
     rgb(233, 30, 99) 100%
   );
-  padding-top:0.5vh ;
-  padding-bottom:0.5vh; 
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
   padding-left: 3vh;
   padding-right: 3vh;
   border-radius: 2.5vh;
@@ -493,7 +510,7 @@ body {
 .popup-content li {
   background: rgba(28, 28, 28, 0.7);
   color: #d3d3d3;
-margin: 1vh;
+  margin: 1vh;
   padding: 1.2vh;
   font-size: 2vh;
   border-radius: 10px;
@@ -503,8 +520,6 @@ margin: 1vh;
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
 }
-
-
 
 .popup-content li:hover {
   transform: scale(1.08);
