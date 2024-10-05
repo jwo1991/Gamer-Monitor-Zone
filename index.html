@@ -195,53 +195,45 @@
     </script>
 
 <script>
-const images = ['img/file.png', 'img/file2.png', 'img/file3.png', 'img/file4.png'];
-let currentImageIndex = 0;
-const slideshow = document.getElementById('slideshow');
-let interval;
-
-function preloadImages() {
-  images.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
-}
-
-function startSlideshow() {
-  interval = setInterval(() => {
-    slideshow.style.opacity = '0';
-    slideshow.classList.add('blur');
-    
-    setTimeout(() => {
-      currentImageIndex = (currentImageIndex + 1) % images.length;
-      slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
-
+  const images = ['img/file.png', 'img/file2.png', 'img/file3.png', 'img/file4.png'];
+  let currentImageIndex = 0;
+  const slideshow = document.getElementById('slideshow');
+  let interval;
+  
+  function preloadImages() {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }
+  
+  function startSlideshow() {
+    interval = setInterval(() => {
+      slideshow.style.opacity = '0';
+      slideshow.classList.add('blur');
+      
       setTimeout(() => {
-        slideshow.style.opacity = '1';
-        slideshow.classList.remove('blur');
-      }, 100);
-
-    }, 500);
-
-  }, 3000);
-}
-
-function stopSlideshow() {
-  clearInterval(interval);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  preloadImages();
-  slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
-  slideshow.style.opacity = '1'; // Asegúrate de que se muestre la primera imagen inmediatamente
-  startSlideshow();
-});
-
-slideshow.addEventListener('mouseover', stopSlideshow);
-slideshow.addEventListener('mouseout', startSlideshow);
-
-
-</script>
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
+  
+        setTimeout(() => {
+          slideshow.style.opacity = '1';
+          slideshow.classList.remove('blur');
+        }, 100);
+  
+      }, 500);
+  
+    }, 3000);
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    preloadImages();
+    slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    slideshow.style.opacity = '1';
+    startSlideshow();
+  });
+  </script>
+  
 
   </body>
 </html>
