@@ -82,28 +82,9 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: #d3d3d3;
+  
 }
 
-@keyframes parpadeo {
-  0%,
-  100% {
-    text-shadow: none;
-  }
-  50% {
-    text-shadow: 0 0 2px rgb(33, 150, 243), 0 0 4px rgb(33, 150, 243),
-      0 0 6px rgb(33, 150, 243), 0 0 8px rgb(33, 150, 243),
-      0 0 10px rgb(33, 150, 243);
-  }
-}
-
-/* Efecto de sombra permanente */
-@keyframes sombraFija {
-  100% {
-    text-shadow: 0 0 2px rgb(33, 150, 243), 0 0 4px rgb(33, 150, 243),
-      0 0 6px rgb(33, 150, 243), 0 0 8px rgb(33, 150, 243),
-      0 0 10px rgb(33, 150, 243);
-  }
-}
 
 .tituloMediano {
   display: inline-block;
@@ -188,6 +169,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: saturate(1.2);
 }
 
 .column-2 {
