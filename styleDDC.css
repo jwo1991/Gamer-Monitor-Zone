@@ -3,16 +3,10 @@ body {
   font-family: "Roboto";
   color: #d3d3d3;
   text-align: center;
-  background-color: black;
+  background: linear-gradient(to right, #2273a8 0%, #a31e47 100%);
 }
 
 .titulo {
-  background: linear-gradient(
-    to right,
-    rgba(33, 150, 243, 0.7) 0%,
-    rgba(233, 30, 99, 0.7) 100%
-  );
-  position: absolute;
   top: 0;
   width: 100%;
   padding: 10px 0;
@@ -20,7 +14,7 @@ body {
 }
 
 .titulo p {
-  font-size: 4vh;
+  font-size: 5vh;
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -34,14 +28,9 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 10px;
-  width: 100vw;
-  overflow: hidden;
-  margin-top: 15vh;
-  background: linear-gradient(
-    to right,
-    rgba(33, 150, 243, 0.7) 0%,
-    rgba(233, 30, 99, 0.7) 100%
-  );
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 2vh;
 }
 
 .col1 {
@@ -73,19 +62,19 @@ body {
 
 .boton {
   display: inline-block;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 1.3vh 2vh 1vh 3vh;
+   font-weight: bold;
   font-size: 2vh;
-  background: linear-gradient(145deg, #d3d3d3, #b8b8b8);
-  color: rgb(28, 28, 28);
+  color: #d3d3d3;
+  background: linear-gradient(145deg, #1c1c1c, #3a3a3a);
   border: none;
   border-radius: 3vh;
   cursor: pointer;
-  margin-top: 5vh;
+  margin-top: 7vh;
   margin-bottom: 2vh;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.8),
+    inset 0 2px 3px rgba(255, 255, 255, 0.3), 0 4px 6px rgba(0, 0, 0, 0.4);
 
   transform: translateZ(0);
   transform-style: preserve-3d;
@@ -93,11 +82,23 @@ body {
 }
 
 .boton:hover {
-  background: linear-gradient(145deg, #f0f0f0, #d1d1d1);
+  background: linear-gradient(145deg, #2c2c2c, #555555);
 
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.7),
-    inset 0 3px 4px rgba(255, 255, 255, 0.6), 0 6px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.9),
+    inset 0 3px 4px rgba(255, 255, 255, 0.4), 0 6px 10px rgba(0, 0, 0, 0.5);
 
   transform: translateY(-2px);
+}
+
+.icono {
+  background-image: url("img/logoPrin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 4vw;
+  height: 4vh;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4vh;
+  margin-left: -1vh;
 }
