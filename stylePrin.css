@@ -355,7 +355,6 @@ body {
   background-size: cover;
 }
 
-
 .copy {
   position: fixed;
   bottom: 0;
@@ -542,7 +541,7 @@ body {
   margin-left: 5vh;
   background: linear-gradient(145deg, #969595, #7d7d7d);
   padding: 1.3vh;
-  border-radius: 0.8vh;
+  border-radius: 1.5vh;
 
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
     inset 0 -1px 2px rgba(0, 0, 0, 0.6),
@@ -554,7 +553,7 @@ body {
 }
 
 .link a:hover {
-  background: linear-gradient(145deg, #5e5e5e, #464646);
+  background: linear-gradient(145deg, #3a8ff3, #1e6ec1);
   color: #bbb9b9;
 
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4),
@@ -582,14 +581,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-    margin-top: 0;
+  margin-top: 0;
   margin-bottom: 15vh;
   background: linear-gradient(135deg, #d7d7d7 0%, #e0e0e0 50%, #eaeaea 100%);
   width: 100vw;
   margin-top: 15vh;
 }
 
-.final h4{
+.final h4 {
   text-decoration: underline;
 }
 
@@ -600,19 +599,7 @@ body {
   color: rgb(51, 51, 51);
   font-weight: bold;
   padding: 20px;
-  position: relative; 
-}
-
-.column::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0.1vh; 
-  height: 29vh; 
-  background-color: rgb(51, 51, 51); 
-  margin-top: 2vh;
-
+  position: relative;
 }
 
 .column ul {

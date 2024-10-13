@@ -144,9 +144,7 @@ body {
 .textoOcultar {
   z-index: 999;
   position: absolute;
-    margin-top: 3vh;
- 
- 
+  margin-top: 3vh;
 }
 
 .textoOcultar p {
@@ -160,10 +158,15 @@ body {
 
 .hover-container {
   display: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(28, 28, 28, 0.8);
   border-radius: 3vh;
   padding: 2vh;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7),
+    inset 0 5px 10px rgba(255, 255, 255, 0.1),
+    inset 0 -5px 10px rgba(0, 0, 0, 0.8);
+
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -188,7 +191,6 @@ body {
   max-height: 20vh;
   object-fit: cover;
   border-radius: 50%;
-  border: black 0.2vh solid;
   text-shadow: 1px 1px 0 black;
 }
 
@@ -228,10 +230,8 @@ body {
   border-radius: 60vh;
   border: none;
   cursor: pointer;
-  transition: transform 0.5s;
   font-weight: bold;
-  padding: 0.5vh;
-  transition: box-shadow 0.3s;
+  font-size: 1.6vh;
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
     inset 0 -1px 2px rgba(0, 0, 0, 0.6),
     inset 0 2px 3px rgba(255, 255, 255, 0.5);
@@ -239,13 +239,14 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s, box-shadow 0.5s;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 .boton-circular:hover {
   transform: scale(1.2);
   background: linear-gradient(to right, #0d47a1, #c51162);
   color: #aaa9a9;
-  border: 0.2vh #d3d3d3 solid;
+  border: 0.3vh #d3d3d3 solid;
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -458,8 +459,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   z-index: 3;
@@ -491,6 +491,15 @@ body {
 .popup ul {
   list-style: none;
   text-align: left;
+  background-color: rgba(229, 229, 229, 0.8);
+  border-radius: 5vh;
+  padding: 2vh;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
+  inset 0 -1px 2px rgba(0, 0, 0, 0.8),
+  inset 0 2px 3px rgba(255, 255, 255, 0.7);
+transform: translateZ(0);
+transform-style: preserve-3d;
+
 }
 
 .popup-content {
@@ -500,30 +509,23 @@ body {
   width: 130vh;
   height: 80vh;
   text-align: center;
-  color: rgb(28, 28, 28);
-  position: relative;
+    position: relative;
   transform: scale(0);
   opacity: 0;
   transition: transform 1s ease, opacity 0.5s ease;
 }
 
 .popup-content li {
-  background: rgba(28, 28, 28, 0.7);
-  color: #d3d3d3;
+
+  color: rgb(28, 28, 28);
   margin: 1vh;
-  padding: 1.2vh;
+ 
   font-size: 2vh;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7),
-    inset 0 0 10px rgba(255, 255, 255, 0.3);
-  transform: translateZ(0);
-  transform-style: preserve-3d;
-  transition: transform 0.5s, box-shadow 0.5s;
+
 }
 
-.popup-content li:hover {
-  transform: scale(1.08);
-}
+
 
 .popup.active .popup-content {
   transform: scale(1);
