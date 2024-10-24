@@ -122,6 +122,54 @@ body {
   margin-top: 1.5vh;
 }
 
+/*//////////////////////////////////////////////////////////*/
+
+.cuadroBotones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(img/fonBotones.jpg);
+      width: 100vw;
+      height: 40vh;
+    background-repeat: no-repeat;
+  position: relative;
+  margin-top: 20vh;
+
+  z-index: 1;
+}
+
+.cuadroBotones::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/fonBotones.jpg");
+  background-size: 100vw 40vh;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+#descripcionCompra {
+  font-size: 5.5vh;
+  font-weight: bold;
+  margin-left: 5vh;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.contenedorBotones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vh;
+  width: 100vh;
+  margin-right: 30vh;
+  margin-bottom: 5vh;
+}
+
+/*//////////////////////////////////////////////////////*/
+
 .asd {
   background: linear-gradient(
     to right,
@@ -423,14 +471,14 @@ body {
     rgb(233, 30, 99) 100%
   );
   display: inline-block;
+  width: 40vh;
   border-radius: 1vh;
   position: relative;
-  padding-top: 1.4vh;
-  padding-bottom: 1.4vh;
-  padding-left: 2.5vh;
-  padding-right: 1.5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   color: #d3d3d3;
-  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
   border: 0.4vh solid #d3d3d3;
   font-size: 2.3vh;
   cursor: pointer;
@@ -489,19 +537,15 @@ body {
   background-image: url(img/iconCompra.png);
   background-size: cover;
   width: 4vh;
-  height: 2.9vh;
-  float: left;
-  margin-right: 0.5vh;
-  margin-left: -1.8vh;
+  height: 3vh;
+  display: inline-block;
 }
 #iconoCompra2 {
   background-image: url(img/iconDes.png);
   background-size: cover;
   width: 1.7vh;
-  height: 2.6vh;
-  float: left;
-  margin-right: 0.7vh;
-  margin-left: -1vh;
+  height: 2.8vh;
+  display: inline-block;
 }
 
 /*//////////////////////////////////////////////////////////*/

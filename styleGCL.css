@@ -91,9 +91,20 @@ body {
 }
 
 .menu img {
-  width: 12vh;
-  height: 11vh;
+  width: 13vh;
+  height: 9vh;
   margin-left: 10vh;
+  margin-top: 1vh;
+}
+
+.menu .menu-text {
+  position: absolute;
+ font-weight: bold;
+  color: #d3d3d3; 
+  font-size: 2vh;
+  pointer-events: none;
+  margin-top: 8vh;
+  margin-left: -18vh;
 }
 
 /* scrollbar /////////////////////////////////////////////////////*/
@@ -154,13 +165,13 @@ body {
 
 
 .imgCap {
-  background-image: url(img/capGCL2.png);
+  background-image: url(img/capGCL.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
   width: 58vw;
   height: auto;
-  margin-top: 20vh;
+  margin-top: 27vh;
   filter: contrast(1.07);
   margin-left: 5vh;
 
