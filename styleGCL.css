@@ -100,11 +100,12 @@ body {
 .menu .menu-text {
   position: absolute;
  font-weight: bold;
-  color: #d3d3d3; 
-  font-size: 2vh;
+  color: #c3c2c2; 
+  font-size: 1.8vh;
   pointer-events: none;
   margin-top: 8vh;
-  margin-left: -18vh;
+  margin-left: -19vh;
+  font-family: 'Orbitron';
 }
 
 /* scrollbar /////////////////////////////////////////////////////*/
