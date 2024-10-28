@@ -602,8 +602,8 @@ body {
 .popup-content {
   background: linear-gradient(
     to right,
-    rgba(229, 229, 229, 0.9),
-    rgba(200, 200, 200, 0.9)
+    rgba(229, 229, 229),
+    rgba(200, 200, 200)
   );
 
   padding: 2vh;
@@ -634,7 +634,7 @@ body {
   text-decoration: none;
   color: #d3d3d3;
   margin-left: 5vh;
-  background: linear-gradient(145deg, rgb(28, 28, 28), rgb(51, 51, 51));
+  background: linear-gradient(145deg, rgb(51, 51, 51), rgb(80, 80, 80));
   padding: 1.3vh;
   border-radius: 1.5vh;
 
@@ -812,8 +812,8 @@ body {
 .formulario form {
   background: linear-gradient(
     to right,
-    rgba(229, 229, 229, 0.9),
-    rgba(200, 200, 200, 0.9)
+    rgba(229, 229, 229),
+    rgba(200, 200, 200)
   );
 
   padding: 2vh;
@@ -840,7 +840,7 @@ body {
 }
 
 .formulario button {
-  background: linear-gradient(145deg, rgb(28, 28, 28), rgb(51, 51, 51));
+  background: linear-gradient(145deg, rgb(51, 51, 51), rgb(80, 80, 80));
   color: #d3d3d3;
   font-weight: bold;
   font-size: 1.8vh;
