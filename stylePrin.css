@@ -282,10 +282,7 @@ body {
   margin-right: 2vh;
 }
 
-.asd2 ul li:hover {
-  font-weight: bold;
-  cursor: pointer;
-}
+
 
 #slideshow {
   opacity: 0;
@@ -371,10 +368,7 @@ body {
   margin-right: 2vh;
 }
 
-.asd3 ul li:hover {
-  font-weight: bold;
-  cursor: pointer;
-}
+
 
 .play-store {
   background-color: transparent;
