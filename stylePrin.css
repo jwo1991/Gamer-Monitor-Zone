@@ -626,7 +626,7 @@ body {
   text-decoration: none;
   color: #d3d3d3;
   margin-left: 5vh;
-  background: linear-gradient(145deg, rgb(35, 35, 35), rgb(60, 60, 60));
+  background: linear-gradient(145deg,  #c51162, #e11e76);
   padding: 1.3vh;
   border-radius: 0.5vh;
 
@@ -842,7 +842,7 @@ body {
 }
 
 .formulario button {
-  background: linear-gradient(145deg, rgb(35, 35, 35), rgb(60, 60, 60));
+  background: linear-gradient(145deg,  #c51162, #e11e76);
   color: #d3d3d3;
   font-weight: bold;
   font-size: 1.8vh;
