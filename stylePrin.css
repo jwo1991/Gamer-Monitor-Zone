@@ -148,7 +148,7 @@ body {
   background-image: url("img/fonBotones.jpg");
   background-size: 100vw 40vh;
   background-repeat: no-repeat;
-  filter: blur(4px);
+  filter: blur(3px);
   z-index: -1;
 }
 
@@ -232,7 +232,7 @@ body {
   background-image: url("img/fondoPrin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(1px);
+  filter: blur(0.75px);
   z-index: -1;
 }
 
