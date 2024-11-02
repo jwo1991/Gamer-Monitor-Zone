@@ -607,7 +607,7 @@ body {
 
 .popup-content h2 {
   text-align: center;
-  color: #2196f3;
+  color: rgb(28, 28, 28);
 }
 
 .link {
@@ -616,13 +616,14 @@ body {
   margin-bottom: 2vh;
   margin-top: 4vh;
   font-size: 2vh;
+  margin-left: -5vh;
 }
 
 .link a {
   text-decoration: none;
-  color: #d3d3d3;
+  color: rgb(51, 51, 51);
   margin-left: 5vh;
-  background: linear-gradient(145deg, #c51162, #e11e76);
+  background: linear-gradient(145deg, #2196F3, #4CAF50);
   padding: 1.3vh;
   border-radius: 1vh;
 
@@ -636,8 +637,8 @@ body {
 }
 
 .link a:hover {
-  background: linear-gradient(145deg, #8f0b46, #c51162);
-  color: #bbb9b9;
+  background: linear-gradient(145deg, #1461a0, #257e68);
+  color:rgb(28, 28, 28);
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4),
     inset 0 -1px 2px rgba(0, 0, 0, 0.7),
     inset 0 3px 4px rgba(255, 255, 255, 0.6), 0 6px 10px rgba(0, 0, 0, 0.3);
@@ -652,10 +653,11 @@ body {
   font-size: 4vh;
   font-weight: bold;
   cursor: pointer;
+  color: rgb(100, 100, 100);
 }
 
 .cerrar:hover {
-  color: #c51162;
+  color: rgb(28, 28, 28);
 }
 
 /*//////////////////////////////////////////////*/
@@ -794,7 +796,7 @@ body {
 
 .formulario h2 {
   margin-top: -0.15vh;
-  color: #2196f3;
+  color: rgb(28, 28, 28);
 }
 
 .formulario form {
@@ -826,7 +828,6 @@ body {
   border-radius: 2vh;
   color: rgb(28, 28, 28);
   font-size: 2vh;
-
 }
 
 .formulario textarea {
@@ -834,18 +835,14 @@ body {
 }
 
 .formulario button {
-  background: linear-gradient(145deg, #c51162, #e11e76);
-  color: #d3d3d3;
+  background: linear-gradient(145deg, #2196F3, #4CAF50);
+  color: rgb(51, 51, 51);
   font-weight: bold;
   font-size: 1.8vh;
   padding: 1vh;
   border: none;
   border-radius: 1vh;
   cursor: pointer;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.2);
-
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
     inset 0 -1px 2px rgba(0, 0, 0, 0.6),
     inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -861,8 +858,8 @@ body {
 }
 
 .formulario button:hover {
-  background: linear-gradient(145deg, #8f0b46, #c51162);
-  color: #bbb9b9;
+  background: linear-gradient(145deg, #1461a0, #2b6b2d);
+  color: rgb(28, 28, 28);
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4),
     inset 0 -1px 2px rgba(0, 0, 0, 0.7),
     inset 0 3px 4px rgba(255, 255, 255, 0.6), 0 6px 10px rgba(0, 0, 0, 0.3);
