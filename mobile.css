@@ -163,6 +163,25 @@ body {
   background-color: #ffffff;
 }
 
+.perfiles {
+  background-image: url(img/perfil_2_11zon.webp);
+  width: 100vw;
+  height: 25vh;
+
+}
+
+.perfiles p{
+
+text-align: center;
+  padding-top: 10vw;
+  padding-right: 60vw;
+  padding-left: 5vw;
+  font-size: 4vw;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
 .smm {
 }
 
