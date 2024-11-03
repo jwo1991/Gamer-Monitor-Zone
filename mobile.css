@@ -144,8 +144,8 @@ body {
 
 .indicators1 span {
   display: block;
-  width: 20px;
-  height: 5px;
+   width: 3vw;
+  height: 1vw;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0 5px;
   cursor: pointer;
@@ -163,6 +163,22 @@ body {
   background-color: #ffffff;
 }
 
+/*//////////////////////////////////////////////////////////////////////*/
+
+.slider2 {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: auto;
+  background-color: black;
+}
+
+.slides2 {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 200%;
+}
+
 .perfiles {
   background-image: url(img/perfil_2_11zon.webp);
   background-size: 100vw 25vh;
@@ -174,10 +190,10 @@ body {
 
 .perfiles p {
   text-align: center;
-  padding-top: 10vw;
-  padding-right: 60vw;
+  padding-top: 4vw;
+  padding-right: 50vw;
   padding-left: 5vw;
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -194,31 +210,66 @@ body {
 
 .movil p {
   text-align: center;
-  padding-top: 8vw;
+  padding-top: 2.5vw;
   padding-right: 60vw;
   padding-left: 5vw;
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+
+.indicators2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+  border-radius: 2vw;
+  margin-top: 4vw;
+}
+
+.indicators2 span {
+  display: block;
+  width: 3vw;
+  height: 1vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 2vw;
+}
+
+.indicators2 span.active {
+  background-color: #ffffff;
+  height: 10px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
 
 .smm {
   position: relative;
   background: linear-gradient(
     to right,
-    rgba(229, 229, 229, 0.9),
-    rgba(240, 240, 240, 1)
+    rgba(51, 51, 51, 0.8),
+    rgba(51, 51, 51, 1)
   );
 
   width: 100vw;
   height: auto;
+  margin-top: 5vw;
 }
 
 .tituloSMM {
   font-size: 6vw;
   font-weight: 900;
   padding-top: 2vw;
-  color: rgb(28, 28, 28);
+
+}
+
+.tituloSMM p span {
+  font-size: 2.5vw;
+  font-weight: 700;
+  padding-top: 1vw;
 }
 
 .monitoreo {
@@ -228,7 +279,7 @@ body {
   background-size: contain;
   width: 100vw;
   height: 20vh;
-  margin-top: 1vw;
+
 }
 
 .gcl {

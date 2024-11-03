@@ -46,26 +46,35 @@
             <span></span>
           </div>
         </div>
-        <div translate="no" class="perfiles">
-          <p>
-            CREATE COLOR PROFILES FOR GAME AND CINEMA MODES WITH AUTOMATIC
-            DETECTION
-          </p>
-        </div>
       </div>
-
-      <div class="movil">
-        <p>CONTROL INTEGRATION WITH ANDROID APP</p>
+      <div translate="no" class="slider2">
+        <div class="slides2">
+          <div class="perfiles">
+            <p>
+              CREATE COLOR PROFILES FOR GAME AND CINEMA MODES WITH AUTOMATIC
+              DETECTION
+            </p>
+          </div>
+          <div class="movil">
+            <p>CONTROL INTEGRATION WITH ANDROID APP</p>
+          </div>
+        </div>
+        <div class="indicators2">
+          <span class="active"></span>
+          <span></span>
+        </div>
       </div>
 
       <div class="smm">
-        <p class="tituloSMM">SYSTEM MONITOR MANAGER</p>
-        <div class="monitoreo">
-
-
-
-
+        <div translate="no" class="tituloSMM">
+          <p>
+            SYSTEM MONITOR MANAGER<br />
+            <span>
+              EASILY TRACK YOUR PC’S PERFORMANCE, CPU, RAM, GPU, AND HARD DRIVE
+            </span>
+          </p>
         </div>
+        <div class="monitoreo"></div>
       </div>
 
       <div class="gcl"></div>
@@ -112,6 +121,42 @@
 
       slides1.addEventListener("touchend", () => {
         updateSlider1(currentIndex1);
+      });
+    </script>
+
+    <script>
+      const slides2 = document.querySelector(".slides2");
+      const indicators2 = document.querySelectorAll(".indicators2 span");
+      let currentIndex2 = 0;
+
+      function updateSlider2(index) {
+        slides2.style.transform = `translateX(-${index * 100}vw)`;
+        indicators2.forEach((indicator, i) => {
+          indicator.classList.toggle("active", i === index);
+        });
+      }
+
+      indicators2.forEach((indicator, index) => {
+        indicator.addEventListener("click", () => {
+          currentIndex2 = index;
+          updateSlider2(currentIndex2);
+        });
+      });
+
+      let startX2;
+      slides2.addEventListener("touchstart", (e) => {
+        startX2 = e.touches[0].clientX;
+      });
+
+      slides2.addEventListener("touchmove", (e) => {
+        const moveX2 = e.touches[0].clientX - startX2;
+        if (moveX2 > 50 && currentIndex2 > 0) {
+          currentIndex2--;
+          updateSlider2(currentIndex2);
+        } else if (moveX2 < -50 && currentIndex2 < indicators2.length - 1) {
+          currentIndex2++;
+          updateSlider2(currentIndex2);
+        }
       });
     </script>
   </body>
