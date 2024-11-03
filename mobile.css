@@ -87,7 +87,6 @@ body {
 /*//////////////////////////////////////////////////////////////////////////*/
 
 .container2 {
-
   width: 100vw;
   height: auto;
   overflow: hidden;
@@ -103,14 +102,13 @@ body {
 }
 
 #tituloMMM {
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 900;
   padding-top: 2vw;
 }
 
 .mmm p span {
-
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 700;
 }
 
@@ -123,17 +121,20 @@ body {
 .slides1 {
   display: flex;
   transition: transform 0.5s ease;
+  width: calc(100vw * 3); 
 }
 
 .slides1 img {
-  width: 75vw;
+  width: 100vw; 
   height: auto;
+  flex: 0 0 100vw; 
 }
 
 .indicators1 {
   display: flex;
   justify-content: center;
   margin-top: 1vw;
+  margin-bottom: 3vw;
 }
 
 .indicators1 span {
@@ -144,6 +145,7 @@ body {
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 2vw;
 }
 
 .indicators1 span.active {
@@ -155,7 +157,6 @@ body {
   height: 10px;
   background-color: #ffffff;
 }
-
 
 .smm {
 }
