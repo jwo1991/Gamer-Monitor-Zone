@@ -28,7 +28,7 @@
       </p>
     </div>
 
-    <div class="container2">
+    <div class="container2 hidden">
       <div class="mmm">
         <div class="slider1">
           <p translate="no" id="tituloMMM">
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div translate="no" class="slider2">
+      <div translate="no" class="slider2 hidden">
         <div class="slides2">
           <div class="perfiles">
             <p>
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div class="smm">
+      <div class="smm hidden">
         <div translate="no" class="tituloSMM">
           <p>
             SYSTEM MONITOR MANAGER<br />
@@ -77,14 +77,14 @@
         <div class="monitoreo"></div>
       </div>
 
-      <div translate="no" class="textoMedio">
+      <div translate="no" class="textoMedio hidden">
         <p>
           INTEGRATE THE ENTIRE CONTROL ECOSYSTEM WITH MULTI MONITOR MANAGER
           <br /><span> ALL IN ONE CLICK OR WITH KEYBOARD SHORTCUTS</span>
         </p>
       </div>
 
-      <div class="gcl">
+      <div class="gcl hidden">
         <div translate="no" class="tituloGCL">
           <p>
             GAMER CORE LAUNCHER<br />
@@ -97,10 +97,12 @@
         <div class="lanzador"></div>
       </div>
 
-      <div class="final">
+      <div translate="no" class="final">
         <p>
           FOR DETAILED INFORMATION ON EACH TOOL, INCLUDING FEATURES AND
-          COMPATIBILITY<br><span>PLEASE VISIT THE DESKTOP VERSION OF THE WEBSITE</span>
+          COMPATIBILITY<br /><span
+            >PLEASE VISIT THE DESKTOP VERSION OF THE WEBSITE</span
+          >
         </p>
       </div>
     </div>
@@ -183,6 +185,30 @@
           updateSlider2(currentIndex2);
         }
       });
+    </script>
+
+    <script>
+      // Selecciona todos los elementos que tienen la clase 'hidden'
+      const elements = document.querySelectorAll(".hidden");
+
+      // Función para manejar el scroll y mostrar los elementos
+      function handleScroll() {
+        elements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          // Si el elemento está en el viewport, se añade la clase 'visible'
+          if (rect.top <= windowHeight - 50) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // Escucha el evento de scroll
+      window.addEventListener("scroll", handleScroll);
+
+      // Llama a la función una vez al cargar la página para detectar los elementos visibles de inmediato
+      handleScroll();
     </script>
   </body>
 </html>
