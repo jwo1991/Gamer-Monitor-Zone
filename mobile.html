@@ -10,59 +10,85 @@
     />
 
     <title>Gamer Monitor Zone</title>
-</head>
-<body>
-  <video class="background-video" autoplay loop muted>
-    <source src="video/video_web2.mp4" type="video/mp4" />
-    Tu navegador no soporta el elemento de video.
-  </video>
-  <div class="overlay"></div>
-  <div class="container" translate="no">
-    <div class="logoPrin"></div>
-
- 
-    <p class="tituloMediano">
-      ENHANCE EFFICIENCY WITH AN INTEGRATED ECOSYSTEM
-   
-  <br>
-      <span>DISPLAY CONTROL, SYSTEM MONITORING AND GAME LAUNCHER</span>
-    </p>
- 
-  
-
-  </div>
-
-  <div class="textoCompra">
-  <p id="descripcionCompra">
-    GEET STARTED WITH THE TOOLS <br /><span
-      >Paid and free options available</span
-    >
-  </p>
-</div>
-
-  <div class="cuadroBotones">
- 
-
-    <div translate="no" class="contenedorBotones">
-      <button class="botonCompra" onclick="abrirPopup()">
-        MULTI MONITOR MANAGER
-      </button>
-
-      <button class="botonCompra" id="separadorBoton">
-        DDC TEST FREE TOOL
-      </button>
-
-      <button class="botonCompra" id="separadorBoton">
-        SYSTEM MONITOR MANAGER
-      </button>
-
-      <button class="botonCompra" id="separadorBoton">
-        GAMER CORE LAUNCHER
-      </button>
-    </div>
-  </div>
-
-
+  </head>
   <body>
+    <video class="background-video" autoplay loop muted>
+      <source src="video/video_web2.mp4" type="video/mp4" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="overlay"></div>
+    <div class="container" translate="no">
+      <div class="logoPrin"></div>
+
+      <p class="tituloMediano">
+        ENHANCE EFFICIENCY WITH AN INTEGRATED ECOSYSTEM
+
+        <br />
+        <span>DISPLAY CONTROL, SYSTEM MONITORING AND GAME LAUNCHER</span>
+      </p>
+    </div>
+
+    <div class="container2">
+      <div class="mmm">
+        <div class="slider1">
+          <p id="tituloMMM">
+            MULTI MONITOR MANAGER <br />
+            <span>TAKE CONTROL OF YOUR MONITORS</span>
+          </p>
+          <div class="slides1">
+            <img src="img/file.png" />
+            <img src="img/file2.png" />
+            <img src="imagen3.jpg" />
+          </div>
+          <div class="indicators1">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="smm"></div>
+    
+      <div class="gcl"></div>
+    </div>
+    
+
+    <script>
+      const slides1 = document.querySelector(".slides1");
+      const images1 = document.querySelectorAll(".slides1 img");
+      const indicators1 = document.querySelectorAll(".indicators1 span");
+      let currentIndex1 = 0;
+
+      function updateSlider1(index) {
+        slides1.style.transform = `translateX(-${index * 100}%)`;
+        indicators1.forEach((indicator, i) => {
+          indicator.classList.toggle("active", i === index);
+        });
+      }
+
+      indicators1.forEach((indicator, index) => {
+        indicator.addEventListener("click", () => {
+          currentIndex1 = index;
+          updateSlider1(currentIndex1);
+        });
+      });
+
+      let startX1;
+
+      slides1.addEventListener("touchstart", (e) => {
+        startX1 = e.touches[0].clientX;
+      });
+
+      slides1.addEventListener("touchmove", (e) => {
+        const moveX1 = e.touches[0].clientX - startX1;
+        if (moveX1 > 50 && currentIndex1 > 0) {
+          currentIndex1--;
+        } else if (moveX1 < -50 && currentIndex1 < images1.length - 1) {
+          currentIndex1++;
+        }
+        updateSlider1(currentIndex1);
+      });
+    </script>
   </body>
 </html>
