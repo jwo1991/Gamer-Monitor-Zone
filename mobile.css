@@ -201,13 +201,13 @@ body {
 }
 
 .movil {
-  background-image: url(img/movil.jpg);
-  background-size: 100vw 20vh;
+  background-image: url(img/movil2.jpg);
+  background-size: 100vw 25vh;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100vw;
-  height: 20vh;
-  margin-top: 10vw;
+  height: 25vh;
+
 }
 
 .movil p {
@@ -215,9 +215,9 @@ body {
   padding-top: 2.5vw;
   padding-right: 60vw;
   padding-left: 5vw;
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 900;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .indicators2 {
