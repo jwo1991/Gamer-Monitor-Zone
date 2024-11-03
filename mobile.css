@@ -318,4 +318,72 @@ body {
 /*/////////////////////////////////////////////////////////////*/
 
 .gcl {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(51, 51, 51, 0.8),
+    rgba(51, 51, 51, 1)
+  );
+
+  width: 100vw;
+  height: auto;
+  margin-top: 5vw;
 }
+
+.tituloGCL {
+  font-size: 6vw;
+  font-weight: 900;
+  padding-top: 2vw;
+}
+
+.tituloGCL p span {
+  font-size: 2.5vw;
+  font-weight: 700;
+  padding-top: 1vw;
+}
+
+.lanzador {
+  background-image: url(img/capGCL.png);
+  background-size: 100vw 20vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 20vh;
+}
+
+.final p {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+    rgb(233, 30, 99) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 5vw;
+  font-weight: 900;
+  border-top: 0.4vw solid #d3d3d3;
+  border-bottom: 0.4vw solid #d3d3d3;
+  padding: 10px 5vw;
+  margin: 0 auto; 
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  width: 90vw;
+  box-sizing: border-box;
+}
+
+.final p span{
+  background: linear-gradient(
+    to right,
+    rgb(229, 229, 229) 0%,
+    rgb(250, 250, 250) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 4vw;
+  font-weight: 700;
+
+}
+
