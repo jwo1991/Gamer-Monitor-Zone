@@ -297,7 +297,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 5.5vw;
+  font-size: 7vw;
   font-weight: 900;
  
 }
@@ -311,7 +311,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-weight: 700;
 }
 
