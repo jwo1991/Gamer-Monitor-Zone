@@ -188,26 +188,23 @@
     </script>
 
     <script>
-      // Selecciona todos los elementos que tienen la clase 'hidden'
       const elements = document.querySelectorAll(".hidden");
 
-      // Función para manejar el scroll y mostrar los elementos
       function handleScroll() {
         elements.forEach((element) => {
           const rect = element.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          // Si el elemento está en el viewport, se añade la clase 'visible'
-          if (rect.top <= windowHeight - 50) {
+          if (rect.top <= windowHeight - 50 && rect.bottom >= 0) {
             element.classList.add("visible");
+          } else {
+            element.classList.remove("visible");
           }
         });
       }
 
-      // Escucha el evento de scroll
       window.addEventListener("scroll", handleScroll);
 
-      // Llama a la función una vez al cargar la página para detectar los elementos visibles de inmediato
       handleScroll();
     </script>
   </body>
