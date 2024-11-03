@@ -91,7 +91,7 @@ body {
   height: auto;
   overflow: hidden;
   background-color: black;
-  margin-top: 30vw;
+  margin-top: 25vw;
 }
 
 .mmm {
@@ -171,7 +171,7 @@ body {
   overflow: hidden;
   height: auto;
   background-color: black;
-  margin-top: 40vw;
+  margin-top: 25vw;
 }
 
 .slides2 {
@@ -201,7 +201,7 @@ body {
 }
 
 .movil {
-  background-image: url(img/movil2.jpg);
+  background-image: url(img/movil2.png);
   background-size: 100vw 25vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -213,9 +213,9 @@ body {
 .movil p {
   text-align: center;
   padding-top: 2.5vw;
-  padding-right: 60vw;
+  padding-right: 40vw;
   padding-left: 5vw;
-  font-size: 6vw;
+  font-size: 6.5vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -256,7 +256,7 @@ body {
 
   width: 100vw;
   height: auto;
-  margin-top: 40vw;
+  margin-top: 25vw;
 }
 
 .tituloSMM {
@@ -285,7 +285,7 @@ body {
 .textoMedio {
   width: 100vw;
   height: 20vh;
-  margin-top: 35vw;
+  margin-top: 25vw;
 }
 
 .textoMedio p {
@@ -328,7 +328,7 @@ body {
 
   width: 100vw;
   height: auto;
-  margin-top: 40vw;
+  margin-top: 25vw;
 }
 
 .tituloGCL {
