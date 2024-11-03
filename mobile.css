@@ -155,11 +155,11 @@ body {
 
 .indicators1 span.active {
   background-color: #ffffff;
-  height: 10px;
+  height: 1vw;
 }
 
 .indicators1 span:hover {
-  height: 10px;
+  height: 1vw;
   background-color: #ffffff;
 }
 
@@ -190,12 +190,13 @@ body {
 
 .perfiles p {
   text-align: center;
-  padding-top: 4vw;
-  padding-right: 50vw;
+  padding-top: 2vw;
+  padding-right: 40vw;
   padding-left: 5vw;
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 900;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .movil {
@@ -239,7 +240,7 @@ body {
 
 .indicators2 span.active {
   background-color: #ffffff;
-  height: 10px;
+  height: 1vw;
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
