@@ -84,5 +84,113 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.tools {
+/*//////////////////////////////////////////////////////////////////////////*/
+
+.cuadroBotones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 20vh;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top:3vw;
+  border-top: #d3d3d3 0.3vh solid;
+  border-bottom: #d3d3d3 0.3vh solid;
+  z-index: 1;
 }
+
+.cuadroBotones::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/fonBotones.jpg");
+  background-size: 100vw 20vh;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.textoCompra{
+position: relative;
+  margin-top: 45vw;
+
+}
+
+#descripcionCompra {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-left: 1vw;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+
+
+}
+
+#descripcionCompra span {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-left: 1vw;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.contenedorBotones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vh;
+  width: 100vh;
+  margin-right: 20vh;
+  margin-bottom: 5vh;
+}
+
+.botonCompra {
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+
+    rgb(233, 30, 99) 100%
+  );
+  display: inline-block;
+  width: 35vw;
+  border-radius: 1vh;
+  position: relative;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #d3d3d3;
+  align-items: center;
+  justify-content: flex-start;
+  border: 0.4vh solid #d3d3d3;
+  font-size: 2vw;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  transform: translateZ(0) rotate(-8deg) skewX(-18deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin-top: 8vw;
+  margin-left: 8vw;
+  overflow: hidden;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.botonCompra p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+  transition: background-color 0.3s;
+}
+
+.botonCompra:hover p::before {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
