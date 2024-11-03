@@ -170,22 +170,65 @@ body {
   background-size: cover;
   width: 100vw;
   height: 25vh;
-
 }
 
-.perfiles p{
-
-text-align: center;
+.perfiles p {
+  text-align: center;
   padding-top: 10vw;
   padding-right: 60vw;
   padding-left: 5vw;
   font-size: 4vw;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
+.movil {
+  background-image: url(img/movil.jpg);
+  background-size: 100vw 20vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 10vw;
+}
+
+.movil p {
+  text-align: center;
+  padding-top: 8vw;
+  padding-right: 60vw;
+  padding-left: 5vw;
+  font-size: 4vw;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .smm {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(229, 229, 229, 0.9),
+    rgba(240, 240, 240, 1)
+  );
+
+  width: 100vw;
+  height: auto;
+}
+
+.tituloSMM {
+  font-size: 6vw;
+  font-weight: 900;
+  padding-top: 2vw;
+  color: rgb(28, 28, 28);
+}
+
+.monitoreo {
+  background-image: url(img/file4.png);
+  background-size: 100vw 20vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 1vw;
 }
 
 .gcl {
