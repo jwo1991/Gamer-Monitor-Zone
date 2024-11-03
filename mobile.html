@@ -38,7 +38,7 @@
           <div class="slides1">
             <img src="img/file.png" />
             <img src="img/file2.png" />
-            <img src="img/file3.png" />
+            <img src="img/5.png" />
           </div>
           <div class="indicators1">
             <span class="active"></span>
@@ -60,7 +60,7 @@
       let currentIndex1 = 0;
 
       function updateSlider1(index) {
-        slides1.style.transform = `translateX(-${index * 100}vw)`;
+        slides1.style.transform = `translateX(-${index *100}vw`;
         indicators1.forEach((indicator, i) => {
           indicator.classList.toggle("active", i === index);
         });
@@ -83,10 +83,13 @@
         const moveX1 = e.touches[0].clientX - startX1;
         if (moveX1 > 50 && currentIndex1 > 0) {
           currentIndex1--;
+          updateSlider1(currentIndex1);
+          startX1 = e.touches[0].clientX;
         } else if (moveX1 < -50 && currentIndex1 < images1.length - 1) {
           currentIndex1++;
+          updateSlider1(currentIndex1);
+          startX1 = e.touches[0].clientX;
         }
-        updateSlider1(currentIndex1);
       });
 
       slides1.addEventListener("touchend", () => {

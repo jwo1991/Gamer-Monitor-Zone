@@ -96,7 +96,12 @@ body {
 
 .mmm {
   position: relative;
-  background-color: rgba(28, 28, 28, 0.6);
+  background: linear-gradient(
+    to right,
+    rgba(51, 51, 51, 0.8),
+    rgba(51, 51, 51, 1)
+  );
+
   width: 100vw;
   height: auto;
 }
@@ -121,13 +126,13 @@ body {
 .slides1 {
   display: flex;
   transition: transform 0.5s ease;
-  width: calc(100vw * 3); 
+  width: calc(100vw * 3);
 }
 
 .slides1 img {
-  width: 100vw; 
+  width: 100vw;
   height: auto;
-  flex: 0 0 100vw; 
+  flex: 0 0 100vw;
 }
 
 .indicators1 {
