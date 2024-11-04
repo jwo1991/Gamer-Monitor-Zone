@@ -490,3 +490,64 @@ body {
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
+.ddcTest {
+  background-color: rgb(229, 229, 229);
+  width: 100vw;
+  height: auto;
+  margin-top: 25vw;
+}
+
+.ddcTest img {
+  width: 100vw;
+  height: auto;
+}
+
+.ddcTest p {
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(28, 28, 28);
+  padding: 2vw;
+  margin-top: -5vw;
+}
+
+.ddcTest p span {
+  font-size: 4vw;
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+}
+
+.torrePC {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 25vw;
+  overflow: hidden;
+}
+
+.filtro-fondo {
+  background-image: url(img/fondoF2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+.torrePC p{
+  text-align: left;
+  font-size: 4.5vw;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding-right: 43vw;
+  padding-left: 2vw;
+  padding-top: 10vw;
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
