@@ -189,7 +189,11 @@ body {
   height: 25vh;
 }
 
+
+
 .perfiles p {
+  z-index: 2;
+  position: relative;
   text-align: center;
   padding-top: 2vw;
   padding-right: 40vw;
@@ -210,7 +214,19 @@ body {
 
 }
 
+.movil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25); 
+
+}
+
 .movil p {
+ position: relative;
   text-align: center;
   padding-top: 2.5vw;
   padding-right: 50vw;
