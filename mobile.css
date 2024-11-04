@@ -199,10 +199,10 @@ body {
   z-index: 2;
   position: relative;
   text-align: center;
-  padding-top: 2vw;
-  padding-right: 40vw;
+  padding-top: 32vw;
+  padding-right: 5vw;
   padding-left: 5vw;
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
 

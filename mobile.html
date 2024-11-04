@@ -105,12 +105,11 @@
         <div class="lanzador"></div>
       </div>
 
-      <div translate="no" class="final">
+      <div translate="no" class="final hidden">
         <p>
           FOR DETAILED INFORMATION ON EACH TOOL, INCLUDING FEATURES AND
-          COMPATIBILITY<br /><span
-            >PLEASE VISIT THE DESKTOP VERSION OF THE WEBSITE</span
-          >
+          COMPATIBILITY<br />
+          <span>PLEASE VISIT THE DESKTOP VERSION OF THE WEBSITE FOR COMPLETE DETAILS AND PURCHASE.</span>
         </p>
       </div>
     </div>
@@ -120,27 +119,27 @@
       const images1 = document.querySelectorAll(".slides1 img");
       const indicators1 = document.querySelectorAll(".indicators1 span");
       let currentIndex1 = 0;
-
+    
       function updateSlider1(index) {
-        slides1.style.transform = `translateX(-${index * 100}vw`;
+        slides1.style.transform = `translateX(-${index * 100}vw)`;
         indicators1.forEach((indicator, i) => {
           indicator.classList.toggle("active", i === index);
         });
       }
-
+    
       indicators1.forEach((indicator, index) => {
         indicator.addEventListener("click", () => {
           currentIndex1 = index;
           updateSlider1(currentIndex1);
         });
       });
-
+    
       let startX1;
-
+    
       slides1.addEventListener("touchstart", (e) => {
         startX1 = e.touches[0].clientX;
       });
-
+    
       slides1.addEventListener("touchmove", (e) => {
         const moveX1 = e.touches[0].clientX - startX1;
         if (moveX1 > 50 && currentIndex1 > 0) {
@@ -153,47 +152,77 @@
           startX1 = e.touches[0].clientX;
         }
       });
-
+    
+      slides1.addEventListener("click", (e) => {
+        const slideWidth = slides1.clientWidth;
+        const clickPosition = e.clientX;
+        const slideCenter = slideWidth / 2;
+    
+        if (clickPosition < slideCenter && currentIndex1 > 0) {
+          currentIndex1--;
+        } else if (clickPosition >= slideCenter && currentIndex1 < images1.length - 1) {
+          currentIndex1++;
+        }
+    
+        updateSlider1(currentIndex1);
+      });
+    
       slides1.addEventListener("touchend", () => {
         updateSlider1(currentIndex1);
       });
     </script>
+    
 
-    <script>
-      const slides2 = document.querySelector(".slides2");
-      const indicators2 = document.querySelectorAll(".indicators2 span");
-      let currentIndex2 = 0;
+<script>
+  const slides2 = document.querySelector(".slides2");
+  const indicators2 = document.querySelectorAll(".indicators2 span");
+  let currentIndex2 = 0;
 
-      function updateSlider2(index) {
-        slides2.style.transform = `translateX(-${index * 100}vw)`;
-        indicators2.forEach((indicator, i) => {
-          indicator.classList.toggle("active", i === index);
-        });
-      }
+  function updateSlider2(index) {
+    slides2.style.transform = `translateX(-${index * 100}vw)`;
+    indicators2.forEach((indicator, i) => {
+      indicator.classList.toggle("active", i === index);
+    });
+  }
 
-      indicators2.forEach((indicator, index) => {
-        indicator.addEventListener("click", () => {
-          currentIndex2 = index;
-          updateSlider2(currentIndex2);
-        });
-      });
+  indicators2.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentIndex2 = index;
+      updateSlider2(currentIndex2);
+    });
+  });
 
-      let startX2;
-      slides2.addEventListener("touchstart", (e) => {
-        startX2 = e.touches[0].clientX;
-      });
+  let startX2;
+  slides2.addEventListener("touchstart", (e) => {
+    startX2 = e.touches[0].clientX;
+  });
 
-      slides2.addEventListener("touchmove", (e) => {
-        const moveX2 = e.touches[0].clientX - startX2;
-        if (moveX2 > 50 && currentIndex2 > 0) {
-          currentIndex2--;
-          updateSlider2(currentIndex2);
-        } else if (moveX2 < -50 && currentIndex2 < indicators2.length - 1) {
-          currentIndex2++;
-          updateSlider2(currentIndex2);
-        }
-      });
-    </script>
+  slides2.addEventListener("touchmove", (e) => {
+    const moveX2 = e.touches[0].clientX - startX2;
+    if (moveX2 > 50 && currentIndex2 > 0) {
+      currentIndex2--;
+      updateSlider2(currentIndex2);
+    } else if (moveX2 < -50 && currentIndex2 < indicators2.length - 1) {
+      currentIndex2++;
+      updateSlider2(currentIndex2);
+    }
+  });
+
+  slides2.addEventListener("click", (e) => {
+    const slideWidth = slides2.clientWidth;
+    const clickPosition = e.clientX;
+    const slideCenter = slideWidth / 2;
+
+    if (clickPosition < slideCenter && currentIndex2 > 0) {
+      currentIndex2--;
+    } else if (clickPosition >= slideCenter && currentIndex2 < indicators2.length - 1) {
+      currentIndex2++;
+    }
+
+    updateSlider2(currentIndex2);
+  });
+</script>
+
 
     <script>
       const elements = document.querySelectorAll(".hidden");
