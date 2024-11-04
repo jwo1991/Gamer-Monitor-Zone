@@ -464,14 +464,14 @@ filter: brightness(0.8);
 
 .integracion {
   background-image: url(img/integracion.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
   height: 90%;
   filter: blur(10px);
   opacity: 0;
-  animation: fadeInBlur 6s infinite;
+  animation: fadeInBlur 20s infinite;
 }
 
 @keyframes fadeInBlur {
