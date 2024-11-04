@@ -469,7 +469,27 @@ filter: brightness(0.8);
   background-repeat: no-repeat;
   width: 90%;
   height: 90%;
+  filter: blur(10px);
+  opacity: 0;
+  animation: fadeInBlur 6s infinite;
 }
 
+@keyframes fadeInBlur {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
 
 /*//////////////////////////////////////////////////////////////////////////*/
