@@ -180,6 +180,10 @@ body {
   width: 200%;
 }
 
+.slides2 > div {
+  min-width: 100vw; 
+}
+
 .perfiles {
   background-image: url(img/perfil_2_11zon.webp);
   background-size: 100vw 25vh;
@@ -235,6 +239,46 @@ body {
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.befAft{
+  background-image: url(img/imagenlarga_2_11zon.webp);
+  background-size: 100vw 25vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 25vh;
+}
+
+.befAft p {
+   text-align: center;
+   padding-top: 33vw;
+   padding-right:2.5vw;
+   padding-left: 5vw;
+   font-size: 4vw;
+   font-weight: 900;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ .duo{
+  background-image: url(img/uso_5_11zon.webp);
+  background-size: 100vw 25vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 25vh;
+}
+
+.duo p {
+   text-align: center;
+   padding-top: 33vw;
+   padding-right: 5vw;
+   padding-left: 5vw;
+   font-size: 3vw;
+   font-weight: 900;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+
 
 .indicators2 {
   display: flex;
