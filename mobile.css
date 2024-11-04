@@ -181,7 +181,7 @@ body {
 }
 
 .slides2 > div {
-  min-width: 100vw; 
+  min-width: 100vw;
 }
 
 .perfiles {
@@ -193,8 +193,6 @@ body {
   height: 25vh;
 }
 
-
-
 .perfiles p {
   z-index: 2;
   position: relative;
@@ -205,7 +203,6 @@ body {
   font-size: 4vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
-
 }
 
 .movil {
@@ -215,7 +212,6 @@ body {
   background-size: contain;
   width: 100vw;
   height: 25vh;
-
 }
 
 .movil::before {
@@ -225,12 +221,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25); 
-
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .movil p {
- position: relative;
+  position: relative;
   text-align: center;
   padding-top: 2.5vw;
   padding-right: 50vw;
@@ -240,7 +235,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.befAft{
+.befAft {
   background-image: url(img/imagenlarga_2_11zon.webp);
   background-size: 100vw 25vh;
   background-repeat: no-repeat;
@@ -250,16 +245,16 @@ body {
 }
 
 .befAft p {
-   text-align: center;
-   padding-top: 33vw;
-   padding-right:2.5vw;
-   padding-left: 5vw;
-   font-size: 4vw;
-   font-weight: 900;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
- }
+  text-align: center;
+  padding-top: 33vw;
+  padding-right: 2.5vw;
+  padding-left: 5vw;
+  font-size: 4vw;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
- .duo{
+.duo {
   background-image: url(img/uso_5_11zon.webp);
   background-size: 100vw 25vh;
   background-repeat: no-repeat;
@@ -269,16 +264,14 @@ body {
 }
 
 .duo p {
-   text-align: center;
-   padding-top: 33vw;
-   padding-right: 5vw;
-   padding-left: 5vw;
-   font-size: 3vw;
-   font-weight: 900;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
- }
-
-
+  text-align: center;
+  padding-top: 33vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  font-size: 4vw;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 .indicators2 {
   display: flex;
@@ -345,7 +338,7 @@ body {
 .textoMedio {
   width: 100vw;
   height: 20vh;
-  margin-top: 25vw;
+  margin-top: 15vw;
 }
 
 .textoMedio p {
@@ -360,7 +353,6 @@ body {
   background-clip: text;
   font-size: 7vw;
   font-weight: 900;
- 
 }
 
 .textoMedio p span {
@@ -404,7 +396,7 @@ body {
 }
 
 .lanzador {
-   background-image: url(img/capGCL.png);
+  background-image: url(img/capGCL.png);
   background-size: 100vw 20vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -427,14 +419,14 @@ body {
   border-top: 0.4vw solid #d3d3d3;
   border-bottom: 0.4vw solid #d3d3d3;
   padding: 10px 5vw;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-top: 25vw;
   margin-bottom: 3vw;
   width: 90vw;
   box-sizing: border-box;
 }
 
-.final p span{
+.final p span {
   background: linear-gradient(
     to right,
     rgb(229, 229, 229) 0%,
@@ -445,16 +437,39 @@ body {
   background-clip: text;
   font-size: 4vw;
   font-weight: 700;
-
 }
 
 .hidden {
   opacity: 0;
-  transform: translateY(20px) scale(0.6); 
+  transform: translateY(20px) scale(0.6);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .visible {
   opacity: 1;
-  transform: translateY(0) scale(1); 
+  transform: translateY(0) scale(1);
 }
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+.centrarInt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 15vw;
+filter: brightness(0.8);
+}
+
+.integracion {
+  background-image: url(img/integracion.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 90%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
