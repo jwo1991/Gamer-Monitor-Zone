@@ -785,7 +785,7 @@ color: #d3d3d3;
 
 .formulario h2 {
   margin-top: -0.15vh;
-  color: rgb(28, 28, 28);
+  color: #2196f3;
 }
 
 .formulario form {
@@ -825,18 +825,23 @@ color: #d3d3d3;
 
 .formulario button {
   background-color: #4d9a4d;
-  color: #d3d3d3(51, 51, 51);
   font-weight: bold;
   font-size: 1.8vh;
   padding: 1vh;
   border: none;
   border-radius: 1vh;
   cursor: pointer;
+  color: #d3d3d3;
  
 }
 
 #cerrar{
   background-color: #D73A4A;
+
+}
+
+#cerrar:hover{
+  background-color: #b72b39;
 
 }
 
