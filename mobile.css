@@ -450,44 +450,7 @@ body {
   transform: translateY(0) scale(1);
 }
 
-/*//////////////////////////////////////////////////////////////////////////*/
 
-.centrarInt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 40vh;
-  margin-top: 15vw;
-  filter: brightness(0.8);
-}
-
-.integracion {
-  background-image: url(img/integracion.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 90%;
-  filter: blur(10px);
-  opacity: 0;
-  animation: fadeInBlur 15s infinite;
-}
-
-@keyframes fadeInBlur {
-  0% {
-    filter: blur(10px);
-    opacity: 0;
-  }
-  50% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-  100% {
-    filter: blur(0);
-    opacity: 1;
-  }
-}
 
 /*//////////////////////////////////////////////////////////////////////////*/
 .ddcTest {
@@ -519,7 +482,7 @@ body {
 .torrePC {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: auto;
   margin-top: 25vw;
   overflow: hidden;
 }
@@ -579,31 +542,7 @@ body {
   border-radius: 5vw;
   margin: 0 auto;
   padding: 2vw 2vw;
-  animation: bounce 2s forwards infinite;
 }
-
-.boton:nth-child(1) {
-  animation-delay: 0s; 
-}
-
-.boton:nth-child(2) {
-  animation-delay: 2s; 
-}
-
-.boton:nth-child(3) {
-  animation-delay: 4s; 
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); 
-  }
-  40% {
-    transform: translateY(-5vw); 
-  }
-}
-
-
 
 .icono {
   width: 13vw;
