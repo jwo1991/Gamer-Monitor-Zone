@@ -236,8 +236,8 @@ body {
 }
 
 .befAft {
-  background-image: url(img/imagenlarga_2_11zon.webp);
-  background-size: 100vw 25vh;
+  background-image: url(img/befAf.jpg);
+  background-size: 100vw 30vh;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100vw;
@@ -246,7 +246,7 @@ body {
 
 .befAft p {
   text-align: center;
-  padding-top: 33vw;
+  padding-top: 40vw;
   padding-right: 2.5vw;
   padding-left: 5vw;
   font-size: 4vw;
