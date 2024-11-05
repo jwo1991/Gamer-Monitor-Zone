@@ -450,8 +450,6 @@ body {
   transform: translateY(0) scale(1);
 }
 
-
-
 /*//////////////////////////////////////////////////////////////////////////*/
 .ddcTest {
   width: 100vw;
@@ -552,3 +550,42 @@ body {
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
+.rawg {
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  margin-top: 25vw;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.rawg a {
+  color: #d3d3d3;
+  font-size: 7vw;
+  font-weight: 900;
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+    rgb(233, 30, 99) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  position: relative;
+}
+
+.rawg a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1vw;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(33, 150, 243) 0%,
+    rgb(233, 30, 99) 100%
+  );
+  z-index: -1;
+}
