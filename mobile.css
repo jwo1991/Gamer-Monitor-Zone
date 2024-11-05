@@ -513,38 +513,38 @@ body {
 .ddcTest p span {
   font-size: 4vw;
   font-weight: 700;
-  color: rgb(70, 70, 70);
+  color: rgb(80, 80, 80);
 }
 
 .torrePC {
   position: relative;
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   margin-top: 25vw;
   overflow: hidden;
 }
 
 .filtro-fondo {
-  background-image: url(img/fondoF2.jpg);
-  background-size: contain;
+  background-image: url(img/fondoMobile.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(0.7);
+  filter: brightness(0.8);
   z-index: -1;
 }
 
 .torrePC p {
-  text-align: left;
-  font-size: 4.5vw;
+  text-align: center;
+  font-size: 5vw;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding-right: 43vw;
+  padding-right: 2vw;
   padding-left: 2vw;
-  padding-top: 10vw;
+  padding-top: 75vw;
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
@@ -576,11 +576,34 @@ body {
   align-items: center;
   background-color: rgba(51, 51, 51, 0.9);
   width: 70vw;
-  border-radius: 3vw;
-  transition: background-color 0.3s;
+  border-radius: 5vw;
   margin: 0 auto;
-  padding: 2vw 2vw 2vw 2vw;
+  padding: 2vw 2vw;
+  animation: bounce 2s forwards infinite;
 }
+
+.boton:nth-child(1) {
+  animation-delay: 0s; 
+}
+
+.boton:nth-child(2) {
+  animation-delay: 2s; 
+}
+
+.boton:nth-child(3) {
+  animation-delay: 4s; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-5vw); 
+  }
+}
+
+
 
 .icono {
   width: 13vw;
