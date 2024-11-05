@@ -98,8 +98,8 @@ body {
   position: relative;
   background: linear-gradient(
     to right,
-    rgba(51, 51, 51, 0.8),
-    rgba(51, 51, 51, 1)
+    rgba(38, 38, 38, 0.8),
+    rgba(38, 38, 38, 1)
   );
 
   width: 100vw;
@@ -303,8 +303,8 @@ body {
   position: relative;
   background: linear-gradient(
     to right,
-    rgba(51, 51, 51, 0.8),
-    rgba(51, 51, 51, 1)
+    rgba(38, 38, 38, 0.8),
+    rgba(38, 38, 38, 1)
   );
 
   width: 100vw;
@@ -374,8 +374,8 @@ body {
   position: relative;
   background: linear-gradient(
     to right,
-    rgba(51, 51, 51, 0.8),
-    rgba(51, 51, 51, 1)
+    rgba(38, 38, 38, 0.8),
+    rgba(38, 38, 38, 1)
   );
 
   width: 100vw;
@@ -471,7 +471,7 @@ body {
   height: 90%;
   filter: blur(10px);
   opacity: 0;
-  animation: fadeInBlur 10s infinite;
+  animation: fadeInBlur 15s infinite;
 }
 
 @keyframes fadeInBlur {
@@ -491,7 +491,6 @@ body {
 
 /*//////////////////////////////////////////////////////////////////////////*/
 .ddcTest {
-  background-color: rgb(229, 229, 229);
   width: 100vw;
   height: auto;
   margin-top: 25vw;
@@ -507,15 +506,14 @@ body {
   font-size: 6vw;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(28, 28, 28);
   padding: 2vw;
-  margin-top: -5vw;
+  margin-top: -3vw;
 }
 
 .ddcTest p span {
   font-size: 4vw;
   font-weight: 700;
-  color: rgb(61, 61, 61);
+  color: rgb(70, 70, 70);
 }
 
 .torrePC {
@@ -539,7 +537,7 @@ body {
   z-index: -1;
 }
 
-.torrePC p{
+.torrePC p {
   text-align: left;
   font-size: 4.5vw;
   font-weight: 700;
@@ -547,7 +545,6 @@ body {
   padding-right: 43vw;
   padding-left: 2vw;
   padding-top: 10vw;
-
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
