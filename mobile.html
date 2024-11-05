@@ -259,7 +259,7 @@
           const rect = element.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          if (rect.top <= windowHeight / 2 && rect.bottom >= 0) {
+          if (rect.top <= windowHeight * 2 && rect.bottom >= 0) {
             element.classList.add("visible");
           } else {
             element.classList.remove("visible");
