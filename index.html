@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="stylePrin.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -17,243 +18,363 @@
     <title>Gamer Monitor Zone</title>
   </head>
   <body>
-    <video class="background-video" autoplay loop muted>
-      <source src="video/videoPrin.mp4" type="video/mp4" />
-      Tu navegador no soporta el elemento de video.
-    </video>
-    <div class="overlay"></div>
-    <div class="container" translate="no">
-      <div class="logoPrin"></div>
+    <div id="particles-js" class="particles-neon"></div>
+    <div class="barraSuperior">
+      <div class="logo">
+        <img src="img/gmz.png" alt="Logo" />
+      </div>
+      <nav class="linksSup">
+        <a href="#compatibility">Compatibility</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#licenses">Licenses</a>
+      </nav>
+    </div>
 
-      <div class="titulo">GAMER MONITOR ZONE</div>
+    <div class="tiraSuperior">
+      <div class="contenedorTextoSup">
+        <div class="titulo">GAMER MONITOR ZONE</div>
 
-      <p class="tituloMediano">
-        ENHANCE EFFICIENCY WITH AN INTEGRATED ECOSYSTEM THAT UNIFIES
-      </p>
-      <br />
-      <p class="tituloMediano">
-        DISPLAY CONTROL, SYSTEM MONITORING AND GAME LAUNCHER
-      </p>
-      <p class="tituloMenor">
-        CUSTOMIZATION AND IMPROVED PERFORMANCE ARE ACHIEVED THROUGH THIS
-        COMPREHENSIVE PLATAFORM
-      </p>
-
-      <div class="cuadroBotones">
-        <p id="descripcionCompra">
-          GEET STARTED WITH THE TOOLS <br /><span
-            >Paid and free options available</span
-          >
+        <p class="tituloMediano">
+          ENHANCE EFFICIENCY WITH AN ALL-IN-ONE SOLUTION THAT UNIFIES
+        </p>
+        <br />
+        <p class="tituloMediano">
+          DISPLAY CONTROL, SYSTEM MONITORING, AND GAME LAUNCHER
         </p>
 
         <div class="contenedorBotones">
-          <button class="botonCompra" onclick="abrirPopup()">
-            MULTI MONITOR MANAGER
-          </button>
+          <button class="botonCompra" onclick="abrirPopup()">BUY NOW</button>
 
           <button class="botonCompra" id="separadorBoton">
             DDC TEST FREE TOOL
           </button>
-
-          <button class="botonCompra" id="separadorBoton">
-            SYSTEM MONITOR MANAGER
-          </button>
-
-          <button class="botonCompra" id="separadorBoton">
-            GAMER CORE LAUNCHER
-          </button>
         </div>
       </div>
+    </div>
 
-      <div class="asd2">
-        <div class="column-1">
-          <div id="slideshow" class="image-slide"></div>
+    <div class="barraMedio">
+      <div class="contenedorColumnas">
+        <div class="columna">
+          <p>TAKE CONTROL OF YOUR MONITORS</p>
         </div>
-        <div class="column-2">
-          <h2 translate="no">FUTURE UPDATES</h2>
-          <ul translate="yes">
-            <li>
-              Take care of yourself, activate reminders to rest your eyes,
-              shoulders and neck from the screen after long work or gaming
-              sessions. Take a break!
-            </li>
-            <br />
-            <li>
-              Developer mode, open your IDE's on the desired monitor with the
-              screen orientation you prefer.
-            </li>
-            <br />
-          </ul>
+        <div class="columna">
+          <p>MONITOR YOUR COMPUTER IN REAL TIME</p>
+        </div>
+        <div class="columna">
+          <p>ORGANIZE AND LAUNCH YOUR GAMES</p>
         </div>
       </div>
-
-      <div class="asd3">
-        <div class="column-3">
-          <p>CONTROL INTEGRATION<br />WITH ANDROID APP</p>
-        </div>
-        <div class="column-4">
-          <h2 translate="no">ANDROID APP</h2>
-          <ul translate="yes">
-            <li>
-              Control key monitor functions directly from the official Android
-              app.
-            </li>
-            <br />
-            <li>
-              Adjust monitor settings remotely as if using a virtual remote
-              control.
-            </li>
-            <br />
-            <li>
-              Voice command integration with Alexa for hands-free control.
-            </li>
-          </ul>
-
-          <button
-            class="play-store"
-            onclick="window.location.href='https://play.google.com/store/apps/dev?id=5700313618786177705'"
-          ></button>
-        </div>
+    </div>
+    
+ 
+    <div class="contenedorPrincipal">
+      <div class="left">
+        <p translate="no">DISCOVER THE TOOL<br />FOR MONITORS CONTROL</p>
       </div>
-
-      <div class="asd">
-        <p>EXPLORE EACH TOOL IN DEPTH<br />AND UNLOCK THEIR FULL POTENTIAL</p>
-
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slide">
-              <button
-                class="boton"
-                id="boton1"
-                onclick="window.location.href='MMM.html';"
-              >
-                <span>MULTI MONITOR MANAGER</span>
-              </button>
+      <div class="right">
+        <div class="slider">
+          <div class="slider-images">
+            <div class="box">
+              <div class="imagen imagen3"></div>
+              <div class="contenido">
+                <p><span>DISCOVER THE DIFFERENCE</span></p>
+                <p>
+                  Explore how Multi Monitor Manager can transform your monitor
+                  usage experience. Whether you’re working or relaxing, you’ll
+                  discover the comfort and efficiency of managing multiple
+                  screens with ease. Experience a new level of control and
+                  optimize your workspace or entertainment area.
+                </p>
+              </div>
             </div>
-            <div class="slide">
-              <button
-                class="boton"
-                id="boton2"
-                onclick="window.location.href='SMM.html';"
-              >
-                <span>SYSTEM MONITOR MANAGER</span>
-              </button>
+            <div class="box">
+              <div class="imagen imagen4"></div>
+              <div class="contenido">
+                <p><span>DESIGNED FOR YOU</span></p>
+                <p>
+                  Aimed at professionals and gamers alike, Multi Monitor Manager
+                  is the ideal solution for anyone with multiple monitors
+                  looking to boost efficiency. Whether you're editing images and
+                  videos or diving into complex games, simplify your daily tasks
+                  and enhance productivity by ensuring each monitor works
+                  seamlessly in harmony with you.
+                </p>
+              </div>
             </div>
-
-            <div class="slide">
-              <button
-                class="boton"
-                id="boton3"
-                onclick="window.location.href='test.html';"
-              >
-                <span>DDC TEST TOOL</span>
-              </button>
+            <div class="box">
+              <div class="imagen imagen1"></div>
+              <div class="contenido">
+                <p><span>CINEMA MODE</span></p>
+                <p>
+                  The monitor detects when a video player is launched and
+                  automatically applies pre-configured profiles designed for
+                  optimal movie playback. Experience enhanced color accuracy and
+                  contrast with custom-designed profiles, tailored to your
+                  viewing needs.
+                </p>
+              </div>
             </div>
-
-            <div class="slide">
-              <button
-                class="boton"
-                id="boton4"
-                onclick="window.location.href='GCL.html';"
-              >
-                <span>GAMER CORE LAUNCHER</span>
-              </button>
+            <div class="box">
+              <div class="imagen imagen2"></div>
+              <div class="contenido">
+                <p><span>GAME MODE</span></p>
+                <p>
+                  The monitor detects when a game is launched and automatically
+                  switches to the appropriate pre-set profile for optimal
+                  performance. Easily apply your pre-configured game profiles
+                  for instant adjustments when starting a game.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="imagen imagen5"></div>
+              <div class="contenido">
+                <p><span>CREATE COLOR PROFILES</span></p>
+                <p>
+                  Adjust red, green, and blue settings to customize your display for optimal color accuracy.
+                  Achieve perfect color calibration by selecting different monitor modes.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="imagen imagen6"></div>
+              <div class="contenido">
+                <p><span>APPLY THE ONE YOU WANT</span></p>
+                <p>
+                  Save your customized RGB and mode settings into profiles for easy application.
+                  Quickly switch between profiles to apply your preferred color configurations.
+                </p>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
             </div>
           </div>
-          <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+         <script src="scripts.js"></script>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info1">
+      <div class="sliderPre">
+        <div class="sliderPre-images">
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/1.png');"></div>
+            <div class="titlePre">
+              <h2>MAIN PAGE</h2>
+              <p>Access to your recently played games and the latest news from your favorite video game websites</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/2.png');"></div>
+            <div class="titlePre">
+              <h2>MONITOR CONTROL</h2>
+              <p>Easily switch between monitor inputs, navigate through connected devices, and power them on or off with just a few clicks, all from one convenient interface.</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/3.png');"></div>
+            <div class="titlePre">
+              <h2>DISPLAY SETTINGS CONTROL</h2>
+              <p>Fine-tune your monitor's settings with ease, including brightness, saturation, orientation, and other display options, to achieve the perfect viewing experience.</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/4.png');"></div>
+            <div class="titlePre">
+              <h2>SYSTEM INFORMATION</h2>
+              <p>Access detailed information about your PC, including CPU model, RAM capacity, disk usage, and more, to monitor and optimize your system's performance.</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/5.png');"></div>
+            <div class="titlePre">
+              <h2>REAL-TIME MONITORING</h2>
+              <p>Monitor your devices in real time, including load, temperatures, and system performance. Easily view and manage active processes, with the option to close or adjust them as needed</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/6.png');"></div>
+            <div class="titlePre">
+              <h2>GAME LAUNCHER</h2>
+              <p>Find and launch your games quickly with recursive search, and instantly download metadata for a seamless gaming experience</p>
+            </div>
+          </div>
+          <div class="slidePre">
+            <div class="imagePre" style="background-image: url('img/caps/7.png');"></div>
+            <div class="titlePre">
+              <h2>GAME METADATA VIEWER</h2>
+              <p>Explore detailed game metadata in real time with the option to view additional information in a separate window. Get instant access to all relevant data for a complete gaming experience</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="final">
-      <div class="column">
-        <h4 translate="no">Multi Monitor Manager</h4>
-        <ul>
-          <li>
-            Full control over the monitor, adjusting all parameters available in
-            the OSD menu.
-          </li>
-          <li>
-            Creation of color profiles and modes for optimal viewing
-            experiences.
-          </li>
-          <li>
-            Game and movie detection to apply tailored settings automatically.
-          </li>
-          <li>
-            Keyboard shortcuts for efficient application control over the
-            monitor.
-          </li>
-        </ul>
-        <div translate="no" class="contact" onclick="togglePopup()">
-          <span class="iconSopor"><img src="img/icon-soporte.png" alt="Icono" /></span>
-          <p>Contact Support</p>
+        <div class="sliderPre-controls">
+          <span class="dot2" onclick="currentSlidePre(1)"></span>
+          <span class="dot2" onclick="currentSlidePre(2)"></span>
+          <span class="dot2" onclick="currentSlidePre(3)"></span>
+          <span class="dot2" onclick="currentSlidePre(4)"></span>
+          <span class="dot2" onclick="currentSlidePre(5)"></span>
+          <span class="dot2" onclick="currentSlidePre(6)"></span>
+          <span class="dot2" onclick="currentSlidePre(7)"></span>
         </div>
       </div>
-      <div class="column">
-        <h4 translate="no">System Monitor Manager</h4>
-        <ul>
-          <li>
-            System specifications with real-time graphs for CPU usage, including
-            active processes with the ability to terminate them.
-          </li>
-          <li>GPU monitoring with detailed performance metrics.</li>
-          <li>
-            RAM usage overview and disk information with optimization options,
-            including disk cleanup and defragmentation tools.
-          </li>
-        </ul>
-      </div>
-      <div class="column">
-        <h4 translate="no">Display Data Channel Test Tool</h4>
-        <ul>
-          <li>
-            DDC test tool to assess monitor compatibility with DDC and VCP
-            parameters.
-          </li>
-          <li>
-            Verifies capability string for accurate functionality and
-            performance assessment of connected monitors.
-          </li>
-        </ul>
-      </div>
+    </div>
+    
+    
+    
 
-      <div class="column">
-        <h4 translate="no">Gamer Core Launcher</h4>
-        <ul>
-          <li>
-            Wasting time searching across multiple platforms, have everything in
-            one place and ready to play.
-          </li>
-          <li>Create notes and don't leave anything undone.</li>
-        </ul>
+    <div class="features">
+      <div class="item">
+        <p>
+          <strong><span>Turn off monitors:</span></strong> Instantly suspend
+          all monitors or select individual ones to turn off.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Change inputs:</span></strong> Seamlessly switch
+          between devices, like a game console or any connected input.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Customize inputs:</span></strong> Personalize input
+          names and icons for clarity. Modify the tool’s main image strip for
+          a tailored experience.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Apply settings:</span></strong> Adjust brightness,
+          contrast, saturation, sharpness, screen orientation, refresh rate, resolution,
+          color temperature...
+        </p>
+      </div>
+    
+      <div class="extra-text">
+        <h1 translate="no">
+          CONQUER YOUR WORKSTATION
+        </h1>
+        <p translate="no">
+          ADVANCED SETTINGS AND MONITOR CONTROL IN ONE TOUCH
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Key mapping:</span></strong> Configure keyboard
+          shortcuts for quicker and more efficient monitor management.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Timer:</span></strong> Schedule automatic shutdowns
+          for monitors or your PC, set night mode to lower the brightness
+          within set hours.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>User profiles:</span></strong> Create tailored
+          profiles for different activities like gaming, working, or reading.
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Adaptive Mode:</span></strong>
+          Activate it to apply your game or movie profiles automatically when
+          a game window or video player is detected.<span translate="no" class="info" onclick="openPopupInfo()">+Info</span>
+        </p>
+      </div>
+    
+      <div class="item">
+        <p>
+          <strong><span>Oled Care:</span></strong>
+          Take care of your OLED screen with optimized tools and options, extending the life and image quality of your display.
+        </p>
       </div>
     </div>
 
-    <div translate="no" class="formulario" id="popupForm">
-      <form action="https://formspree.io/f/mqkrrkak" method="POST">
-        <h2>CONTACT SUPPORT</h2>
-        <label>NAME</label>
-        <input type="text" name="nombre" required />
-        <br /><br />
+    <div class="asd3">
+      <div class="column-3">
+        <p>CONTROL INTEGRATION<br />WITH ANDROID APP</p>
+      </div>
+      <div class="column-4">
+        <h2 translate="no">ANDROID APP</h2>
+        <ul translate="yes">
+          <li>
+            Control key monitor functions directly from the official Android
+            app.
+          </li>
+          <br />
+          <li>
+            Adjust monitor settings remotely as if using a virtual remote
+            control.
+          </li>
+          <br />
+          <li>
+            Voice command integration with Alexa for hands-free control.
+          </li>
+        </ul>
 
-        <label>MATTER</label>
-        <input type="text" name="asunto" required />
-        <br /><br />
-
-        <label>MESSAGE</label>
-        <textarea name="Message" maxlength="1000" required></textarea>
-        <br /><br />
-
-        <button type="submit">Send Message</button>
-        <button type="button" id="cerrar" onclick="togglePopup()">Close</button>
-      </form>
+        <button
+          class="play-store"
+          onclick="window.location.href='https://play.google.com/store/apps/dev?id=5700313618786177705'"
+        ></button>
+      </div>
     </div>
+    
+
+               <div id="popupInfo" class="popupInfo">
+  <div class="popupInfo-content">
+      <span class="closepopupInfo" onclick="closePopup()">×</span>
+      <p>The adaptive mode is designed to detect full-screen windows and analyze GPU usage. This system differentiates between games, which typically use more than 50% of GPU capacity during their initial load, and movie playback, by recognizing specific video player names. Although not an extremely complex system, it is efficient enough to manage graphic resources effectively. Having the latest GPU drivers from the manufacturer is generally sufficient. If the application doesn't work as expected, please follow these steps and checks.</p>
+      <ul>
+          <li>
+              <strong>Driver Installation:</strong>
+              <ul>
+                  <li>- Ensure that the appropriate NVIDIA or AMD drivers are installed.</li>
+                  <li>- For NVIDIA, install the driver that includes <code>nvidia-smi</code>.</li>
+                  <li>- The application integrates AMD's ADLX library for GPU monitoring, so no additional action is needed by the user. Compatibility begins with AMD Radeon graphics cards.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Adding Paths to System PATH:</strong>
+              <ul>
+                  <li>- Open the Control Panel and select "System and Security".</li>
+                  <li>- Click on "System" and then "Advanced system settings".</li>
+                  <li>- In the "Advanced" tab, click on "Environment Variables".</li>
+                  <li>- In the "System variables" section, select the "Path" variable and click "Edit".</li>
+                  <li>- Add the program path at the end of the list, ensuring each path is separated by a semicolon (;).</li>
+                  <li>- For example, if <code>nvidia-smi</code> is located in <code>C:\Program Files\NVIDIA Corporation\NVSMI</code>, add this path to the PATH variable.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Verification of Installation:</strong>
+              <ul>
+                  <li>- Open a command prompt (CMD) and type <code>nvidia-smi</code> for NVIDIA or verify that AMD ADLX monitoring is active.</li>
+                  <li>- If the <code>nvidia-smi</code> command executes successfully, you will see the GPU information in the console.</li>
+                  <li>- If you receive an error, verify that the paths are correctly configured in the PATH variable.</li>
+              </ul>
+          </li>
+      </ul>
+      
+  </div>
+</div>
+
+  </div>
 
     <div id="popup" class="popup">
       <div class="popup-content">
@@ -271,134 +392,168 @@
         </div>
       </div>
     </div>
-
-
-    
-
-    <script>
-      function togglePopup() {
-        const popupForm = document.getElementById("popupForm");
-        popupForm.style.display =
-          popupForm.style.display === "flex" ? "none" : "flex";
-      }
-    </script>
-
-    <script>
-      function togglePopup() {
-        const popup = document.getElementById("popupForm");
-        popup.style.display = popup.style.display === "flex" ? "none" : "flex";
-      }
-
-      function closePopup() {
-        document.getElementById("popupForm").style.display = "none";
-      }
-
-      const form = document.getElementById("formulario");
-
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-        })
-          .then((response) => {
-            if (response.ok) {
-              closePopup();
-              form.reset();
-              alert("Message sent successfully!");
-            } else {
-              alert(
-                "There was an issue sending your message. Please try again."
-              );
-            }
-          })
-          .catch((error) => {
-            alert("An error occurred. Please check your connection.");
-          });
-      });
-    </script>
-
-    <script>
-      function abrirPopup() {
-        document.getElementById("popup").style.display = "flex";
-      }
-
-      function cerrarPopup() {
-        document.getElementById("popup").style.display = "none";
-      }
-    </script>
-
-    <script>
-      let currentIndex = 0;
-
-      function showSlide(index) {
-        const slides = document.querySelectorAll(".slide");
-        const dots = document.querySelectorAll(".dot");
-
-        if (index >= slides.length) currentIndex = 0;
-        if (index < 0) currentIndex = slides.length - 1;
-
-        slides.forEach((slide, i) => {
-          slide.style.transform = `translateX(-${currentIndex * 100}%)`;
-          dots[i].classList.remove("active");
-        });
-
-        dots[currentIndex].classList.add("active");
-      }
-
-      function currentSlide(index) {
-        currentIndex = index - 1;
-        showSlide(currentIndex);
-      }
-
-      showSlide(currentIndex);
-    </script>
-
-    <script>
-      const images = [
-        "img/file.png",
-        "img/file2.png",
-        "img/file3.png",
-        "img/file4.png",
-        "img/capGCL.png",
-      ];
-      let currentImageIndex = 0;
-      const slideshow = document.getElementById("slideshow");
-      let interval;
-
-      function preloadImages() {
-        images.forEach((src) => {
-          const img = new Image();
-          img.src = src;
-        });
-      }
-
-      function startSlideshow() {
-        interval = setInterval(() => {
-          slideshow.style.opacity = "0";
-          slideshow.classList.add("blur");
-
-          setTimeout(() => {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
-
-            setTimeout(() => {
-              slideshow.style.opacity = "1";
-              slideshow.classList.remove("blur");
-            }, 100);
-          }, 500);
-        }, 4000);
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        preloadImages();
-        slideshow.style.backgroundImage = `url(${images[currentImageIndex]})`;
-        slideshow.style.opacity = "1";
-        startSlideshow();
-      });
-    </script>
-
-
+    <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
   </body>
+
+  <script>
+    function abrirPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function cerrarPopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slider = document.querySelector(".slider");
+
+      slider.classList.add("start-animation");
+    });
+  </script>
+
+<script>
+  function openPopupInfo() {
+    document.getElementById("popupInfo").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("popupInfo").style.display = "none";
+  }
+</script>
+
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 90,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+      "value": ["#2196f3","#FF69B4","#8A2BE2"]
+      },
+      "shape": {
+        "type": "polygon",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#d3d3d3",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<script>
+let slideIndexPre = 1;
+showSlidesPre(slideIndexPre);
+
+function currentSlidePre(n) {
+  showSlidesPre(slideIndexPre = n);
+}
+
+function showSlidesPre(n) {
+  let i;
+  let slides = document.getElementsByClassName("slidePre");
+  let dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) { slideIndexPre = 1 }
+  if (n < 1) { slideIndexPre = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexPre - 1].style.display = "flex";
+  dots[slideIndexPre - 1].className += " active";
+}
+
+</script>
 </html>
