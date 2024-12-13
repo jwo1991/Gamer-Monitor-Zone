@@ -1,11 +1,22 @@
-let currentSlide = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function changeSlide(direction) {
-  const slides = document.querySelectorAll('.right .slider-images .box');
-  const totalSlides = slides.length;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-
-  const sliderImages = document.querySelector('.slider-images');
-  sliderImages.style.transform = `translateX(-${currentSlide * 100}%)`;
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("box");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
 }
