@@ -880,6 +880,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 2vh;
+  font-size: 2vh;
 }
 
 /*/////////////////////ANDROID//////////////////////*/
