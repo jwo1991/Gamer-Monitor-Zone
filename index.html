@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <link rel="stylesheet" href="stylePrin.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -17,7 +19,7 @@
 
     <title>Gamer Monitor Zone</title>
   </head>
-  <body>
+  <body translate="no">
     <div id="particles-js" class="particles-neon"></div>
     <div class="barraSuperior">
       <div class="logo">
@@ -44,9 +46,9 @@
         </p>
 
         <div class="contenedorBotones">
-          <button class="botonCompra" onclick="abrirPopup()">BUY NOW</button>
+          <button class="botonCompra" id="boton" onclick="abrirPopup()">BUY NOW</button>
 
-          <button class="botonCompra" id="separadorBoton">
+          <button class="botonCompra" id="boton">
             DDC TEST FREE TOOL
           </button>
         </div>
@@ -56,18 +58,25 @@
     <div class="barraMedio">
       <div class="contenedorColumnas">
         <div class="columna">
-          <p>TAKE CONTROL OF YOUR MONITORS</p>
+          <div class="textoEscribir">
+            <p>TAKE CONTROL OF YOUR MONITORS</p>
+          </div>
         </div>
         <div class="columna">
-          <p>MONITOR YOUR COMPUTER IN REAL TIME</p>
+          <div class="textoEscribir">
+            <p>MONITOR YOUR COMPUTER IN REAL TIME</p>
+          </div>
         </div>
         <div class="columna">
-          <p>ORGANIZE AND LAUNCH YOUR GAMES</p>
+          <div class="textoEscribir">
+            <p>ORGANIZE AND LAUNCH YOUR GAMES</p>
+          </div>
         </div>
       </div>
     </div>
     
- 
+    
+    <div class="parallax-section">
     <div class="contenedorPrincipal">
       <div class="left">
         <p translate="no">DISCOVER THE TOOL<br />FOR MONITORS CONTROL</p>
@@ -160,7 +169,9 @@
         </div>
       </div>
     </div>
+  </div>
     
+  <div class="parallax-section">
     <div class="info1">
       <div class="sliderPre">
         <div class="sliderPre-images">
@@ -225,28 +236,28 @@
         </div>
       </div>
     </div>
+  </div>
     
     
-    
-
+  <div class="parallax-section">
     <div class="features">
       <div class="item">
         <p>
-          <strong><span>Turn off monitors:</span></strong> Instantly suspend
+          <strong><span>Turn off monitors</span></strong><br>Instantly suspend
           all monitors or select individual ones to turn off.
         </p>
       </div>
     
       <div class="item">
         <p>
-          <strong><span>Change inputs:</span></strong> Seamlessly switch
+          <strong><span>Change inputs</span></strong><br>Seamlessly switch
           between devices, like a game console or any connected input.
         </p>
       </div>
     
       <div class="item">
         <p>
-          <strong><span>Customize inputs:</span></strong> Personalize input
+          <strong><span>Customize inputs</span></strong><br>Personalize input
           names and icons for clarity. Modify the tool’s main image strip for
           a tailored experience.
         </p>
@@ -254,7 +265,7 @@
     
       <div class="item">
         <p>
-          <strong><span>Apply settings:</span></strong> Adjust brightness,
+          <strong><span>Apply settings</span></strong><br>Adjust brightness,
           contrast, saturation, sharpness, screen orientation, refresh rate, resolution,
           color temperature...
         </p>
@@ -271,14 +282,14 @@
     
       <div class="item">
         <p>
-          <strong><span>Key mapping:</span></strong> Configure keyboard
+          <strong><span>Key mapping</span></strong><br>Configure keyboard
           shortcuts for quicker and more efficient monitor management.
         </p>
       </div>
     
       <div class="item">
         <p>
-          <strong><span>Timer:</span></strong> Schedule automatic shutdowns
+          <strong><span>Timer</span></strong><br>Schedule automatic shutdowns
           for monitors or your PC, set night mode to lower the brightness
           within set hours.
         </p>
@@ -286,14 +297,14 @@
     
       <div class="item">
         <p>
-          <strong><span>User profiles:</span></strong> Create tailored
+          <strong><span>User profiles</span></strong><br>Create tailored
           profiles for different activities like gaming, working, or reading.
         </p>
       </div>
     
       <div class="item">
         <p>
-          <strong><span>Adaptive Mode:</span></strong>
+          <strong><span>Adaptive Mode</span></strong><br>
           Activate it to apply your game or movie profiles automatically when
           a game window or video player is detected.<span translate="no" class="info" onclick="openPopupInfo()">+Info</span>
         </p>
@@ -301,12 +312,14 @@
     
       <div class="item">
         <p>
-          <strong><span>Oled Care:</span></strong>
+          <strong><span>Oled Care</span></strong><br>
           Take care of your OLED screen with optimized tools and options, extending the life and image quality of your display.
         </p>
       </div>
     </div>
+  </div>
 
+  <div class="parallax-section">
     <div class="asd3">
       <div class="column-3">
         <p>CONTROL INTEGRATION<br />WITH ANDROID APP</p>
@@ -335,7 +348,7 @@
         ></button>
       </div>
     </div>
-    
+  </div>
 
                <div id="popupInfo" class="popupInfo">
   <div class="popupInfo-content">
@@ -556,4 +569,26 @@ function showSlidesPre(n) {
 }
 
 </script>
+
+<script>
+
+document.addEventListener("scroll", function () {
+  const secciones = document.querySelectorAll(".parallax-section");
+  const triggerPoint = window.innerHeight * 0.8;
+
+  secciones.forEach((seccion) => {
+    const topPos = seccion.getBoundingClientRect().top;
+    const bottomPos = seccion.getBoundingClientRect().bottom;
+
+    if (topPos < triggerPoint && bottomPos > 0) {
+      seccion.classList.add("visible");
+    } else {
+      seccion.classList.remove("visible");
+    }
+  });
+});
+
+
+</script>
+
 </html>
