@@ -159,6 +159,7 @@ body {
   margin: 0 auto;
   margin-top: -6vh;
   position: relative;
+  border: rgba(255, 255, 255, 0.3) 0.2vh solid;
   z-index: 4;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 10px 30px rgba(0, 0, 0, 0.3);
   transform: translateY(5px);
@@ -533,7 +534,7 @@ body {
   opacity: 1;
   transform: translateX(-50px);
   animation: none;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9), 8px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .left p.animate {
@@ -924,9 +925,7 @@ body {
 }
 
 .column-3 p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
-   4px 4px 6px rgba(0, 0, 0, 0.6);
-    
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .column-4 {
@@ -1086,14 +1085,28 @@ body {
   border-radius: 1vh;
   cursor: pointer;
   color: #d3d3d3;
+  margin-top: 2vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.formulario button:hover {
+  background-color: #3d7c3d;
+  color: #b1b0b0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #cerrar {
   background-color: #d73a4a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 #cerrar:hover {
   background-color: #b72b39;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .formulario button[type="button"] {
@@ -1101,7 +1114,8 @@ body {
   margin-left: 2vh;
 }
 
-.formulario button:hover {
-  background-color: #3d7c3d;
-  color: #b1b0b0;
+.formulario p {
+  font-size: 1.3vh;
+  color: rgb(100, 100, 100);
 }
+

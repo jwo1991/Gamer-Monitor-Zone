@@ -28,7 +28,7 @@
       <nav class="linksSup">
         <a href="#compatibility">Compatibility</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#" id="openForm">Contact</a>
         <a href="#licenses">Licenses</a>
       </nav>
     </div>
@@ -116,7 +116,7 @@
               <div class="contenido">
                 <p><span>CINEMA MODE</span></p>
                 <p>
-                  The monitor detects when a video player is launched and
+                  The tool detects when a video player is launched and
                   automatically applies pre-configured profiles designed for
                   optimal movie playback. Experience enhanced color accuracy and
                   contrast with custom-designed profiles, tailored to your
@@ -129,7 +129,7 @@
               <div class="contenido">
                 <p><span>GAME MODE</span></p>
                 <p>
-                  The monitor detects when a game is launched and automatically
+                  The tool detects when a game is launched and automatically
                   switches to the appropriate pre-set profile for optimal
                   performance. Easily apply your pre-configured game profiles
                   for instant adjustments when starting a game.
@@ -389,6 +389,19 @@
 
   </div>
 
+  <div class="formulario" id="formulario">
+    <form action="https://formspree.io/f/mqkrrkak" method="POST">
+      <h2>Contact Us</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Submit</button>
+      <button type="button" id="cerrar">Close</button>
+      <p>Contact via formspree.<br>For any questions or concerns, please do not hesitate to contact us.</p>
+    </form>
+  </div>
+
     <div id="popup" class="popup">
       <div class="popup-content">
         <span class="cerrar" onclick="cerrarPopup()">&times;</span>
@@ -588,6 +601,18 @@ document.addEventListener("scroll", function () {
   });
 });
 
+
+</script>
+
+<script>
+  document.getElementById('openForm').addEventListener('click', function (event) {
+  event.preventDefault(); 
+  document.getElementById('formulario').style.display = 'flex';
+});
+
+document.getElementById('cerrar').addEventListener('click', function () {
+  document.getElementById('formulario').style.display = 'none';
+});
 
 </script>
 
