@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <link rel="stylesheet" href="stylePrin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+      <link rel="stylesheet" href="stylePrin.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -20,13 +18,14 @@
     <title>Gamer Monitor Zone</title>
   </head>
   <body translate="no">
-    <div id="particles-js" class="particles-neon"></div>
+   
+    <div id="particles-container"></div>
     <div class="barraSuperior">
       <div class="logo">
-        <img src="img/gmz.png" alt="Logo" />
+        <img src="img/gmz.png"  />
       </div>
       <nav class="linksSup">
-        <a href="#compatibility">Compatibility</a>
+        <a href="comp.html">Compatibility</a>
         <a href="#about">About</a>
         <a href="#" id="openForm">Contact</a>
         <a href="#licenses">Licenses</a>
@@ -320,6 +319,55 @@
   </div>
 
   <div class="parallax-section">
+<div class="rawg">
+  <p>THE GAMES' METADATA IS SOURCED FROM <span><a href="https://rawg.io/">RAWG</a></span></p>
+
+</div>
+  </div>
+
+  <div class="parallax-section">
+    <div class="ddc">
+      <p>
+        INFORMATION ABOUT<br>THE DISPLAY DATA CHANNEL 
+        <span><a href="#" id="openDdcpop">(DDC)</a></span> PROTOCOL
+      </p>
+    </div>
+  </div>
+  
+  <!-- Popup for DDC information -->
+  <div id="ddcpop" class="ddcpop-popup hidden">
+    <div class="ddcpop-popup-content">
+      <button id="closeDdcpop" class="ddcpop-popup-close">×</button>
+      <ul>
+        <li>
+          <span>Monitor Response Time:</span> Some monitors may have variable response times for processing DDC/CI or VCP commands. This can be due to the monitor's firmware implementation, the speed of the communication bus, the current load on the monitor's internal processor, among other factors.
+        </li>
+        <li>
+          <span>Communication Delays:</span> Communication between the application and the monitor via DDC/CI or VCP can experience delays due to data transmission speed, congestion on the communication bus (especially if multiple queries are being made in short intervals), or even environmental factors that could affect the signal.
+        </li>
+        <li>
+          <span>Wait Between Queries:</span> To mitigate issues related to monitor recovery times, it is advisable to have adequate pauses between queries. For example, after sending a brightness adjustment command, it is prudent to wait a brief period before making another query or adjustment to give the monitor time to process the previous command and prepare for the next.
+        </li>
+        <li>
+          <span>Physical Connection or Hardware Configuration:</span> Intermittent issues may be related to the configuration or physical connection of the monitors. This includes issues like loose cables, electrical power problems, hardware issues in the monitors themselves, etc.
+        </li>
+        <li>
+          <span>Communication with the Monitor:</span> Communication with monitors via interfaces like DXVA2 and JNA depends on several external factors, such as the stability of hardware drivers, the API's compatibility with the driver version, and possibly the operating system configuration.
+        </li>
+        <li>
+          <span>External Interference:</span> External factors such as electromagnetic interference, electrical network issues, or even other connected devices can affect communication and monitor detection.
+        </li>
+        <li>
+          <span>Operating System Behavior:</span> Sometimes, the behavior of the operating system, such as resource management or application concurrency, can influence your application's ability to properly interact with hardware devices like monitors.
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+      
+
+  <div class="parallax-section">
     <div class="asd3">
       <div class="column-3">
         <p>CONTROL INTEGRATION<br />WITH ANDROID APP</p>
@@ -388,6 +436,7 @@
 </div>
 
   </div>
+  
 
   <div class="formulario" id="formulario">
     <form action="https://formspree.io/f/mqkrrkak" method="POST">
@@ -419,8 +468,9 @@
       </div>
     </div>
     <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
-  </body>
+  
 
+  <script src="particle.js"></script>
   <script>
     function abrirPopup() {
       document.getElementById("popup").style.display = "flex";
@@ -447,114 +497,6 @@
   function closePopup() {
     document.getElementById("popupInfo").style.display = "none";
   }
-</script>
-
-<script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 90,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-      "value": ["#2196f3","#FF69B4","#8A2BE2"]
-      },
-      "shape": {
-        "type": "polygon",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false,
-        "distance": 150,
-        "color": "#d3d3d3",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  });
 </script>
 
 <script>
@@ -615,5 +557,36 @@ document.getElementById('cerrar').addEventListener('click', function () {
 });
 
 </script>
+
+<script>
+function openPopup() {
+  document.getElementById("ddcpop").style.display = "flex";
+  document.querySelector(".ddcpop-overlay").style.display = "block";
+  document.body.classList.add("blur-background");
+}
+
+function closePopup() {
+  document.getElementById("ddcpop").style.display = "none";
+  document.querySelector(".ddcpop-overlay").style.display = "none";
+  document.body.classList.remove("blur-background");
+}
+
+document.getElementById('openDdcpop').addEventListener('click', (e) => {
+  e.preventDefault();
+  openPopup();
+});
+
+document.getElementById('closeDdcpop').addEventListener('click', () => {
+  closePopup();
+});
+
+document.querySelector('.ddcpop-overlay').addEventListener('click', () => {
+  closePopup();
+});
+
+
+
+</script>
+</body>
 
 </html>
