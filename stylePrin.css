@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   padding: 0 5vh;
   box-sizing: border-box;
-  background: linear-gradient(to right, rgb(28, 28, 28), rgb(40, 40, 40));
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(45, 45, 45));
   width: 100vw;
   height: 7vh;
   position: fixed;
@@ -393,10 +393,8 @@ body {
   height: auto;
   overflow: hidden;
   position: relative;
-  margin-top: 40vh;
-  background-color: rgba(51, 51, 51, 0.4);
-  backdrop-filter: blur(7px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 25vh;
+
 }
 
 .sliderPre {
@@ -507,7 +505,6 @@ body {
   height: 100vh;
   overflow: hidden;
   margin-top: 30vh;
-  background: url("img/fondo1new.jpg") no-repeat center center/cover;
 }
 
 /* Contenedor Left */
@@ -523,16 +520,17 @@ body {
 }
 
 .left p {
-  font-size: 2.5vw;
+  font-size: 9vh;
   font-weight: bold;
   text-align: center;
-  color: #d3d3d3;
+  background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 5vh;
   margin-left: 10vh;
   opacity: 1;
   transform: translateX(-50px);
   animation: none;
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9), 8px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .left p.animate {
@@ -577,7 +575,7 @@ body {
   position: relative;
   margin-right: 10px;
   overflow: hidden;
-  margin-top: 37vh;
+  margin-top: 25vh;
 }
 
 .slider {
@@ -727,16 +725,15 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0vh;
+  grid-row-gap: 3vh;
   padding-bottom: 7vh;
   width: 100vw;
   height: 70vh;
   box-sizing: border-box;
   padding-top: 7vh;
   overflow: hidden;
-  margin-top: 40vh;
-  background-color: rgba(51, 51, 51, 0.4);
-  backdrop-filter: blur(7px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 25vh;
+
 }
 
 .item {
@@ -748,7 +745,8 @@ body {
   justify-content: center;
   height: 25vh;
   width: 35vh;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+
   transform-style: preserve-3d;
   transition: transform 0.75s, box-shadow 0.5s;
   margin-left: 2.8vh;
@@ -760,7 +758,8 @@ body {
   transform: scale(1.05);
   backface-visibility: hidden;
   will-change: transform;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(0, 0, 0, 0.6); /* Aumentar el efecto de sombra */
+ box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .item p {
@@ -1168,19 +1167,43 @@ body {
   text-decoration: underline;
 }
 
+/*/////////////////////////////////////////////////////////////*/
+
+.contenedorLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.columnaRawg,
+.columnaDdc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+
+  text-align: center;
+}
+
 /*//////////////////////////////////////////////////////////*/
 
 .rawg {
-  width: 100vw;
+  width: 20vw;
   height: auto;
-  margin-top: 40vh;
-  background-color: rgba(51, 51, 51, 0.4);
-  backdrop-filter: blur(7px);
+  background: linear-gradient(to right, #1e1e1e, #3a3a3a);
+  text-align: center;
+  border-radius: 5vh;
+  margin-top: 30vh;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .rawg p {
-  font-size: 7vh;
+  font-size: 4.3vh;
   font-weight: bold;
   color: #d3d3d3;
 }
@@ -1189,22 +1212,44 @@ body {
   background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 9vh;
+  font-size: 6.3vh;
   text-decoration: underline;
+}
+
+.rawg img{
+
+  width: 20vw;
+  height: 17vw;
+  
+}
+
+.rawg:hover{
+  transform: scale(1.05);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
 .ddc {
-  width: 100vw;
+  width: 20vw;
   height: auto;
-  margin-top: 60vh;
-  background-color: rgba(51, 51, 51, 0.4);
-  backdrop-filter: blur(7px);
+  background: linear-gradient(to right, #1e1e1e, #3a3a3a);
+  text-align: center;
+  border-radius: 5vh;
+  margin-top: 30vh;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ddc img{
+
+  width: 20vw;
+  height: 17vw;
+  
 }
 
 .ddc p {
-  font-size: 7vh;
+  font-size: 4.3vh;
   font-weight: bold;
   color: #d3d3d3;
 }
@@ -1213,8 +1258,12 @@ body {
   background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 9vh;
+  font-size: 6.3vh;
   text-decoration: underline;
+}
+
+.ddc:hover{
+  transform: scale(1.05);
 }
 
 .ddcpop-popup {
@@ -1246,8 +1295,8 @@ body {
 .ddcpop-popup-content ul li {
   color: rgb(28, 28, 28);
   border-radius: 2vh;
- margin-left: 2vh;
- margin-left: 2vh;
+  margin-left: 2vh;
+  margin-left: 2vh;
   background: #d3d3d3;
   padding-left: 2vh;
   padding-right: 2vh;
