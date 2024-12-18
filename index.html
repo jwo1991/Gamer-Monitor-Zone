@@ -339,13 +339,56 @@
         <img src="img/asus.png">
         <p>
          ABOUT THE DISPLAY DATA CHANNEL<br>
-          <span><a href="#" id="openDdcpop">(DDC)</a></span>
+          <span><a href="#" id="openDdcpop">DDC</a></span>
+        </p>
+      </div>
+    </div>
+    <div class="columnaWinKeys">
+      <div class="winKeys">
+        <img src="img/winlogo.png">
+        <p>
+          RESERVED KEY MAPPINGS<br>  
+          <span><a href="#" id="openPopupWin">SHORTCUT LIST</a></span>  
         </p>
       </div>
     </div>
   </div>
 </div>
   
+<div id="popupWin" class="popup-win">
+  <div class="popup-content-win">
+    <button id="closePopupWin" class="close-button-win">&times;</button>
+    <div class="two-column-list-win">
+      <div class="column-win">
+        <ul>
+          <li><strong>Ctrl + C</strong>: Copy</li>
+          <li><strong>Ctrl + X</strong>: Cut</li>
+          <li><strong>Ctrl + V</strong>: Paste</li>
+          <li><strong>Ctrl + Z</strong>: Undo</li>
+          <li><strong>Ctrl + Y</strong>: Redo</li>
+          <li><strong>Ctrl + A</strong>: Select all</li>
+          <li><strong>Ctrl + F</strong>: Find</li>
+          <li><strong>Ctrl + S</strong>: Save</li>
+          <li><strong>Ctrl + P</strong>: Print</li>
+        </ul>
+      </div>
+      <div class="column-win">
+        <ul>
+          <li><strong>Alt + Tab</strong>: Switch between open apps</li>
+          <li><strong>Alt + F4</strong>: Close active window</li>
+          <li><strong>Win + D</strong>: Show/hide desktop</li>
+          <li><strong>Win + E</strong>: Open File Explorer</li>
+          <li><strong>Win + L</strong>: Lock the computer</li>
+          <li><strong>Win + R</strong>: Open Run dialog</li>
+          <li><strong>Win + I</strong>: Open Settings</li>
+          <li><strong>Win + X</strong>: Open Quick Link menu</li>
+          <li><strong>Win + S</strong>: Open Search</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
   
   <!-- Popup for DDC information -->
   <div id="ddcpop" class="ddcpop-popup hidden">
@@ -483,7 +526,8 @@
     <p class="copyright">Copyright ©2024 jwo1991<br>All rights reserved.</p>
   
 
-  <script src="particle.js"></script>
+ <!--<script src="particle.js"></script>-->
+
   <script>
     function abrirPopup() {
       document.getElementById("popup").style.display = "flex";
@@ -600,6 +644,33 @@ document.querySelector('.ddcpop-overlay').addEventListener('click', () => {
 
 
 </script>
+
+<script>
+
+  const openPopupLink = document.getElementById('openPopupWin');
+  const closePopupButton = document.getElementById('closePopupWin');
+  const popupWin = document.getElementById('popupWin');
+
+
+  openPopupLink.addEventListener('click', function (event) {
+    event.preventDefault(); 
+    popupWin.style.display = 'block'; 
+  });
+
+
+  closePopupButton.addEventListener('click', function () {
+    popupWin.style.display = 'none';
+  });
+
+
+  window.addEventListener('click', function (event) {
+    if (event.target === popupWin) {
+      popupWin.style.display = 'none';
+    }
+  });
+</script>
+
+
 </body>
 
 </html>
