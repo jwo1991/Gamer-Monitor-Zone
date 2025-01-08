@@ -70,13 +70,12 @@ body {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(45, 45, 45));
   width: 100vw;
   height: 7vh;
-  position: fixed;
   z-index: 999;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
 }
 
 .logo img {
-  height: 5.5vh;
+    height: 5vh;
   object-fit: contain;
 }
 
@@ -95,6 +94,9 @@ body {
 .linksSup a:hover {
   color: #2196f3;
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px; 
+  text-underline-offset: 4px; 
 }
 
 .tiraSuperior {
@@ -122,12 +124,13 @@ body {
   margin-top: -10vh;
   text-align: center;
   background: linear-gradient(to right, #d3d3d3, #a9a9a9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
   white-space: nowrap;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
+
+
 
 .tituloMediano {
   font-size: 2.2vh;
@@ -138,25 +141,22 @@ body {
   padding-left: 1vw;
   padding-right: 1vw;
   border-radius: 1vh;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   background: linear-gradient(to right, #d3d3d3, #a9a9a9);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
   margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
+
 .barraMedio {
-  background: linear-gradient(to right, rgb(28, 28, 28), rgb(40, 40, 40));
-  width: 65vw;
+  width: 100vw;
   height: 10vh;
-  border-radius: 1vh;
   margin: 0 auto;
   margin-top: -6vh;
   position: relative;
-  border: rgba(255, 255, 255, 0.3) 0.2vh solid;
   z-index: 4;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 10px 30px rgba(0, 0, 0, 0.3);
   transform: translateY(5px);
   display: flex;
   align-items: center;
@@ -171,25 +171,6 @@ body {
   left: -50%;
   width: 200%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  animation: shine 4s linear infinite;
-}
-
-@keyframes shine {
-  0% {
-    left: -50%;
-  }
-  50% {
-    left: 50%;
-  }
-  100% {
-    left: -50%;
-  }
 }
 
 .textoEscribir {
@@ -232,7 +213,7 @@ body {
 
 .columna p {
   color: #d3d3d3;
-  font-size: 2vh;
+  font-size: 3vh;
   margin: 0;
   font-weight: bold;
 }
@@ -249,56 +230,51 @@ body {
 }
 
 .botonCompra {
-  background: linear-gradient(
-    to right,
-    rgb(25, 108, 177) 0%,
-    rgb(184, 24, 77) 100%
-  );
+  background: linear-gradient(135deg, #2196F3 0%, #2196F3 100%);
   display: inline-block;
-  border-radius: 1vh;
-  position: relative;
-  padding: 1vh;
-  width: 29vh;
-  color: #d3d3d3;
-  align-items: center;
-  justify-content: flex-start;
-  border: 0.3vh solid #d3d3d3;
-  font-size: 2.3vh;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: auto;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
   cursor: pointer;
   font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
   overflow: hidden;
-  transform: translateZ(0) rotate(-8deg) skewX(-18deg);
-  transform-style: preserve-3d;
-  transition: transform 0.5s, box-shadow 0.5s;
-
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
-.botonCompra p::before {
+.botonCompra::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: -1;
-  transition: background-color 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0;
 }
 
-.botonCompra:hover p::before {
-  background-color: rgba(0, 0, 0, 0.9);
+.botonCompra:hover::before {
+  opacity: 1;
 }
 
 .botonCompra:hover {
-  background: linear-gradient(to right, #0d47a1, #c51162);
-  border: 0.5vh solid #d3d3d3;
-  animation: bounce 0.5s ease-in-out infinite;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9),
-    inset 0 0 6px rgba(255, 255, 255, 0.1), inset 0 -6px 8px rgba(0, 0, 0, 0.7),
-    inset 0 6px 12px rgba(0, 0, 0, 0.6);
-  transform: rotate(-8deg) skewX(-18deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
+
+.botonCompra:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 @keyframes bounce {
   0%,
@@ -519,13 +495,13 @@ body {
 }
 
 .left p {
-  font-size: 8vh;
+  font-size: 7vh;
   font-weight: bold;
   text-align: center;
   background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 5vh;
+  margin-top: 7vh;
   margin-left: 10vh;
   opacity: 1;
   transform: translateX(-50px);
@@ -619,26 +595,23 @@ body {
 }
 
 .contenido {
+  margin-top: 3vh;
   padding-left: 2em;
   padding-right: 2em;
   color: #d3d3d3;
   position: relative;
-  font-size: 2vh;
+  font-size: 2.3vh;
   width: 100%;
   height: 23vh;
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(to right, #1e1e1e, #3a3a3a);
-  border-radius: 5vh;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 0 10px rgba(0, 0, 0, 0.5);
-  transform-style: preserve-3d;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+ 
 }
 
 .contenido p span {
-  color: rgb(33, 150, 243);
-  font-size: 3.3vh;
+
+  font-size: 3.5vh;
   font-weight: bold;
   text-align: center;
   word-spacing: 0.75vh;
@@ -931,15 +904,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
-.column-4 {
-  background: linear-gradient(to right, #1e1e1e, #3a3a3a);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 0 10px rgba(0, 0, 0, 0.5);
-  transform-style: preserve-3d;
-  transition: transform 0.75s, box-shadow 0.5s;
-  border-radius: 5vh;
-  margin-right: 2vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+
 
 .column-4 h2 {
   background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
@@ -959,9 +924,9 @@ body {
 .asd3 ul {
   margin-top: -4vh;
   list-style: none;
-  text-align: center;
+  text-align: left;
   padding: 2vh;
-  font-size: 2.2vh;
+  font-size: 2.3vh;
 }
 
 .asd3 ul li {
@@ -1397,7 +1362,7 @@ body {
   padding: 2vh;
   text-align: left;
   margin-left: -2vh;
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 
 .ddcpop-popup-content ul li {
