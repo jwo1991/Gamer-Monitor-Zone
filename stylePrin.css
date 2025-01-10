@@ -71,11 +71,12 @@ body {
   width: 100vw;
   height: 7vh;
   z-index: 999;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .logo img {
-    height: 5vh;
+  height: 7vh;
   object-fit: contain;
 }
 
@@ -95,8 +96,8 @@ body {
   color: #2196f3;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-thickness: 1.5px; 
-  text-underline-offset: 4px; 
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
 }
 
 .tiraSuperior {
@@ -118,19 +119,72 @@ body {
   z-index: 2;
 }
 
-.titulo {
-  font-size: 10vh;
-  font-weight: bold;
-  margin-top: -10vh;
-  text-align: center;
-  background: linear-gradient(to right, #d3d3d3, #a9a9a9);
-  background-clip: text;
-  display: inline-block;
-  white-space: nowrap;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+.contenedorTitulo {
+  align-items: stretch;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.leftTitulo {
+  flex: 1.5;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  word-spacing: 0.75vh;
+}
+
+.rightTitulo {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.rightTitulo p {
+  font-size: 3vh;
+}
+
+.precio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #1e1e1e;
+  padding: 1vh 1vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border-radius: 2vh;
+  width: 13vw;
+  height: 4.8vh;
+}
+
+.precio p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 2.5vh;
+}
+
+.precio span {
+  font-size: 2.5vh;
+  margin-left: 2vh;
 }
 
 
+
+.titulo {
+  font-size: 9vh;
+  font-weight: bold;
+  margin-top: -40vh;
+  text-align: center;
+  background: linear-gradient(to right, #d3d3d3, #a9a9a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+}
 
 .tituloMediano {
   font-size: 2.2vh;
@@ -148,7 +202,6 @@ body {
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
-
 
 .barraMedio {
   width: 100vw;
@@ -206,7 +259,7 @@ body {
   content: "";
   position: absolute;
   right: -1vw;
-  height: 5.7vh;
+  height: 4vh;
   width: 0.2vh;
   background-color: #d3d3d3;
 }
@@ -220,32 +273,46 @@ body {
 
 .contenedorBotones {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100vh;
-  height: 10vh;
-  margin-top: 15vh;
+  grid-template-columns: 1fr;
+  gap: 2vh;
+  width: 45vh;
+  height: 35vh;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 20vh;
   justify-items: center;
   align-items: center;
   position: relative;
+  margin-left: 8vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.iconoBotones {
+  width: 1.8vw;
+  height: 3vh;
+  margin-right: 0vw;
+  margin-left: 0vh;
+  vertical-align: middle;
 }
 
 .botonCompra {
-  background: linear-gradient(135deg, #2196F3 0%, #2196F3 100%);
+  background: linear-gradient(135deg, #2979ff 0%, #536dfe 100%);
   display: inline-block;
-  border-radius: 8px;
-  padding: 12px 24px;
-  width: auto;
-  color: #ffffff;
-  border: none;
-  font-size: 18px;
+  border-radius: 1vh;
+  margin-left: 0vh;
+  padding: 1vh 2vh;
+  color: rgb(229, 229, 229);
+  border: 2px solid transparent;
+  font-size: 2.5vh;
   cursor: pointer;
-  font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .botonCompra::before {
@@ -255,36 +322,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 0;
 }
 
-.botonCompra:hover::before {
-  opacity: 1;
+.botonCompra:hover {
+  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: none;
+  outline: 0.4vh solid #2979ff;
+  outline-offset: 0.7vh;
+  color: white;
 }
 
-.botonCompra:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transform: translateY(-3px);
-}
+
+
 
 .botonCompra:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
 }
 
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: rotate(-8deg) skewX(-18deg) translateY(0);
-  }
-  50% {
-    transform: rotate(-8deg) skewX(-18deg) translateY(-7px);
-  }
+.botonCompra span {
+  position: relative;
+  z-index: 1;
 }
+
 
 #separadorBoton {
   margin-left: 6vh;
@@ -606,11 +672,9 @@ body {
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
- 
 }
 
 .contenido p span {
-
   font-size: 3.5vh;
   font-weight: bold;
   text-align: center;
@@ -903,8 +967,6 @@ body {
 .column-3 p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
-
-
 
 .column-4 h2 {
   background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
