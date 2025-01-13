@@ -581,6 +581,43 @@ body {
   }
 }
 
+/*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
+.contenedorComp {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2vh;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 15vh;
+}
+
+.columnComp {
+  width: 45%;
+}
+
+.columnComp p{
+ font-size: 3.5vh;
+ margin-top: 15vh;
+ margin-right: 3vh;
+}
+
+.imagenComp {
+  width: 100%;
+  height: auto;
+}
+
+.separadorFinal{
+  margin-top: 5vh;
+ 
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
 /*//////////////////////////INFO MMM//////////////////////////////////////*/
 
 .discover {
