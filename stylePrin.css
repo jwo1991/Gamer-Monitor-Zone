@@ -469,6 +469,9 @@ body {
   overflow: hidden;
   position: relative;
   margin-top: 35vh;
+
+
+
 }
 
 .sliderPre {
@@ -476,98 +479,106 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 2vh;
-}
+ }
 
 .sliderPre-images {
   display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 1s ease-in-out;
+  overflow: hidden;
+  width: 95%;
+  height: 70vh;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: rgb(51, 51, 51);
+  border:   0.2vh solid rgba(200, 200, 200, 0.3);
+  animation: slideIn 1s ease-out;
 }
 
 .slidePre {
   display: flex;
+  flex-shrink: 0;
   width: 100%;
   height: 100%;
+  transition: transform 0.8s ease-in-out;
 }
 
 .imagePre {
-  width: 70vw;
-  height: 70vh;
-  background-size: contain;
-  background-position: center;
+  flex: 3;
+  background-size: 95% 95%;
   background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px 0 0 20px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+  transition: transform 0.6s ease;
 }
 
+
+
 .titlePre {
-  width: 30%;
+  flex: 2;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  color: #d3d3d3;
-}
-
-.titlePre p {
-  margin-right: 2vh;
-  font-size: 3vh;
+  background: rgb(51, 51, 51);
+  color: #e0e0e0;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
 }
 
 .titlePre h2 {
-  font-size: 7vh;
-  margin-right: 2vh;
+  font-size: 3vw;
+  margin-bottom: 1vh;
   font-weight: bold;
-  background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
+  background: linear-gradient(to right, #2196f3, #e91e63);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.titlePre p {
+  font-size: 1.5vw;
+  line-height: 1.6;
 }
 
 .sliderPre-controls {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 2vh;
 }
 
 .dot2 {
   cursor: pointer;
-  height: 0.7vh;
-  width: 3vh;
-  margin: 0 2vh;
-  background-color: transparent;
-  border: 0.3vh solid #d3d3d3;
-  border-radius: 3vh;
-  display: inline-block;
+  width: 1.5vh;
+  height: 1.5vh;
+  margin: 0 10px;
+  background-color: #444;
+  border: 0.1vh solid #888;
+  border-radius: 50%;
   position: relative;
-  transition: background-color 0.6s ease;
-}
-
-.dot2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #d3d3d3;
-  border-radius: 3vh;
-  transition: width 0.6s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .dot2:hover {
   background-color: #d3d3d3;
+  transform: scale(1.2);
 }
 
-.active,
 .dot2.active {
-  background-color: transparent;
+  background-color: #2196f3;
 }
 
-.dot2.active::before {
-  width: 100%;
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*//////////////////////////INFO MMM//////////////////////////////////////*/
@@ -587,19 +598,19 @@ body {
 .gridPre {
   display: grid;
   margin-top: 15vh;
-  background-color: #333;
   grid-template-columns: repeat(3, 1fr);
+  gap: 3vh;
   padding: 0;
-  border: 1vh solid #333;
+  border: none;
   overflow: hidden;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
 
 .itemPre {
   position: relative;
   background-size: 100% 100%;
-  height: 40vh;
-  border-right: 1vh solid #333;
-  border-bottom: 1vh solid #333;
+  height: 37vh;
   background-position: center;
   color: #d3d3d3;
   overflow: hidden;
@@ -607,18 +618,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.itemPre:nth-child(3n) {
-  border-right: none;
-}
-
-.itemPre:nth-last-child(-n + 3) {
-  border-bottom: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 0.2vh solid rgba(200, 200, 200, 0.3);
 }
 
 .tituloPre {
-  font-size: 6vh;
+  font-size: 3.8vh;
   font-weight: bold;
   position: relative;
   color: #d3d3d3;
@@ -632,15 +637,11 @@ body {
   border-radius: 2vh;
 }
 
-
-
-
 .descripcionPre {
   font-size: 2.3vh;
   position: absolute;
   bottom: -100%;
   left: 50%;
-  font-weight: bold;
   transform: translateX(-50%);
   z-index: 2;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
