@@ -562,12 +562,12 @@ body {
 }
 
 .dot2:hover {
-  background-color: #d3d3d3;
+  background-color: #1e1e1e;
   transform: scale(1.2);
 }
 
 .dot2.active {
-  background-color: #2196f3;
+  background-color: #d3d3d3;
 }
 
 @keyframes slideIn {
@@ -626,15 +626,17 @@ body {
   font-size: 3.8vh;
   font-weight: bold;
   position: relative;
-  color: #d3d3d3;
+  color: #1e1e1e;
   z-index: 2;
   transition: opacity 0.3s ease;
   display: inline-block;
   text-align: center;
   margin: auto;
-  padding: 1vh 1vh 1vh 1vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1vh 1.5vh 1vh 1.5vh;
+  background-color: rgba(220, 220, 220, 0.8);
   border-radius: 2vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 0.2vh solid rgba(200, 200, 200, 0.3);
 }
 
 .descripcionPre {
