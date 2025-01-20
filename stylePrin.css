@@ -468,8 +468,8 @@ body {
   height: auto;
   overflow: hidden;
   position: relative;
-  margin-top: 35vh;
-
+  margin-top: 100vh;
+padding-top: 10vh;
 
 
 }
@@ -642,6 +642,7 @@ body {
   overflow: hidden;
   padding-left: 3vh;
   padding-right: 3vh;
+  padding-bottom: 20vh;
 }
 
 .itemPre {
@@ -663,14 +664,14 @@ body {
   font-size: 3.8vh;
   font-weight: bold;
   position: relative;
-  color: #1e1e1e;
+  color: #d3d3d3;
   z-index: 2;
   transition: opacity 0.3s ease;
   display: inline-block;
   text-align: center;
   margin: auto;
   padding: 1vh 1.5vh 1vh 1.5vh;
-  background-color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(51,51,51, 0.7);
   border-radius: 2vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 0.2vh solid rgba(200, 200, 200, 0.3);
@@ -718,6 +719,33 @@ body {
 }
 
 /*///////////////////////////////////////////////////////////////////*/
+.pagCentral {
+  position: fixed;
+  margin-top: 15vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+  background-image: url(img/centro.png);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.pagCentral p {
+  font-size: 7vh;
+  margin: 7vh; 
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.negro{
+  background-color: black;
+ 
+}
+
 
 /*/////////////////FEATURES/////////////////////////*/
 
@@ -980,8 +1008,9 @@ body {
 }
 
 .copyright {
+ 
   text-align: left;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-left: 2vh;
   padding-bottom: 1vh;
   font-size: 1.8vh;
