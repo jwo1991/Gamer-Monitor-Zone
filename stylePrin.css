@@ -198,7 +198,7 @@ body {
   justify-items: center;
   align-items: start;
   position: relative;
-  margin-left: 25vh;
+  margin-left: 27vh;
 }
 
 .contenedorBtn {
@@ -213,10 +213,10 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 50vh;
+  height: 45vh;
   width: 42vh;
   padding: 0;
-  border-radius: 1vh;
+  border-radius: 0.5vh;
   box-sizing: border-box;
   position: relative;
   box-shadow: 
@@ -235,7 +235,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 1vh 1vh 0 0;
+  border-radius: 0.5vh 0.5vh 0 0;
 }
 
 .texto {
