@@ -170,17 +170,20 @@ body {
   position: relative;
   top: 3vh;
   left: 0;
-  color: black;
+  color: rgb(229, 229, 229);
   padding-left: 1vw;
   padding-right: 1vw;
   border-radius: 1vh;
-  background: linear-gradient(to right, #d3d3d3, #a9a9a9);
+  background: transparent;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 8px black;
+  border: 1px solid rgb(229, 229, 229);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 /*////////////////////////////////////////////////////////////////////////*/
 
