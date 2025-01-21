@@ -94,11 +94,23 @@ body {
   height: 100vh;
   background-image: url(img/tiraSuperior.png);
   background-size: 100% 90%;
-  
   background-repeat: no-repeat;
-  
   z-index: 1;
+  position: relative;
 }
+
+.tiraSuperior::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(0.8) blur(1px);
+  z-index: -1;
+}
+
 
 .contenedorTextoSup {
   display: flex;
@@ -141,16 +153,13 @@ body {
   font-size: 3vh;
 }
 
-
-
 .titulo {
   font-size: 9vh;
   font-weight: bold;
   margin-top: -40vh;
   text-align: center;
-  background: linear-gradient(to right, #d3d3d3, #a9a9a9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d3d3d3;
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.8);
   display: inline-block;
   white-space: nowrap;
 }
@@ -185,24 +194,33 @@ body {
   justify-items: center;
   align-items: start;
   position: relative;
-  margin-left: 19vh;
+  margin-left: 25vh;
 }
 
 .contenedorBtn {
-  background: linear-gradient(to bottom, rgb(229, 229, 229), rgb(200, 200, 200));
-  border: 0.15vh solid rgba(28,28,28,0.8);
+  background: linear-gradient(
+    to bottom,
+    rgb(229, 229, 229),
+    rgb(200, 200, 200)
+  );
+  border: 0.15vh solid rgba(28, 28, 28, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 40vh; 
-  width: 45vh; 
-  padding: 0; 
-  border-radius: 2vh;
+  height: 50vh;
+  width: 42vh;
+  padding: 0;
+  border-radius: 1vh;
   box-sizing: border-box;
-  position: relative; 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-shadow: 
+  0 12px 24px rgba(0, 0, 0, 0.3), 
+  0 8px 18px rgba(0, 0, 0, 0.2), 
+  0 4px 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .imagen {
@@ -210,9 +228,9 @@ body {
   height: 50%;
   object-fit: fill;
   margin: 0;
-  padding: 0; 
-  border: 0; 
-  border-radius: 2vh 2vh 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 1vh 1vh 0 0;
 }
 
 .texto {
@@ -241,10 +259,10 @@ body {
   text-align: center;
   transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
-  position: absolute; 
-  left: 7.8vh; 
-  bottom: 3.2vh; 
-  z-index: 1; 
+  position: absolute;
+  left: 6vh;
+  bottom: 3.2vh;
+  z-index: 1;
 }
 
 .botonCompra:hover {
@@ -261,11 +279,11 @@ body {
   justify-content: flex-end;
   background: #1e1e1e;
   padding: 1vh 1vh;
-  margin: 0 1vh; 
+  margin: 0 1vh;
   border-radius: 2vh;
-  width: calc(70% - 2vh); 
+  width: calc(75% - 1.5vh);
   height: 5.3vh;
-  position: relative; 
+  position: relative;
   margin-bottom: 2vh;
 }
 
@@ -280,8 +298,6 @@ body {
   font-size: 2.5vh;
   margin-left: 2vh;
 }
-
-
 
 /*/////////////////////////////////////////////////////////////////////////////*/
 .popup {
@@ -364,7 +380,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-top: 100vh;
-  padding-top: 10vh;
+  padding-top: 20vh;
 }
 
 .sliderPre {
@@ -373,28 +389,27 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 2vh;
+  
 }
 
 .sliderPre-images {
   display: flex;
   overflow: hidden;
-  width: 95%;
+  width: 100vw;
   height: 70vh;
   position: relative;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   background: rgb(51, 51, 51);
-  border: 0.2vh solid rgba(200, 200, 200, 0.3);
-  animation: slideIn 1s ease-out;
+   animation: slideIn 1s ease-out;
 }
 
 .slidePre {
   display: flex;
   flex-shrink: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   transition: transform 0.8s ease-in-out;
+  padding-left: 5vh;
 }
 
 .imagePre {
@@ -436,41 +451,42 @@ body {
 
 .sliderPre-controls {
   display: flex;
-  justify-content: center;
-  margin-top: 2vh;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  padding: 0 2vw;
 }
 
-.dot2 {
+.arrow {
   cursor: pointer;
-  width: 1.5vh;
-  height: 1.5vh;
-  margin: 0 10px;
-  background-color: #444;
-  border: 0.1vh solid #888;
-  border-radius: 50%;
-  position: relative;
+  width: 3vw;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #d3d3d3;
+  border-radius: 2vh;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.dot2:hover {
-  background-color: #1e1e1e;
-  transform: scale(1.2);
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
 }
 
-.dot2.active {
-  background-color: #d3d3d3;
+.arrow-left {
+  justify-content:center;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.arrow-right {
+  justify-content: center;
 }
+
 
 /*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
 .contenedorComp {
@@ -510,9 +526,34 @@ body {
 
 /*//////////////////////////INFO MMM//////////////////////////////////////*/
 
+.featuresCss {
+  margin-top: 25vh;
+}
+
+.featuresCss p {
+
+  font-size: 8vh;
+ color: #d3d3d3;
+  display: inline-block;
+  position: relative;
+}
+
+.featuresCss p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
 .gridPre {
   display: grid;
-  margin-top: 15vh;
+  margin-top: 8vh;
   grid-template-columns: repeat(3, 1fr);
   gap: 3vh;
   padding: 0;
@@ -521,7 +562,6 @@ body {
   padding-left: 3vh;
   padding-right: 3vh;
   padding-bottom: 15vh;
-  margin-top: 25vh;
 }
 
 .itemPre {
@@ -553,7 +593,7 @@ body {
   background-color: rgba(51, 51, 51, 0.7);
   border-radius: 2vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 0.2vh solid rgba(200, 200, 200, 0.3);
+ 
 }
 
 .descripcionPre {

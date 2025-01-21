@@ -84,7 +84,9 @@
      
 
     <div class="parallax-section">
-
+<div class="featuresCss">
+  <p>Features</p>
+</div>
            <div class="gridPre">
         <div class="itemPre" style="background-image: url('img/befAf.jpg');">
             <p class="tituloPre">DISCOVER THE DIFFERENCE</p>
@@ -212,19 +214,11 @@
           
         </div>
         <div class="sliderPre-controls">
-          <span class="dot2" onclick="currentSlidePre(1)"></span>
-          <span class="dot2" onclick="currentSlidePre(2)"></span>
-          <span class="dot2" onclick="currentSlidePre(3)"></span>
-          <span class="dot2" onclick="currentSlidePre(4)"></span>
-          <span class="dot2" onclick="currentSlidePre(5)"></span>
-          <span class="dot2" onclick="currentSlidePre(6)"></span>
-          <span class="dot2" onclick="currentSlidePre(7)"></span>
-          <span class="dot2" onclick="currentSlidePre(8)"></span>
-          <span class="dot2" onclick="currentSlidePre(9)"></span>
-          <span class="dot2" onclick="currentSlidePre(10)"></span>
-          <span class="dot2" onclick="currentSlidePre(11)"></span>
-          <span class="dot2" onclick="currentSlidePre(12)"></span>
+          <div class="arrow arrow-left" onclick="currentSlidePre(-1)">&lt;</div>
+          <div class="arrow arrow-right" onclick="currentSlidePre(1)">&gt;</div>
         </div>
+        
+        
       </div>
     </div>
   </div>
@@ -525,24 +519,20 @@ let slideIndexPre = 1;
 showSlidesPre(slideIndexPre);
 
 function currentSlidePre(n) {
-  showSlidesPre(slideIndexPre = n);
+  showSlidesPre(slideIndexPre += n);
 }
 
 function showSlidesPre(n) {
   let i;
   let slides = document.getElementsByClassName("slidePre");
-  let dots = document.getElementsByClassName("dot2");
   if (n > slides.length) { slideIndexPre = 1 }
   if (n < 1) { slideIndexPre = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndexPre - 1].style.display = "flex";
-  dots[slideIndexPre - 1].className += " active";
 }
+
 
 </script>
 
