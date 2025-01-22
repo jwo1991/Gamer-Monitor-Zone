@@ -677,8 +677,8 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: vh;
-  grid-row-gap: 1vh;
+  grid-column-gap: 0vh;
+  grid-row-gap: 8vh;
   padding-bottom: 7vh;
   width: 100vw;
   height: 70vh;
