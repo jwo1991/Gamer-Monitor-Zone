@@ -111,7 +111,6 @@ body {
   z-index: -1;
 }
 
-
 .contenedorTextoSup {
   display: flex;
   flex-direction: column;
@@ -173,7 +172,7 @@ body {
   padding-left: 1vw;
   padding-right: 1vw;
   border-radius: 1vh;
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
@@ -181,10 +180,8 @@ body {
   text-shadow: 4px 4px 8px black;
   border: 1px solid rgb(229, 229, 229);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
 }
-
-
 
 /*////////////////////////////////////////////////////////////////////////*/
 
@@ -203,26 +200,21 @@ body {
 }
 
 .contenedorBtn {
-  background: linear-gradient(to bottom, rgb(229, 229, 229), rgb(200, 200, 200));
-  border: 0.15vh solid rgba(28, 28, 28, 0.8);
+  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  border: 0.15vh solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   height: 45vh;
-  width: 42vh;
+  width: 40vh;
   padding: 0;
   border-radius: 0.5vh;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 
-  0 6px 12px rgba(0, 0, 0, 0.15), 
-  0 4px 8px rgba(0, 0, 0, 0.1), 
-  0 2px 4px rgba(0, 0, 0, 0.05);
-
-
-
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .imagen {
@@ -237,9 +229,10 @@ body {
 
 .texto {
   font-size: 2.2vh;
-  color: rgb(28, 28, 28);
+  color: #d3d3d3;
   margin: 1vh 0;
   text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 .iconoBotones {
@@ -262,7 +255,7 @@ body {
   transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 6vh;
+  left: 5vh;
   bottom: 3.2vh;
   z-index: 1;
 }
@@ -279,11 +272,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: #1e1e1e;
+  background: #1a1a1a;
   padding: 1vh 1vh;
   margin: 0 1vh;
   border-radius: 2vh;
-  width: calc(75% - 1.5vh);
+  width: calc(78% - 1.5vh);
   height: 5.3vh;
   position: relative;
   margin-bottom: 2vh;
@@ -391,7 +384,6 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
-  
 }
 
 .sliderPre-images {
@@ -400,9 +392,9 @@ body {
   width: 100vw;
   height: 70vh;
   position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   background: rgb(51, 51, 51);
-   animation: slideIn 1s ease-out;
+  animation: slideIn 1s ease-out;
 }
 
 .slidePre {
@@ -483,13 +475,12 @@ body {
 }
 
 .arrow-left {
-  justify-content:center;
+  justify-content: center;
 }
 
 .arrow-right {
   justify-content: center;
 }
-
 
 /*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
 .contenedorComp {
@@ -534,9 +525,8 @@ body {
 }
 
 .featuresCss p {
-
   font-size: 8vh;
- color: #d3d3d3;
+  color: #d3d3d3;
   display: inline-block;
   position: relative;
 }
@@ -551,7 +541,7 @@ body {
   bottom: -10px;
   left: 0;
   border-radius: 1px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .gridPre {
@@ -596,7 +586,6 @@ body {
   background-color: rgba(51, 51, 51, 0.7);
   border-radius: 2vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- 
 }
 
 .descripcionPre {
@@ -734,7 +723,7 @@ body {
 
 .item p span {
   color: #2196f3;
-    text-align: center;
+  text-align: center;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 2.8vh;
