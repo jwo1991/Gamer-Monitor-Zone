@@ -200,7 +200,7 @@ body {
 }
 
 .contenedorBtn {
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  background: linear-gradient(to bottom, #2a2a2a, #3a3a3a);
   border: 0.15vh solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
@@ -210,21 +210,55 @@ body {
   height: 45vh;
   width: 40vh;
   padding: 0;
-  border-radius: 0.5vh;
+  overflow: hidden;
+  border-radius: 2vh;
   box-sizing: border-box;
   position: relative;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
     0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.imagen {
+.imagenFondo {
   width: 100%;
   height: 50%;
-  object-fit: fill;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 2vh 2vh 0 0;
+  overflow: hidden;
+  border-bottom: 0.15vh solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.hoverLista {
   margin: 0;
   padding: 0;
-  border: 0;
-  border-radius: 0.5vh 0.5vh 0 0;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgba(229, 229, 229, 1);
+  font-size: 2.5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vh;
+  padding: 1vh;
+  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+.imagenFondo:hover .hoverLista {
+  display: block;
+}
+
+.hoverLista li {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  margin: 0.5vh 0;
+  transition: opacity 0.3s ease;
 }
 
 .texto {
