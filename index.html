@@ -341,6 +341,32 @@
 </div>
 
 
+<div class="parallax-section">
+  <div class="featuresCss">
+    <p>Quick Guide</p>
+  </div>
+</div>
+<div class="parallax-section">
+  <div class="contenedorInstruc">
+       <div class="sliderInstruc-container">
+      <div class="sliderInstruc-content">
+        <p>First instruction or guide text.</p>
+        <p>Second instruction or guide text.</p>
+        <p>Third instruction or guide text.</p>
+        <p>Fourth instruction or guide text.</p>
+      </div>
+    </div>
+    <div class="sliderInstruc-controls">
+ 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
   <div class="parallax-section">
   <div class="contenedorLinks">
 
@@ -358,7 +384,7 @@
       <div class="ddc">
         <img src="img/asus.png">
         <p>
-         ABOUT THE DISPLAY DATA CHANNEL<br>
+         DISPLAY DATA CHANNEL<br>
           <span><a href="#" id="openDdcpop">DDC</a></span>
         </p>
       </div>
@@ -661,8 +687,51 @@ document.querySelector('.ddcpop-overlay').addEventListener('click', () => {
   });
 </script>
 
-
+<script>
+  const dotInstrucs = document.querySelectorAll('.dotInstruc');
+  const sliderInstrucContent = document.querySelector('.sliderInstruc-content');
+  dotInstrucs.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      sliderInstrucContent.style.transform = `translateX(-${index * 100}%)`;
+      dotInstrucs.forEach((d) => d.style.background = 'rgba(255, 255, 255, 0.5)');
+      dot.style.background = 'white';
+    });
+  });
+</script>
   
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const paragraphs = document.querySelectorAll('.sliderInstruc-content p');
+    const dotsContainer = document.querySelector('.sliderInstruc-controls');
+  
+
+    paragraphs.forEach((_, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dotInstruc');
+      dot.dataset.slide = index;
+      dotsContainer.appendChild(dot);
+    });
+  
+    const dots = document.querySelectorAll('.dotInstruc');
+  
+
+    const activateSlide = (index) => {
+      paragraphs.forEach((p) => p.classList.remove('active'));
+      dots.forEach((d) => d.classList.remove('active'));
+  
+      paragraphs[index].classList.add('active');
+      dots[index].classList.add('active');
+    };
+  
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => activateSlide(index));
+    });
+  
+
+    activateSlide(0);
+  });
+  </script>
 
 </body>
 
