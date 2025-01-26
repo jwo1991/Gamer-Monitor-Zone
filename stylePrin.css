@@ -301,33 +301,7 @@ body {
   margin-left: 0.5vw;
   vertical-align: middle;
 }
-/*
-.botonCompra {
-  background: linear-gradient(135deg, #2979ff 0%, #536dfe 100%);
-  display: inline-block;
-  border-radius: 1vh;
-  padding: 1vh 2vh;
-  color: rgb(229, 229, 229);
-  font-size: 2.5vh;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  left: 5vh;
-  bottom: 3.2vh;
-  z-index: 1;
-}
 
-.botonCompra:hover {
-  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
-  outline: 0.4vh solid #2979ff;
-  outline-offset: 0.7vh;
-  color: white;
-}
-*/
 
 .botonCompra {
   background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
@@ -342,15 +316,15 @@ body {
   transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 8vh;
-  bottom: 3.2vh;
+  left: 8.1vh;
+  bottom: 3.3vh;
   z-index: 1;
 }
 
 .botonCompra:hover {
   background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
-  outline: 0.4vh solid #2979ff;
+  outline: 0.45vh solid #2979ff;
   outline-offset: 0.7vh;
   color: white;
 }
@@ -673,13 +647,14 @@ body {
   text-align: center;
   margin: auto;
   padding: 1vh 1.5vh 1vh 1.5vh;
-  background-color: rgba(51, 51, 51, 0.7);
+  background-color: rgba(51, 51, 51, 0.5);
   border-radius: 2vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 .descripcionPre {
-  font-size: 2.3vh;
+  font-size: 2.6vh;
   position: absolute;
   bottom: -100%;
   left: 50%;
@@ -704,6 +679,7 @@ body {
   z-index: 1;
 }
 
+
 .itemPre:hover .tituloPre {
   opacity: 0;
 }
@@ -716,7 +692,8 @@ body {
 }
 
 .itemPre:hover::before {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
 }
 
 /*///////////////////////////////////////////////////////////////////*/
