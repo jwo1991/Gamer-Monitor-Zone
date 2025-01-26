@@ -52,52 +52,59 @@
         <div class="rightTitulo">
           <div class="contenedorBotones">
             <div class="contenedorBtn">
-              <div class="imagenFondo" style="background-image: url('img/boton12.jpg');">
-                <ul class="hoverLista">
-                  <li>Take Control!</li><br>
-                  <li>Advanced Settings</li><br>
-                  <li>User Profiles</li><br>
-               
-                </ul>
+              <div class="imagenFondo">
+                <video class="videoFondo" autoplay loop muted>
+                  <source src="video/miniatura1-2.mp4" type="video/mp4">
+                </video>
+                <img class="imagenDeFondo" src="img/boton12.jpg">
               </div>
+            
+            
               <p class="texto">Get your license today!</p>
-              <button class="botonCompra" onclick="abrirPopup()">Purchase <img src="img/iconCompra.png" class="iconoBotones"></button>
+              <button class="botonCompra" onclick="abrirPopup()">
+                <span>Purchase</span>
+              
+              </button>
               <p class="precio">1.99€</p>
             </div>
-        
+          
             <div class="contenedorBtn">
-              <div class="imagenFondo" style="background-image: url('img/fileTest.png');">
-                <ul class="hoverLista">
-                  <li>Try for Free</li><br>
-                  <li>Quick Test</li><br>
-                  <li>No Installation</li>
-                </ul>
+              <div class="imagenFondo">
+                <video class="videoFondo" autoplay loop muted>
+                  <source src="video/miniatura2.mp4" type="video/mp4">
+                </video>
+                <img class="imagenDeFondo" src="img/fileTest.png">
               </div>
               <p class="texto">Compatibility Test Tool</p>
-              <button class="botonCompra">DDC Test <img src="img/iconDes.png" class="iconoBotones"></button>
+              <button class="botonCompra">
+                <span>DDC Test</span>
+              
+              </button>
               <p class="precio">Free</p>
             </div>
-        
+          
             <div class="contenedorBtn">
               <div class="imagenFondo" style="background-image: url('img/movil2.png');">
                 <ul class="hoverLista">
                   <li>Full Control on Your Phone</li><br>
                   <li>Easy Synchronization</li><br>
                   <li>Remote Access</li>
-                  
                 </ul>
               </div>
               <p class="texto">Android App Control</p>
-              <button class="botonCompra">Play Store<img src="img/android.png" class="iconoBotones"></button>
+              <button class="botonCompra">
+                <span>Play Store</span>
+               
+              </button>
               <p class="precio">Free</p>
             </div>
           </div>
-        </div>
+          
         
         
         </div>
       </div>
-    
+    </div>
     
     
     
@@ -655,6 +662,7 @@ document.querySelector('.ddcpop-overlay').addEventListener('click', () => {
 </script>
 
 
+  
 
 </body>
 

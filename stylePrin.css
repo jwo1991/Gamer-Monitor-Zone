@@ -231,6 +231,31 @@ body {
   background-repeat: no-repeat;
 }
 
+.imagenFondo .videoFondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; 
+}
+
+.imagenFondo .imagenDeFondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedorBtn:hover .imagenFondo .videoFondo {
+  display: block; 
+}
+
+.contenedorBtn:hover .imagenFondo .imagenDeFondo {
+  display: none; 
+}
+
+
 .hoverLista {
   list-style: none;
   margin: 0;
@@ -276,7 +301,7 @@ body {
   margin-left: 0.5vw;
   vertical-align: middle;
 }
-
+/*
 .botonCompra {
   background: linear-gradient(135deg, #2979ff 0%, #536dfe 100%);
   display: inline-block;
@@ -302,6 +327,36 @@ body {
   outline-offset: 0.7vh;
   color: white;
 }
+*/
+
+.botonCompra {
+  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
+  display: inline-block;
+  border-radius: 1vh;
+  padding: 1vh 2vh;
+  color: #d3d3d3;
+  font-size: 2.5vh;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 8vh;
+  bottom: 3.2vh;
+  z-index: 1;
+}
+
+.botonCompra:hover {
+  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
+  outline: 0.4vh solid #2979ff;
+  outline-offset: 0.7vh;
+  color: white;
+}
+
+
+
 
 .precio {
   display: flex;
@@ -311,7 +366,7 @@ body {
   padding: 1vh 1vh;
   margin: 0 1vh;
   border-radius: 2vh;
-  width: calc(78% - 1.5vh);
+  width: calc(63% - 1.5vh);
   height: 5.3vh;
   position: relative;
   margin-bottom: 2vh;
