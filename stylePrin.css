@@ -256,36 +256,7 @@ body {
 }
 
 
-.hoverLista {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: rgba(229, 229, 229, 1);
-  font-size: 2.5vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 1vh;
-  padding: 1vh;
-  backdrop-filter: blur(3px);
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
-}
 
-.imagenFondo:hover .hoverLista {
-  display: block;
-}
-
-.hoverLista li {
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
-  margin: 0.5vh 0;
-  transition: opacity 0.3s ease;
-}
 
 .texto {
   font-size: 2.2vh;
@@ -294,6 +265,24 @@ body {
   text-align: center;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
+
+.listaPrin{
+  padding: 0; 
+  margin: 0;
+  color: rgb(186, 186, 186);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.listaPrin li{
+  
+  font-weight: normal;
+  font-size: 2.2vh;
+  text-indent: -2vh;
+  list-style-position: inside;
+  text-align: left;
+  margin-left: -5vh;
+  
+  }
 
 .iconoBotones {
   width: 1.8vw;
@@ -317,14 +306,14 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
   left: 8.1vh;
-  bottom: 3.3vh;
+  bottom: 3.1vh;
   z-index: 1;
 }
 
 .botonCompra:hover {
   background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
-  outline: 0.45vh solid #2979ff;
+  outline: 0.3vh solid #2979ff;
   outline-offset: 0.7vh;
   color: white;
 }
