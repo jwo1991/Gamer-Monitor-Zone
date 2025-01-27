@@ -200,32 +200,36 @@ body {
 }
 
 .contenedorBtn {
-  background: linear-gradient(to bottom, #2a2a2a, #3a3a3a);
-  border: 0.15vh solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
+  border: 0.1vh solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 45vh;
+  height: 50vh;
   width: 40vh;
   padding: 0;
   overflow: hidden;
-  border-radius: 2vh;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
 }
+
+.contenedorBtn:hover {
+  background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 50%, #3a3a3a 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 .imagenFondo {
   width: 100%;
-  height: 50%;
+  height: 56%;
   background-size: 100% 100%;
   background-position: center;
-  border-radius: 2vh 2vh 0 0;
   overflow: hidden;
-  border-bottom: 0.15vh solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.1vh solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
   position: relative;
   background-repeat: no-repeat;
@@ -238,7 +242,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none; 
+  display: none;
 }
 
 .imagenFondo .imagenDeFondo {
@@ -248,15 +252,12 @@ body {
 }
 
 .contenedorBtn:hover .imagenFondo .videoFondo {
-  display: block; 
+  display: block;
 }
 
 .contenedorBtn:hover .imagenFondo .imagenDeFondo {
-  display: none; 
+  display: none;
 }
-
-
-
 
 .texto {
   font-size: 2.2vh;
@@ -266,29 +267,21 @@ body {
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
-.listaPrin{
-  padding: 0; 
-  margin: 0;
+.listaPrin {
+  align-self: flex-start;
+  text-align: left;
+ margin-left: 1vh;
   color: rgb(186, 186, 186);
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
-.listaPrin li{
-  
+.listaPrin li {
+  list-style: none;
   font-weight: normal;
   font-size: 2.2vh;
   text-indent: -2vh;
   list-style-position: inside;
   text-align: left;
-  margin-left: -5vh;
-  
-  }
-
-.iconoBotones {
-  width: 1.8vw;
-  height: 3vh;
-  margin-left: 0.5vw;
-  vertical-align: middle;
 }
 
 
@@ -306,7 +299,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
   left: 8.1vh;
-  bottom: 3.1vh;
+  bottom: 2.9vh;
   z-index: 1;
 }
 
@@ -318,9 +311,6 @@ body {
   color: white;
 }
 
-
-
-
 .precio {
   display: flex;
   align-items: center;
@@ -330,21 +320,10 @@ body {
   margin: 0 1vh;
   border-radius: 2vh;
   width: calc(63% - 1.5vh);
-  height: 5.3vh;
+  height: 5vh;
   position: relative;
   margin-bottom: 2vh;
-}
-
-.precio p {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  font-size: 2.5vh;
-}
-
-.precio span {
-  font-size: 2.5vh;
-  margin-left: 2vh;
+  font-size: 2.7vh !important;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////*/
@@ -667,7 +646,6 @@ body {
   transition: background-color 0.4s ease;
   z-index: 1;
 }
-
 
 .itemPre:hover .tituloPre {
   opacity: 0;
@@ -1107,7 +1085,6 @@ body {
   position: relative;
 }
 
-
 .sliderInstruc-container {
   display: flex;
   justify-content: center;
@@ -1115,13 +1092,13 @@ body {
   height: 60vh;
   background: rgba(28, 28, 28, 0.7);
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), inset 0 -4px 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5),
+    inset 0 -4px 10px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   overflow: hidden;
   position: relative;
   text-align: center;
 }
-
 
 .sliderInstruc-content {
   display: flex;
@@ -1135,9 +1112,9 @@ body {
 
 .sliderInstruc-content p {
   display: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
+  color: #d3d3d3;
+  font-size: 3vh;
+ 
   text-align: center;
 }
 
@@ -1153,7 +1130,7 @@ body {
 
 .dotInstruc {
   width: 3vh;
-  height:1vh;
+  height: 1vh;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5vh;
   margin: 0 1vh;
