@@ -201,7 +201,7 @@ body {
 
 .contenedorBtn {
   background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
-  border: 0.1vh solid rgba(255, 255, 255, 0.2);
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,6 +213,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
+  backdrop-filter: blur(5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
@@ -229,7 +230,7 @@ body {
   background-size: 100% 100%;
   background-position: center;
   overflow: hidden;
-  border-bottom: 0.1vh solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
   background-repeat: no-repeat;
@@ -596,27 +597,29 @@ body {
   background-position: center;
   color: #d3d3d3;
   overflow: hidden;
-  border-radius: 2vh;
+  border-radius: 0.8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 0.2vh solid rgba(200, 200, 200, 0.3);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .tituloPre {
   font-size: 3.8vh;
   font-weight: bold;
   position: relative;
-  color: #d3d3d3;
+  color: whitesmoke;
   z-index: 2;
   transition: opacity 0.3s ease;
   display: inline-block;
   text-align: center;
   margin: auto;
+  width: 100%;
+  backdrop-filter: blur(2px);
   padding: 1vh 1.5vh 1vh 1.5vh;
-  background-color: rgba(51, 51, 51, 0.5);
-  border-radius: 2vh;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 0.5vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
@@ -678,7 +681,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: -1;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .pagCentral p {
@@ -722,7 +725,7 @@ body {
   width: 35vh;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.8),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
-
+  backdrop-filter: blur(5px);
   transform-style: preserve-3d;
   transition: transform 0.75s, box-shadow 0.5s;
   margin-left: 2.8vh;
