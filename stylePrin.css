@@ -64,6 +64,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
+.paypal{
+  width: 12vh;
+  height: auto;
+}
+
+
 .logo img {
   height: 7vh;
   object-fit: contain;
@@ -288,7 +294,7 @@ body {
 
 
 .botonCompra {
-  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
   display: inline-block;
   border-radius: 1vh;
   padding: 1vh 2vh;
@@ -300,13 +306,14 @@ body {
   transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 8.1vh;
+  left: 8.5vh;
   bottom: 2.9vh;
   z-index: 1;
 }
 
 .botonCompra:hover {
-  background: linear-gradient(135deg, #1e64cc 0%, #3a54d5 100%);
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
   outline: 0.3vh solid #2979ff;
   outline-offset: 0.7vh;
@@ -321,7 +328,7 @@ body {
   padding: 1vh 1vh;
   margin: 0 1vh;
   border-radius: 2vh;
-  width: calc(63% - 1.5vh);
+  width: calc(63% - 2.5vh);
   height: 5vh;
   position: relative;
   margin-bottom: 2vh;
@@ -427,7 +434,7 @@ body {
   height: 70vh;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  background: rgb(51, 51, 51);
+  background: linear-gradient(to bottom right, rgb(55, 55, 55), rgb(41, 41, 41));
   animation: slideIn 1s ease-out;
 }
 
@@ -457,7 +464,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(51, 51, 51);
+  background: transparent;
+
   color: #e0e0e0;
   border-radius: 0 20px 20px 0;
   text-align: center;
