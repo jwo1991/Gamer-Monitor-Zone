@@ -77,6 +77,7 @@ body {
 .linksSup {
   display: flex;
   gap: 10vh;
+  padding-top: 2vh;
 }
 
 .linksSup a {
@@ -206,7 +207,8 @@ body {
 
 .contenedorBtn {
   background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,32 +294,30 @@ body {
   list-style-position: inside;
   text-align: left;
 }
-
+/*/////////////////////////////////////////////////////////////////////////////*/
 .botonCompra {
-  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
   display: inline-block;
-  border-radius: 1vh;
-  padding: 1vh 2vh;
-  color: #d3d3d3;
+  border-radius: 1.5vh;
+  padding: 0.85vh 2vh;
+  color: #e3f2fd;
   font-size: 2.5vh;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   text-align: center;
-  transition: all 0.3s ease-in-out, outline 0.3s ease-in-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 8.5vh;
+  left: 8.3vh;
   bottom: 2.9vh;
   z-index: 1;
 }
 
 .botonCompra:hover {
-  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
-  outline: 0.3vh solid #2979ff;
-  outline-offset: 0.7vh;
-  color: white;
+  background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 .precio {
@@ -457,6 +457,7 @@ body {
   background-repeat: no-repeat;
   background-size: 46% 100%;
   background-position-x: 10%;
+ margin-bottom: 5vh;
 }
 
 .slidePre {
@@ -478,7 +479,7 @@ body {
   transition: transform 1s ease;
   margin-bottom: 17vh;
   margin-left: 0vw;
-  animation: grow 1s ease-out; /* Añadir animación */
+  animation: grow 1s ease-out;
 }
 
 /* Definir la animación */
@@ -510,7 +511,7 @@ body {
   font-size: 2.7vw;
   margin-bottom: 1vh;
   font-weight: bold;
-  color: #2196f3;
+  color: #d3d3d3;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
@@ -528,7 +529,7 @@ body {
   padding-bottom: 1.6vh;
   padding-left: 2vh;
   padding-right: 2vh;
-   transition: transform 0.75s, box-shadow 0.5s;
+  transition: transform 0.75s, box-shadow 0.5s;
   margin-left: 2.8vh;
   text-align: center;
   font-weight: 500;
@@ -658,13 +659,40 @@ body {
   background-position: center;
   color: #d3d3d3;
   overflow: hidden;
-  border-radius: 0.8vh;
+  border-radius: 1vh;
   display: flex;
   margin-top: 2vh;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+  
+  box-shadow: 
+    inset 0 0 8px rgba(255, 255, 255, 0.4), 
+    inset 0 0 8px rgba(0, 0, 0, 0.2), 
+    0 8px 20px rgba(0, 0, 0, 0.5);
+    
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  transform: scale3d(1, 1, 1);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.itemPre:hover {
+  transform: scale3d(1.05, 1.05, 1.1);
+  box-shadow: 
+    inset 0 0 10px rgba(255, 255, 255, 0.5), 
+    inset 0 0 10px rgba(0, 0, 0, 0.25), 
+    0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.itemPre:active {
+  transform: scale3d(0.98, 0.98, 1);
+  box-shadow: 
+    inset 0 0 6px rgba(255, 255, 255, 0.3), 
+    inset 0 0 6px rgba(0, 0, 0, 0.2), 
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 .tituloPre {
   font-size: 3.4vh;
@@ -736,7 +764,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-weight: bold;
- background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
+  background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,7 +777,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   backdrop-filter: blur(4px) brightness(0.85);
   z-index: -1;
 }
@@ -805,11 +833,11 @@ body {
 }
 
 .item:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   backface-visibility: hidden;
   will-change: transform;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+    inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .item p {
