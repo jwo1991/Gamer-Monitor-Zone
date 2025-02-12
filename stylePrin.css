@@ -64,11 +64,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
-.paypal{
+.paypal {
   width: 12vh;
   height: auto;
 }
-
 
 .logo img {
   height: 7vh;
@@ -220,15 +219,16 @@ body {
   box-sizing: border-box;
   position: relative;
   backdrop-filter: blur(5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
 
 .contenedorBtn:hover {
   background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 50%, #3a3a3a 100%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15),
+    0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .imagenFondo {
   width: 100%;
@@ -236,7 +236,8 @@ body {
   background-size: 100% 100%;
   background-position: center;
   overflow: hidden;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
   background-repeat: no-repeat;
@@ -278,7 +279,7 @@ body {
 .listaPrin {
   align-self: flex-start;
   text-align: left;
- margin-left: 1vh;
+  margin-left: 1vh;
   color: rgb(186, 186, 186);
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
@@ -292,9 +293,8 @@ body {
   text-align: left;
 }
 
-
 .botonCompra {
-  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
   display: inline-block;
   border-radius: 1vh;
   padding: 1vh 2vh;
@@ -312,7 +312,7 @@ body {
 }
 
 .botonCompra:hover {
-  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
   outline: 0.3vh solid #2979ff;
@@ -416,8 +416,9 @@ body {
   overflow: hidden;
   position: relative;
   margin-top: 100vh;
-  padding-top: 20vh;
-
+  padding-top: 40vh;
+  background-image: url(img/fondoInfo.jpg);
+  background-size: 100% 100%;
 }
 
 .sliderPre {
@@ -426,7 +427,6 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
- 
 }
 
 .sliderPre-images {
@@ -435,13 +435,16 @@ body {
   width: 100vw;
   height: 70vh;
   position: relative;
-  background: linear-gradient(to bottom right, rgb(55, 55, 55), rgb(41, 41, 41));
+  background: linear-gradient(
+    to bottom right,
+    rgb(55, 55, 55),
+    rgb(41, 41, 41)
+  );
   animation: slideIn 1s ease-out;
   background-image: url(img/monitorFondo.png);
   background-repeat: no-repeat;
-  background-size: 46% 100% ;
- background-position-x: 10%;
-
+  background-size: 46% 100%;
+  background-position-x: 10%;
 }
 
 .slidePre {
@@ -451,7 +454,6 @@ body {
   height: 100%;
   transition: transform 0.8s ease-in-out;
   padding-left: 5vh;
-  
 }
 
 .imagePre {
@@ -470,13 +472,12 @@ body {
 /* Definir la animación */
 @keyframes grow {
   0% {
-    transform: scale(0.3); 
+    transform: scale(0.3);
   }
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
 }
-
 
 .titlePre {
   flex: 2;
@@ -486,7 +487,7 @@ body {
   justify-content: center;
   align-items: center;
   background: transparent;
-margin-top: -20vh;
+  margin-top: -20vh;
   color: #e0e0e0;
   border-radius: 0 20px 20px 0;
   text-align: center;
@@ -497,35 +498,30 @@ margin-top: -20vh;
   font-size: 2.7vw;
   margin-bottom: 1vh;
   font-weight: bold;
- color: #2196f3;
+  color: #2196f3;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 .titlePre p {
   font-size: 1.5vw;
   line-height: 1.6;
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
   border-radius: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-padding-top: 1.6vh;
-padding-bottom: 1.6vh;
-padding-left: 2vh;
-padding-right: 2vh;
-  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-  transition: transform 0.75s, box-shadow 0.5s;
+  padding-top: 1.6vh;
+  padding-bottom: 1.6vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+   transition: transform 0.75s, box-shadow 0.5s;
   margin-left: 2.8vh;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 500;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
-
 
 .sliderPre-controls {
   display: flex;
@@ -656,7 +652,6 @@ padding-right: 2vh;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 .tituloPre {
@@ -729,14 +724,11 @@ padding-right: 2vh;
   width: 100vw;
   height: 100vh;
   font-weight: bold;
- /* background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);*/
- background-image: url(img/fondoCentral.jpg);
-  background-size: 100% 100%;
+ background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
-
 }
 .pagCentral::before {
   content: "";
@@ -745,11 +737,10 @@ padding-right: 2vh;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px) brightness(0.75);
   z-index: -1;
 }
-
 
 .pagCentral p {
   font-size: 7vh;
@@ -1185,7 +1176,7 @@ padding-right: 2vh;
   display: none;
   color: #d3d3d3;
   font-size: 3vh;
- 
+
   text-align: center;
 }
 
