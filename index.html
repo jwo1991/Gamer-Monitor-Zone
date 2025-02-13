@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
       <link rel="stylesheet" href="stylePrin.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Audiowide&display=swap"
       rel="stylesheet"
     />
+    
     <script>
       if (window.innerWidth <= 719) {
         window.location.href = "mobile.html";
@@ -37,14 +38,21 @@
     </div>
 <div class="negro">
     <div class="tiraSuperior">
+      <div class="fondoVideo"></div>
+      <video class="videoPrin" autoplay loop muted playsinline>
+        <source src="video/videoPrin.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+   
+
       <div class="contenedorTitulo">
         <div class="leftTitulo">
           <div class="contenedorTextoSup">
-            <div class="titulo">GAMER MONITOR ZONE</div>
+            <div class="titulo">GAMER<br><span>MONITOR ZONE&trade;</span></div>
             <p class="tituloMediano">
               ENHANCE EFFICIENCY WITH AN ALL-IN-ONE SOLUTION THAT UNIFIES
             </p>
-            <br />
+            
             <p class="tituloMediano">
               DISPLAY CONTROL &middot; SYSTEM MONITORING &middot; GAME LAUNCHER
             </p>
@@ -52,16 +60,9 @@
         </div>
         <div class="rightTitulo">
           <div class="contenedorBotones">
-            <div class="contenedorBtn">
-              <div class="imagenFondo">
-                <video class="videoFondo" autoplay loop muted>
-                  <source src="video/miniatura1-2.mp4" type="video/mp4">
-                </video>
-                <img class="imagenDeFondo" src="img/boton12.jpg">
-              </div>
-            
-            
-              <p class="texto">Get your license today!</p>
+            <div class="contenedorBtn" style="background-image: url(img/boton12.jpg);">
+        
+                <p class="texto">Try it free today</p>
               <div class="listaPrin">
               <ul>
                 <li>- Take Control!</li><br>
@@ -69,19 +70,14 @@
               </ul>
               </div>
               <button class="botonCompra" onclick="abrirPopup()">
-                <span>&nbsp;&nbsp;&nbsp;GMZ&nbsp;&nbsp;&nbsp;</span>
+                <span>Download now</span>
               
               </button>
-              <p class="precio">Free</p>
+              <p class="precio">Windows 11<br>Windows 10</p>
             </div>
           
-            <div class="contenedorBtn">
-              <div class="imagenFondo">
-                <video class="videoFondo" autoplay loop muted>
-                  <source src="video/miniatura2.mp4" type="video/mp4">
-                </video>
-                <img class="imagenDeFondo" src="img/fileTest.png">
-              </div>
+            <div class="contenedorBtn" style="background-image: url(img/fileTest.png);">
+              
               <p class="texto">Compatibility Test Tool</p>
               <div class="listaPrin">
               <ul>
@@ -90,16 +86,14 @@
               </ul>
               </div>
               <button class="botonCompra">
-                <span>DDC Test</span>
+                <span>DDC Test Tool</span>
               
               </button>
-              <p class="precio">Free</p>
+              <p class="precio">Windows 11<br>Windows 10</p>
             </div>
           
             <div class="contenedorBtn">
-              <div class="imagenFondo" style="background-image: url('img/movil2.png');">
-                
-              </div>
+            
               <p class="texto">Android App Control</p>
               <div class="listaPrin">
               <ul >
@@ -108,10 +102,10 @@
               </ul>
             </div>
               <button class="botonCompra">
-                <span>Play Store</span>
+                <span>&nbsp;&nbsp;Play Store&nbsp;&nbsp;</span>
                
               </button>
-              <p class="precio">Free</p>
+              <p class="precio">Android 8<br>Android 14</p>
             </div>
           </div>
           
@@ -121,9 +115,7 @@
       </div>
     </div>
     
-    
-    
-    
+           
      
 
     <div class="parallax-section">
@@ -270,7 +262,7 @@
     
     
   <div class="parallax-section">
-    <div class="featuresCss">
+    <div class="features2">
       <p>Discover More Features</p>
     </div>
   
@@ -748,6 +740,8 @@ document.querySelector('.ddcpop-overlay').addEventListener('click', () => {
     activateSlide(0);
   });
   </script>
+
+  
 
 </body>
 
