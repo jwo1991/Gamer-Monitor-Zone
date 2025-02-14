@@ -101,14 +101,13 @@ body {
   height: 100vh;
 }
 
-
 .videoPrin {
   position: relative;
   width: 100vw;
-  max-height:  100vh;
-  object-fit: contain;
+  max-height: 100vh;
+  object-fit: cover;
   filter: brightness(45%);
-z-index: 0;
+  z-index: 0;
 }
 
 .fondoVideo {
@@ -117,10 +116,9 @@ z-index: 0;
   width: 100vw;
   height: 30%;
   background-size: contain;
-margin-top: 30vh;
+  margin-top: 80vh;
   z-index: 1;
 }
-
 
 .contenedorTextoSup {
   position: relative;
@@ -142,7 +140,7 @@ margin-top: 30vh;
   width: 100vw;
   height: auto;
   overflow: hidden;
-  margin-top: -55vh;
+  margin-top: -89vh;
 }
 
 .leftTitulo {
@@ -156,19 +154,47 @@ margin-top: 30vh;
 
 .rightTitulo {
   width: 100%;
+  min-height: 70vh;
   padding: 10px;
   position: relative;
   overflow: hidden;
-  margin-top: 15vh;
+  margin-top: 45vh;
 }
 
 .rightTitulo p {
   font-size: 3vh;
 }
 
-.titulo {
-  font-size: 13vh;
+.tituloContenedorBotones {
+  font-size: 5.3vh !important;
   font-weight: bold;
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  position: relative;
+}
+
+.tituloContenedorBotones::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: #2196f3;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 1px;
+  box-shadow: 0 0 8px 2px rgba(33, 150, 243, 0.8),
+    0 0 15px 5px rgba(33, 150, 243, 0.5), 0 0 25px rgba(33, 150, 243, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.tituloContenedorBotones span {
+  color: #2196f3;
+}
+
+.titulo {
+  font-size: 16vh;
+  font-weight: normal;
   text-align: left;
   color: #2196f3;
   font-family: "Audiowide";
@@ -179,7 +205,7 @@ margin-top: 30vh;
 }
 
 .titulo span {
-  font-size: 9vh;
+  font-size: 12vh;
   font-family: "Roboto";
   color: #d3d3d3;
   text-shadow: 4px 4px 8px black;
@@ -187,7 +213,7 @@ margin-top: 30vh;
 }
 
 .tituloMediano {
-  font-size: 2.3vh;
+  font-size: 3vh;
   position: relative;
   top: 3vh;
   left: 0;
@@ -213,13 +239,13 @@ margin-top: 30vh;
 .contenedorBotones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15vh;
-  width: 90vh;
+  gap: 8vh;
+  width: 100%;
   height: auto;
   justify-items: center;
-  align-items: start;
+  align-items: center; /* Centrado vertical y horizontal */
   position: relative;
-  margin-left: 17vh;
+  margin-top: 20vh;
 }
 
 .contenedorBtn {
@@ -231,8 +257,8 @@ margin-top: 30vh;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 30vh;
-  width: 45vh;
+  height: 37vh;
+  width: 53vh;
   padding: 0;
   overflow: hidden;
   box-sizing: border-box;
@@ -262,7 +288,7 @@ margin-top: 30vh;
 }
 
 .texto {
-  font-size: 2.2vh;
+  font-size: 2.7vh;
   color: rgb(240, 240, 240);
   margin: 1vh 0;
   text-align: center;
@@ -281,7 +307,7 @@ margin-top: 30vh;
 .listaPrin li {
   list-style: none;
   font-weight: bold;
-  font-size: 2.7vh;
+  font-size: 3vh;
   text-indent: -2vh;
   list-style-position: inside;
   text-align: left;
@@ -294,7 +320,7 @@ margin-top: 30vh;
   border-radius: 3px;
   padding: 0.85vh 2vh;
   color: #e3f2fd;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -326,7 +352,7 @@ margin-top: 30vh;
   height: 4vh;
   position: relative;
   margin-bottom: 2vh;
-  font-size: 1.3vh !important;
+  font-size: 1.6vh !important;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////*/
@@ -608,7 +634,7 @@ margin-top: 30vh;
 /*//////////////////////////INFO MMM//////////////////////////////////////*/
 
 .featuresCss {
-  margin-top: 30vh;
+  margin-top: 120vh;
 }
 
 .featuresCss p {
@@ -628,7 +654,9 @@ margin-top: 30vh;
   bottom: -10px;
   left: 0;
   border-radius: 1px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px 2px rgba(33, 150, 243, 0.8),
+    0 0 15px 5px rgba(33, 150, 243, 0.5), 0 0 25px rgba(33, 150, 243, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .features2 {
@@ -652,7 +680,35 @@ margin-top: 30vh;
   bottom: -10px;
   left: 0;
   border-radius: 1px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px 2px rgba(33, 150, 243, 0.8),
+    0 0 15px 5px rgba(33, 150, 243, 0.5), 0 0 25px rgba(33, 150, 243, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.features3 {
+  margin-top: 10vh;
+}
+
+.features3 p {
+  font-size: 8vh;
+  color: #d3d3d3;
+  display: inline-block;
+  position: relative;
+}
+
+.features3 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 1px;
+  box-shadow: 0 0 8px 2px rgba(33, 150, 243, 0.8),
+    0 0 15px 5px rgba(33, 150, 243, 0.5), 0 0 25px rgba(33, 150, 243, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .gridPre {
@@ -682,27 +738,16 @@ margin-top: 30vh;
   margin-top: 2vh;
   justify-content: center;
   align-items: center;
-
-  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.4),
-    inset 0 0 8px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.5);
-
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
+  border: 1px solid rgba(0, 0, 0, 0.4);
   transform: scale3d(1, 1, 1);
   transform-style: preserve-3d;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .itemPre:hover {
   transform: scale3d(1.05, 1.05, 1.1);
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5),
-    inset 0 0 10px rgba(0, 0, 0, 0.25), 0 8px 18px rgba(0, 0, 0, 0.35);
-}
-
-.itemPre:active {
-  transform: scale3d(0.98, 0.98, 1);
-  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3),
-    inset 0 0 6px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.9);
 }
 
 .tituloPre {
