@@ -238,7 +238,7 @@ body {
 .contenedorBotones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8vh;
+  gap: 3vh;
   width: 100%;
   height: auto;
   justify-items: center;
@@ -314,18 +314,21 @@ body {
 }
 /*/////////////////////////////////////////////////////////////////////////////*/
 .botonCompra {
-  background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+  background: transparent; 
+  backdrop-filter: blur(5px); 
   display: inline-block;
-  border-radius: 3px;
+  
   padding: 0.85vh 2vh;
-  color: #e3f2fd;
   font-size: 3vh;
   font-weight: bold;
-  border: none;
+  color: #d3d3d3;
+  border: 3px solid;
+  border-image-source: linear-gradient(135deg, #00e1ff, #e600a9);
+  border-image-slice: 1;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #00e1ff, 0 0 20px #c400ff;
   position: absolute;
   left: 10vh;
   bottom: 2.9vh;
@@ -333,10 +336,12 @@ body {
 }
 
 .botonCompra:hover {
-  background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-image-source: linear-gradient(135deg, #007bff, #a10087);
+  box-shadow: 0 0 10px #007bff, 0 0 20px #a10087;
   color: #ffffff;
 }
+
+
 
 .precio {
   display: flex;
