@@ -83,8 +83,6 @@ body {
   height: auto;
 }
 
-
-
 .logo img {
   height: 7vh;
   object-fit: contain;
@@ -101,7 +99,7 @@ body {
   color: #d3d3d3;
   font-size: 2vh;
   transition: all 0.3s ease;
-   margin-right: 13vh;
+  margin-right: 13vh;
   position: relative;
 }
 
@@ -115,7 +113,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 1vh; 
+  bottom: 1vh;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, #00e1ff, #c400ff);
@@ -128,7 +126,6 @@ body {
   transform: scaleX(1);
   transform-origin: left;
 }
-
 
 .tiraSuperior {
   width: 100vw;
@@ -297,10 +294,11 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15), inset 0 4px 8px rgba(255, 255, 255, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15),
+    inset 0 4px 8px rgba(255, 255, 255, 0.1),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
-
 
 .imagenFondo {
   width: 100%;
@@ -348,8 +346,8 @@ body {
 }
 /*/////////////////////////////////////////////////////////////////////////////*/
 .botonCompra {
-  background: transparent; 
-  backdrop-filter: blur(5px); 
+  background: transparent;
+  backdrop-filter: blur(5px);
   display: inline-block;
   padding: 0.85vh 2vh;
   font-size: 3vh;
@@ -374,8 +372,6 @@ body {
   color: #ffffff;
   background: linear-gradient(135deg, #00e1ff, #e600a9);
 }
-
-
 
 .precio {
   display: flex;
@@ -856,7 +852,13 @@ body {
   position: absolute;
   width: 150%;
   height: 150%;
-  background: radial-gradient(circle, rgba(33, 150, 243, 0.3), rgba(233, 30, 99, 0.4), rgba(255, 193, 7, 0.3), rgba(76, 175, 80, 0.3));
+  background: radial-gradient(
+    circle,
+    rgba(33, 150, 243, 0.3),
+    rgba(233, 30, 99, 0.4),
+    rgba(255, 193, 7, 0.3),
+    rgba(76, 175, 80, 0.3)
+  );
   filter: blur(120px);
   z-index: -1;
   animation: pulseBackground 6s infinite ease-in-out;
@@ -884,8 +886,6 @@ body {
     opacity: 0.7;
   }
 }
-
-
 
 .pagCentral p {
   font-size: 7vh;
@@ -919,7 +919,7 @@ body {
 }
 
 .item {
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
   border-radius: 5vh;
   display: flex;
   flex-direction: column;
@@ -927,7 +927,7 @@ body {
   justify-content: center;
   height: 25vh;
   width: 35vh;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.8),
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
@@ -941,8 +941,7 @@ body {
   transform: scale(1.02);
   backface-visibility: hidden;
   will-change: transform;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
-    inset 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .item p {
@@ -1375,11 +1374,11 @@ body {
 .winKeys {
   width: 20vw;
   height: auto;
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1407,6 +1406,7 @@ body {
 
 .winKeys:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .popup-win {
@@ -1485,11 +1485,11 @@ body {
 .rawg {
   width: 20vw;
   height: auto;
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1517,17 +1517,18 @@ body {
 
 .rawg:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
 .ddc {
   width: 20vw;
   height: auto;
-  background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1555,6 +1556,7 @@ body {
 
 .ddc:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .ddcpop-popup {
