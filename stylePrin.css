@@ -64,10 +64,26 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
+.paypalNada {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.paypalNada::after {
+  content: none !important;
+  background: transparent;
+  transform: none;
+}
+
 .paypal {
   width: 12vh;
   height: auto;
 }
+
+
 
 .logo img {
   height: 7vh;
@@ -84,17 +100,35 @@ body {
   text-decoration: none;
   color: #d3d3d3;
   font-size: 2vh;
-  transition: color 0.3s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  margin-right: 13vh;
+  transition: all 0.3s ease;
+   margin-right: 13vh;
+  position: relative;
 }
 
 .linksSup a:hover {
-  color: #2196f3;
+  color: #d3d3d3;
   font-weight: bold;
-  text-decoration-thickness: 1.5px;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  transform: scale(1.2);
 }
+
+.linksSup a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1vh; 
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00e1ff, #c400ff);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.linksSup a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 .tiraSuperior {
   width: 100vw;
@@ -200,7 +234,7 @@ body {
 }
 
 .titulo span {
-  font-size: 12vh;
+  font-size: 13vh;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   background: linear-gradient(90deg, #c400ff, #e600a9);
@@ -242,7 +276,7 @@ body {
   width: 100%;
   height: auto;
   justify-items: center;
-  align-items: center; /* Centrado vertical y horizontal */
+  align-items: center;
   position: relative;
   margin-top: 20vh;
 }
@@ -262,11 +296,10 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2),
-    0 3px 6px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15), inset 0 4px 8px rgba(255, 255, 255, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
+
 
 .imagenFondo {
   width: 100%;
@@ -287,7 +320,7 @@ body {
 }
 
 .texto {
-  font-size: 2.7vh;
+  font-size: 4vh !important;
   color: rgb(240, 240, 240);
   margin: 1vh 0;
   text-align: center;
@@ -317,7 +350,6 @@ body {
   background: transparent; 
   backdrop-filter: blur(5px); 
   display: inline-block;
-  
   padding: 0.85vh 2vh;
   font-size: 3vh;
   font-weight: bold;
@@ -330,7 +362,7 @@ body {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px #00e1ff, 0 0 20px #c400ff;
   position: absolute;
-  left: 10vh;
+  left: 12.5vh;
   bottom: 2.9vh;
   z-index: 1;
 }
@@ -339,6 +371,7 @@ body {
   border-image-source: linear-gradient(135deg, #007bff, #a10087);
   box-shadow: 0 0 10px #007bff, 0 0 20px #a10087;
   color: #ffffff;
+  background: linear-gradient(135deg, #00e1ff, #e600a9);
 }
 
 
@@ -348,9 +381,9 @@ body {
   align-items: center;
   justify-content: flex-end;
   background: transparent;
-  color: #d3d3d3;
+  color: rgb(150, 150, 150);
   padding: 1vh 1vh;
-  margin-left: 13vh;
+  margin-left: 18vh;
   border-radius: 2vh;
   width: calc(60% - 2.5vh);
   height: 4vh;
@@ -441,7 +474,7 @@ body {
   position: relative;
   margin-top: 100vh;
   padding-top: 40vh;
-  background-image: url(img/fondoInfo.jpg);
+  background-image: url(img/fondoMonitor2.jpg);
   background-size: 100% 100%;
   backdrop-filter: blur(4px);
 }
@@ -809,23 +842,39 @@ body {
   width: 100vw;
   height: 100vh;
   font-weight: bold;
-  background: linear-gradient(to right, #2196f3 0%, #e91e63 100%);
+  background: linear-gradient(90deg, #0d47a1, #1565c0, #ad1457, #880e4f);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
+  overflow: hidden;
 }
+
 .pagCentral::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  backdrop-filter: blur(4px) brightness(0.85);
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(33, 150, 243, 0.2), rgba(233, 30, 99, 0.3));
+  filter: blur(100px);
   z-index: -1;
+  animation: rotateBackground 8s infinite linear;
 }
+
+@keyframes rotateBackground {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
 
 .pagCentral p {
   font-size: 7vh;
