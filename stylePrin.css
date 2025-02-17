@@ -198,7 +198,7 @@ body {
 }
 
 .tituloContenedorBotones {
-  font-size: 8vh !important;
+  font-size: 6vh !important;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -672,7 +672,7 @@ body {
 }
 
 .featuresCss p {
-  font-size: 8vh;
+  font-size: 6vh;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -693,7 +693,7 @@ body {
 }
 
 .features2 p {
-  font-size: 8vh;
+  font-size: 6vh;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -714,7 +714,7 @@ body {
 }
 
 .features3 p {
-  font-size: 8vh;
+  font-size: 6vh;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -927,8 +927,8 @@ body {
   justify-content: center;
   height: 25vh;
   width: 35vh;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
   transition: transform 0.75s, box-shadow 0.5s;
@@ -941,7 +941,7 @@ body {
   transform: scale(1.02);
   backface-visibility: hidden;
   will-change: transform;
-  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .item p {
@@ -1378,8 +1378,8 @@ body {
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5);   
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -1406,7 +1406,7 @@ body {
 
 .winKeys:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .popup-win {
@@ -1489,8 +1489,8 @@ body {
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5); 
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -1517,7 +1517,7 @@ body {
 
 .rawg:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -1528,8 +1528,8 @@ body {
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.8),
-    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5);  
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -1556,7 +1556,7 @@ body {
 
 .ddc:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(33, 150, 243, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .ddcpop-popup {
