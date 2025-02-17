@@ -294,10 +294,10 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15),
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
     inset 0 4px 8px rgba(255, 255, 255, 0.1),
     inset 0 -4px 8px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .imagenFondo {
