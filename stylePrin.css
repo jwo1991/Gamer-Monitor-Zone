@@ -653,16 +653,16 @@ body {
 
 /*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
 .contenedorComp {
-  background: rgba(30, 30,30, 0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
-  inset 0 4px 8px rgba(255, 255, 255, 0.1),
-  inset 0 -4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5); 
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  transform-style: preserve-3d;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 15vh;
@@ -1172,22 +1172,23 @@ body {
 }
 
 .formulario form {
-  background-color: #d3d3d3;
+  background: linear-gradient(to right, rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.8));
+
   padding: 2vh;
   border-radius: 2vh;
   width: 50vh;
   text-align: left;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
-    inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1),
+  inset 0 -1px 1px rgba(0, 0, 0, 0.3),
+  inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
   transform-style: preserve-3d;
   color: rgb(28, 28, 28);
 }
 
 .formulario form label {
-  font-size: 2vh;
-  color: rgb(28, 28, 28);
-  font-weight: bold;
+  font-size: 2.7vh;
+  color: rgb(220,220,220);
+  font-weight: normal;
 }
 
 .formulario input[type="text"],
@@ -1196,9 +1197,9 @@ body {
   padding: 1vh;
   margin-top: 1vh;
   border: none;
-  background-color: rgba(156, 154, 154, 0.5);
+  background-color: rgba(156, 154, 154, 0.2);
   border-radius: 2vh;
-  color: rgb(28, 28, 28);
+  color: rgb(220,220,220);
   font-size: 2vh;
 }
 
@@ -1248,7 +1249,7 @@ body {
 
 .formulario p {
   font-size: 1.3vh;
-  color: rgb(100, 100, 100);
+  color: rgb(200,200,200);
 }
 
 /*//////////////////////////////////////////////////////////*/
@@ -1279,14 +1280,15 @@ body {
 }
 
 .compDiv2 {
-  background: rgba(30, 30,30, 0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
-              inset 0 4px 8px rgba(255, 255, 255, 0.1),
-              inset 0 -4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
+  inset 0 0 10px rgba(0, 0, 0, 0.5); 
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
   border-radius: 1vh;
   text-align: left;
+  transform-style: preserve-3d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background-size: 100% 100%;
   transition: transform 0.3s, box-shadow 0.3s, all 0.3s ease-in-out;
 }
