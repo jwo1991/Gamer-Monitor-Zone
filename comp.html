@@ -19,24 +19,25 @@
     <title>Gamer Monitor Zone</title>
   </head>
   <body class="bodyComp">
-    <div class="barraSuperior">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/gmz.png" />
-        </a>
+   
+      <div class="barraSuperior">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/gmz.png" />
+          </a>
+        </div>
+        <nav class="linksSup">
+          <a href="comp.html">Compatibility</a>
+          <a href="#about">About</a>
+          <a href="#" id="openForm">Support</a>
+          <a href="#licenses">Licenses</a>
+          <a class="paypalNada" href=""
+            ><img class="paypal" src="img/paypal.png"
+          /></a>
+        </nav>
       </div>
-      <nav class="linksSup">
-        <a href="comp.html">Compatibility</a>
-        <a href="#about">About</a>
-        <a href="#" id="openForm">Support</a>
-        <a href="#licenses">Licenses</a>
-        <a class="paypalNada" href=""
-          ><img class="paypal" src="img/paypal.png"
-        /></a>
-      </nav>
-    </div>
-    <canvas id="canvas"></canvas>
-    <div id="bg_glow">
+      <canvas id="canvas"></canvas>
+      <div id="bg_glow">
       <fieldset id="comp" class="fieldset-comp">
         <div id="parrafosNoInicio">
           <div class="compDiv2">
@@ -54,6 +55,11 @@
             (Windows 10 or higher) and requires a 64-bit version for optimal
             performance. The tool is not compatible with macOS or Linux.
           </div>
+
+          <div class="compDiv2">
+            <strong>Internet Connection:</strong> Required to download game metadata and update news from RSS channels.
+          </div>
+          
 
           <div class="compDiv2">
             <strong>Driver Updates:</strong> Ensure your graphics drivers are up
@@ -76,15 +82,9 @@
           </div>
 
           <div class="compDiv2">
-            <strong>Known Limitations:</strong> In rare cases, changes may fail
-            or result in an error. If this occurs, restart the tool or attempt
-            the action again. These failures are often due to external processes
-            or slight delays in monitor communication. To mitigate communication
-            issues, each command sent to the monitor includes a brief delay when
-            multiple adjustments are made, preventing the communication channel
-            from becoming overwhelmed. May not function correctly if other
-            system monitoring tools are running simultaneously.
+            <strong>Known Limitations:</strong> May not function correctly if other system monitoring tools are running simultaneously.
           </div>
+          
         </div>
       </fieldset>
 
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class="separadorFinal">&nbsp;</div>
-  </div>
+
       <div class="formulario" id="formulario">
         <form action="https://formspree.io/f/mqkrrkak" method="POST">
           <h2>Contact Us</h2>
@@ -118,7 +118,7 @@
           </p>
         </form>
       </div>
-  
+    </div>
     <script>
       document
         .getElementById("openForm")
@@ -132,92 +132,75 @@
       });
     </script>
 
-    <script>
-      var canvas = document.getElementById("canvas");
-      var ctx = canvas.getContext("2d");
 
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+<script>
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
 
-      window.onresize = function () {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        dots = [];
-        pushDots();
-      };
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 
-      let dots = [];
-      let maxDots = 50;
-      let maxWidth = 15;
-      let minWidth = 2;
-      let maxHeight = canvas.height * 0.9;
-      let minHeight = canvas.height * 0.5;
-      let maxSpeed = 20;
-      let minSpeed = 6;
-      let glow = 10;
+  window.onresize = function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    dots = [];
+    pushDots();
+  };
 
-      function pushDots() {
-        for (let i = 0; i < maxDots; i++) {
-          dots.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            h: Math.random() * (maxHeight - minHeight) + minHeight,
-            w: Math.random() * (maxWidth - minWidth) + minWidth,
-            color: Math.random() > 0.5 ? "#00e1ff" : "#c400ff",
-            m: Math.random() * (maxSpeed - minSpeed) + minSpeed,
-          });
-        }
+  let dots = [];
+  let maxDots = 50; // Menor cantidad de elementos
+  let maxWidth = 15;
+  let minWidth = 2;
+  let maxHeight = canvas.height * 0.9;
+  let minHeight = canvas.height * 0.5;
+  let maxSpeed = 15;
+  let minSpeed = 3;
+  let glow = 10;
+
+  function pushDots() {
+    for (let i = 0; i < maxDots; i++) {
+      dots.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        h: Math.random() * (maxHeight - minHeight) + minHeight,
+        w: Math.random() * (maxWidth - minWidth) + minWidth,
+        color: Math.random() > 0.5 ? "#00e1ff" : "#c400ff",
+        m: Math.random() * (maxSpeed - minSpeed) + minSpeed,
+      });
+    }
+  }
+  pushDots();
+
+  function render() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < dots.length; i++) {
+      ctx.beginPath();
+      let grd = ctx.createLinearGradient(
+        dots[i].x,
+        dots[i].y,
+        dots[i].x + dots[i].w,
+        dots[i].y + dots[i].h
+      );
+      grd.addColorStop(0.0, dots[i].color);
+      grd.addColorStop(1.0, dots[i].color);
+
+      ctx.shadowBlur = glow;
+      ctx.shadowColor = dots[i].color;
+      ctx.fillStyle = grd;
+      ctx.fillRect(dots[i].x, dots[i].y, dots[i].w, dots[i].h);
+      ctx.closePath();
+
+      dots[i].x += dots[i].m / 100;
+      if (dots[i].x > canvas.width + maxWidth) {
+        dots[i].x = -maxWidth;
       }
-      pushDots();
+    }
+    window.requestAnimationFrame(render);
+  }
 
-      ctx.roundRect = function (x, y, width, height, radius) {
-        ctx.beginPath();
-        ctx.moveTo(x + radius, y);
-        ctx.lineTo(x + width - radius, y);
-        ctx.arcTo(x + width, y, x + width, y + height, radius);
-        ctx.lineTo(x + width, y + height - radius);
-        ctx.arcTo(
-          x + width,
-          y + height,
-          x + width - radius,
-          y + height,
-          radius
-        );
-        ctx.lineTo(x + radius, y + height);
-        ctx.arcTo(x, y + height, x, y + height - radius, radius);
-        ctx.lineTo(x, y + radius);
-        ctx.arcTo(x, y, x + radius, y, radius);
-        ctx.closePath();
-      };
+  render();
+</script>
 
-      function render() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (let i = 0; i < dots.length; i++) {
-          let grd = ctx.createLinearGradient(
-            dots[i].x,
-            dots[i].y,
-            dots[i].x + dots[i].w,
-            dots[i].y + dots[i].h
-          );
-          grd.addColorStop(0.0, dots[i].color);
-          grd.addColorStop(1.0, dots[i].color);
 
-          ctx.shadowBlur = glow;
-          ctx.shadowColor = dots[i].color;
-          ctx.fillStyle = grd;
-
-          ctx.roundRect(dots[i].x, dots[i].y, dots[i].w, dots[i].h, 3);
-          ctx.fill();
-
-          dots[i].x += dots[i].m / 100;
-          if (dots[i].x > canvas.width + maxWidth) {
-            dots[i].x = -maxWidth;
-          }
-        }
-        window.requestAnimationFrame(render);
-      }
-
-      render();
-    </script>
   </body>
 </html>
