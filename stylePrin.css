@@ -693,11 +693,21 @@ body {
 
 .columnComp {
   width: 45%;
+  text-align: left;
+}
+
+.columnComp strong{
+color: #2196f3;
+}
+
+.columnComp ul{
+
+  list-style: none;
 }
 
 .columnComp p {
-  font-size: 3.5vh;
-  margin-top: 15vh;
+  font-size: 2vh;
+
   margin-right: 3vh;
 }
 
