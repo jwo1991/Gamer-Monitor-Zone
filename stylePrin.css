@@ -77,13 +77,15 @@ body {
   justify-content: space-between;
   padding: 0 5vh;
   box-sizing: border-box;
-  background: linear-gradient(to right, rgb(4, 4, 4), rgb(10, 10, 10));
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(8px); 
   width: 100vw;
-  height: 7vh;
+  height: 8vh;
   z-index: 999;
   position: fixed;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
+
 
 .paypalNada {
   text-decoration: none;
@@ -118,10 +120,11 @@ body {
 .linksSup a {
   text-decoration: none;
   color: #d3d3d3;
-  font-size: 2vh;
+  font-size: 2.4vh;
   transition: all 0.3s ease;
   margin-right: 13vh;
   position: relative;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .linksSup a:hover {
@@ -292,16 +295,26 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3vh;
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 50vh;
   justify-items: center;
   align-items: center;
   position: relative;
   margin-top: 20vh;
+  margin-left: 5vh;
+  border-radius: 3vh;
+  background: linear-gradient(145deg, rgb(40, 40, 40), rgb(30, 30, 30));
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
 }
 
+.contenedorBotones:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7), inset 0 3px 6px rgba(255, 255, 255, 0.08);
+}
+
+
 .contenedorBtn {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background-size: 100% 100%;
   border-radius: 1vh;
   display: flex;
@@ -577,9 +590,10 @@ body {
   background: transparent;
   margin-top: -20vh;
   color: #e0e0e0;
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px 20px 0px 0px;
   text-align: center;
   margin-left: 2.5vh;
+
 }
 
 .titlePre h2 {
@@ -653,16 +667,16 @@ body {
 
 /*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
 .contenedorComp {
-  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5); 
+  background: rgba(30, 30,30, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
+  inset 0 4px 8px rgba(255, 255, 255, 0.1),
+  inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  transform-style: preserve-3d;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 15vh;
@@ -1172,23 +1186,22 @@ body {
 }
 
 .formulario form {
-  background: linear-gradient(to right, rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.8));
-
+  background-color: #d3d3d3;
   padding: 2vh;
   border-radius: 2vh;
   width: 50vh;
   text-align: left;
-  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1),
-  inset 0 -1px 1px rgba(0, 0, 0, 0.3),
-  inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.6),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 6px rgba(0, 0, 0, 0.2);
   transform-style: preserve-3d;
   color: rgb(28, 28, 28);
 }
 
 .formulario form label {
-  font-size: 2.7vh;
-  color: rgb(220,220,220);
-  font-weight: normal;
+  font-size: 2vh;
+  color: rgb(28, 28, 28);
+  font-weight: bold;
 }
 
 .formulario input[type="text"],
@@ -1197,9 +1210,9 @@ body {
   padding: 1vh;
   margin-top: 1vh;
   border: none;
-  background-color: rgba(156, 154, 154, 0.2);
+  background-color: rgba(156, 154, 154, 0.5);
   border-radius: 2vh;
-  color: rgb(220,220,220);
+  color: rgb(28, 28, 28);
   font-size: 2vh;
 }
 
@@ -1249,7 +1262,7 @@ body {
 
 .formulario p {
   font-size: 1.3vh;
-  color: rgb(200,200,200);
+  color: rgb(100, 100, 100);
 }
 
 /*//////////////////////////////////////////////////////////*/
@@ -1280,15 +1293,14 @@ body {
 }
 
 .compDiv2 {
-  background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5); 
+  background: rgba(30, 30,30, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
+              inset 0 4px 8px rgba(255, 255, 255, 0.1),
+              inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
   border-radius: 1vh;
   text-align: left;
-  transform-style: preserve-3d;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   background-size: 100% 100%;
   transition: transform 0.3s, box-shadow 0.3s, all 0.3s ease-in-out;
 }
