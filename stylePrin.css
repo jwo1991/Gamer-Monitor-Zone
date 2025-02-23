@@ -15,7 +15,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-
 #canvas {
   position: fixed;
   top: 0;
@@ -34,7 +33,6 @@ body {
   z-index: -1;
   pointer-events: none;
 }
-
 
 /* parallax /////////////////////////////////////////////////////*/
 
@@ -77,15 +75,14 @@ body {
   justify-content: space-between;
   padding: 0 5vh;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6); 
-  backdrop-filter: blur(8px); 
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   width: 100vw;
   height: 8vh;
   z-index: 999;
   position: fixed;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
-
 
 .paypalNada {
   text-decoration: none;
@@ -304,9 +301,8 @@ body {
   margin-left: 5vh;
   border-radius: 3vh;
   background: linear-gradient(145deg, rgb(40, 40, 40), rgb(30, 30, 30));
-   transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 
 .contenedorBtn {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -326,7 +322,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
     inset 0 4px 8px rgba(255, 255, 255, 0.1),
     inset 0 -4px 8px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .imagenFondo {
@@ -389,7 +385,7 @@ body {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px #00e1ff, 0 0 20px #c400ff;
   z-index: 1;
-position:absolute;
+  position: absolute;
   left: 12.5vh;
   bottom: 2.9vh;
 }
@@ -417,7 +413,6 @@ position:absolute;
 .botonCompra:hover::before {
   background: linear-gradient(135deg, #007bff, #a10087);
 }
-
 
 .precio {
   display: flex;
@@ -600,13 +595,13 @@ position:absolute;
   justify-content: center;
   align-items: center;
   background: transparent;
- height: 85%;
+  height: 85%;
   color: #e0e0e0;
   border-radius: 5vh;
   text-align: center;
   margin-left: 2.5vh;
-background-color: rgba(0, 0, 0, 0.4);
-backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
 }
 
 .titlePre h2 {
@@ -624,7 +619,7 @@ backdrop-filter: blur(5px);
   line-height: 1.6;
   border-radius: 5vh;
   display: flex;
-  color: rgb(230 , 230, 230);
+  color: rgb(230, 230, 230);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -680,19 +675,20 @@ backdrop-filter: blur(5px);
 
 /*//////////////////////////////////////COMPATIBILIDAD///////////////////////////*/
 .contenedorComp {
-  background: rgba(30, 30,30, 0.95);
+  background: rgba(14, 14, 14, 0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
-  inset 0 4px 8px rgba(255, 255, 255, 0.1),
-  inset 0 -4px 8px rgba(0, 0, 0, 0.15);
+    inset 0 4px 8px rgba(255, 255, 255, 0.1),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
-  border-radius: 8px;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 15vh;
+  backdrop-filter: blur(5px);
 }
 
 .columnComp {
@@ -978,8 +974,7 @@ backdrop-filter: blur(5px);
   justify-content: center;
   height: 25vh;
   width: 35vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
   transition: transform 0.75s, box-shadow 0.5s;
@@ -1306,29 +1301,31 @@ backdrop-filter: blur(5px);
 }
 
 .compDiv2 {
-  background: rgba(30, 30,30, 0.95);
+  background: rgba(14, 14, 14, 0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8),
-              inset 0 4px 8px rgba(255, 255, 255, 0.1),
-              inset 0 -4px 8px rgba(0, 0, 0, 0.15);
+    inset 0 4px 8px rgba(255, 255, 255, 0.1),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2vh;
-  border-radius: 1vh;
+  border-radius: 3px;
   text-align: left;
   background-size: 100% 100%;
   transition: transform 0.3s, box-shadow 0.3s, all 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
 }
-
-
 
 .fieldset-comp strong {
   color: #42a5f5;
+  font-size: 3vh;
+font-weight: bold;
 }
 
 #parrafosNoInicio {
-  margin-top: 8vh;
+  margin-top: 15vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 6vh;
+
 }
 
 #parrafosNoInicio a {
@@ -1444,8 +1441,7 @@ backdrop-filter: blur(5px);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5);   
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -1555,8 +1551,7 @@ backdrop-filter: blur(5px);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -1594,8 +1589,7 @@ backdrop-filter: blur(5px);
   text-align: center;
   border-radius: 5vh;
   margin-top: 30vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 
-  inset 0 0 10px rgba(0, 0, 0, 0.5);  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
