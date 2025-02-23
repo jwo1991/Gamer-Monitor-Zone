@@ -19,72 +19,81 @@
     <title>Gamer Monitor Zone</title>
   </head>
   <body class="bodyComp">
-   
-      <div class="barraSuperior">
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/gmz.png" />
-          </a>
-        </div>
-        <nav class="linksSup">
-          <a href="comp.html">Compatibility</a>
-          <a href="#about">About</a>
-          <a href="#" id="openForm">Support</a>
-          <a href="#licenses">Licenses</a>
-          <a class="paypalNada" href=""
-            ><img class="paypal" src="img/paypal.png"
-          /></a>
-        </nav>
+    <div class="barraSuperior">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/gmz.png" />
+        </a>
       </div>
-      <canvas id="canvas"></canvas>
-      <div id="bg_glow">
+      <nav class="linksSup">
+        <a href="comp.html">Compatibility</a>
+        <a href="#about">About</a>
+        <a href="#" id="openForm">Support</a>
+        <a href="#licenses">Licenses</a>
+        <a class="paypalNada" href=""
+          ><img class="paypal" src="img/paypal.png"
+        /></a>
+      </nav>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="bg_glow">
       <fieldset id="comp" class="fieldset-comp">
         <div id="parrafosNoInicio">
           <div class="compDiv2">
-            <strong>Java Requirements</strong><br><br> The tool is developed using
+            <strong>Java Requirements</strong><br /><br />
+            The tool is developed using
             <a href="https://www.oracle.com/es/java/technologies/downloads/"
               >Java, version 10 or higher</a
             >. Ensure that Java is installed on your system. Administrator
             privileges are required for proper operation. <br /><br />
-            <strong>.NET Requirements</strong><br><br> Ensure that .NET is also updated
-            to the latest version for proper monitoring functionality.
+            
+          </div>
+          <div class="compDiv2">
+            <strong>.NET Requirements</strong><br /><br />
+            Ensure that .NET is also updated to the latest version for proper
+            monitoring functionality.
           </div>
 
           <div class="compDiv2">
-            <strong>Operating System</strong><br><br> Supported only on Windows
-            (Windows 10 or higher) and requires a 64-bit version for optimal
-            performance. The tool is not compatible with macOS or Linux.
+            <strong>Operating System</strong><br /><br />
+            Supported only on Windows (Windows 10 or higher) and requires a
+            64-bit version for optimal performance. The tool is not compatible
+            with macOS or Linux.
           </div>
 
           <div class="compDiv2">
-            <strong>Internet Connection</strong><br><br> Required to download game metadata and update news from RSS channels.
-          </div>
-          
-
-          <div class="compDiv2">
-            <strong>Driver Updates</strong><br><br> Ensure your graphics drivers are up
-            to date for full compatibility. Both the extraction of monitor
-            capabilities and signal transmission rely on the GPU, and outdated
-            graphics cards may not function properly.
-          </div>
-          <div class="compDiv2">
-            <strong>Monitor Compatibility</strong><br><br> Supports up to four monitors
-            with a maximum of three input parameters. If more are present, only
-            the first three will be utilized. If you can read brightness,
-            contrast, or saturation levels but cannot apply changes, this may be
-            due to your monitor's factory settings allowing read-only
-            permissions without enabling write access.
-          </div>
-          <div class="compDiv2">
-            <strong>Tool Integrity</strong><br><br> The tool is unsigned, as it is a
-            personal project, and obtaining a digital signature incurs
-            significant costs.
+            <strong>Internet Connection</strong><br /><br />
+            Required to download game metadata and update news from RSS
+            channels.
           </div>
 
           <div class="compDiv2">
-            <strong>Known Limitations</strong><br><br> May not function correctly if other system monitoring tools are running simultaneously.
+            <strong>Driver Updates</strong><br /><br />
+            Ensure your graphics drivers are up to date for full compatibility.
+            Both the extraction of monitor capabilities and signal transmission
+            rely on the GPU, and outdated graphics cards may not function
+            properly.
           </div>
-          
+          <div class="compDiv2">
+            <strong>Monitor Compatibility</strong><br /><br />
+            Supports up to four monitors with a maximum of three input
+            parameters. If more are present, only the first three will be
+            utilized. If you can read brightness, contrast, or saturation levels
+            but cannot apply changes, this may be due to your monitor's factory
+            settings allowing read-only permissions without enabling write
+            access.
+          </div>
+          <div class="compDiv2">
+            <strong>Tool Integrity</strong><br /><br />
+            The tool is unsigned, as it is a personal project, and obtaining a
+            digital signature incurs significant costs.
+          </div>
+
+          <div class="compDiv2">
+            <strong>Known Limitations</strong><br /><br />
+            May not function correctly if other system monitoring tools are
+            running simultaneously.
+          </div>
         </div>
       </fieldset>
 
@@ -103,22 +112,22 @@
       </div>
       <div class="separadorFinal">&nbsp;</div>
     </div>
-      <div class="formulario" id="formulario">
-        <form action="https://formspree.io/f/mqkrrkak" method="POST">
-          <h2>Contact Us</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Submit</button>
-          <button type="button" id="cerrar">Close</button>
-          <p>
-            Contact via formspree.<br />For any questions or concerns, please do
-            not hesitate to contact us.
-          </p>
-        </form>
-      </div>
- 
+    <div class="formulario" id="formulario">
+      <form action="https://formspree.io/f/mqkrrkak" method="POST">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Submit</button>
+        <button type="button" id="cerrar">Close</button>
+        <p>
+          Contact via formspree.<br />For any questions or concerns, please do
+          not hesitate to contact us.
+        </p>
+      </form>
+    </div>
+
     <script>
       document
         .getElementById("openForm")
@@ -132,75 +141,72 @@
       });
     </script>
 
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
 
-<script>
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+      window.onresize = function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        dots = [];
+        pushDots();
+      };
 
-  window.onresize = function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    dots = [];
-    pushDots();
-  };
+      let dots = [];
+      let maxDots = 50;
+      let maxWidth = 15;
+      let minWidth = 2;
+      let maxHeight = canvas.height * 0.9;
+      let minHeight = canvas.height * 0.5;
+      let maxSpeed = 15;
+      let minSpeed = 3;
+      let glow = 10;
 
-  let dots = [];
-  let maxDots = 50; 
-  let maxWidth = 15;
-  let minWidth = 2;
-  let maxHeight = canvas.height * 0.9;
-  let minHeight = canvas.height * 0.5;
-  let maxSpeed = 15;
-  let minSpeed = 3;
-  let glow = 10;
-
-  function pushDots() {
-    for (let i = 0; i < maxDots; i++) {
-      dots.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        h: Math.random() * (maxHeight - minHeight) + minHeight,
-        w: Math.random() * (maxWidth - minWidth) + minWidth,
-        color: Math.random() > 0.5 ? "#00e1ff" : "#c400ff",
-        m: Math.random() * (maxSpeed - minSpeed) + minSpeed,
-      });
-    }
-  }
-  pushDots();
-
-  function render() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < dots.length; i++) {
-      ctx.beginPath();
-      let grd = ctx.createLinearGradient(
-        dots[i].x,
-        dots[i].y,
-        dots[i].x + dots[i].w,
-        dots[i].y + dots[i].h
-      );
-      grd.addColorStop(0.0, dots[i].color);
-      grd.addColorStop(1.0, dots[i].color);
-
-      ctx.shadowBlur = glow;
-      ctx.shadowColor = dots[i].color;
-      ctx.fillStyle = grd;
-      ctx.fillRect(dots[i].x, dots[i].y, dots[i].w, dots[i].h);
-      ctx.closePath();
-
-      dots[i].x += dots[i].m / 100;
-      if (dots[i].x > canvas.width + maxWidth) {
-        dots[i].x = -maxWidth;
+      function pushDots() {
+        for (let i = 0; i < maxDots; i++) {
+          dots.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            h: Math.random() * (maxHeight - minHeight) + minHeight,
+            w: Math.random() * (maxWidth - minWidth) + minWidth,
+            color: Math.random() > 0.5 ? "#00e1ff" : "#c400ff",
+            m: Math.random() * (maxSpeed - minSpeed) + minSpeed,
+          });
+        }
       }
-    }
-    window.requestAnimationFrame(render);
-  }
+      pushDots();
 
-  render();
-</script>
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < dots.length; i++) {
+          ctx.beginPath();
+          let grd = ctx.createLinearGradient(
+            dots[i].x,
+            dots[i].y,
+            dots[i].x + dots[i].w,
+            dots[i].y + dots[i].h
+          );
+          grd.addColorStop(0.0, dots[i].color);
+          grd.addColorStop(1.0, dots[i].color);
 
+          ctx.shadowBlur = glow;
+          ctx.shadowColor = dots[i].color;
+          ctx.fillStyle = grd;
+          ctx.fillRect(dots[i].x, dots[i].y, dots[i].w, dots[i].h);
+          ctx.closePath();
 
+          dots[i].x += dots[i].m / 100;
+          if (dots[i].x > canvas.width + maxWidth) {
+            dots[i].x = -maxWidth;
+          }
+        }
+        window.requestAnimationFrame(render);
+      }
+
+      render();
+    </script>
   </body>
 </html>
