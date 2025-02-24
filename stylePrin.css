@@ -694,6 +694,7 @@ body {
 .columnComp {
   width: 45%;
   text-align: left;
+  font-size: 2vh;
 }
 
 .columnComp strong{
@@ -701,13 +702,12 @@ color: #2196f3;
 }
 
 .columnComp ul{
-
+  font-size: 2vh;
   list-style: none;
 }
 
 .columnComp p {
   font-size: 2vh;
-
   margin-right: 3vh;
 }
 
