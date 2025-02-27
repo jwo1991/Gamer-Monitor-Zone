@@ -211,7 +211,8 @@ body {
   padding: 10px;
   position: relative;
   overflow: hidden;
-  margin-top: 45vh;
+  margin-top: 33.1vh;
+  background: linear-gradient(145deg, rgb(40, 40, 40), rgb(30, 30, 30));
 }
 
 .rightTitulo p {
@@ -298,7 +299,7 @@ body {
   align-items: center;
   position: relative;
   margin-top: 15vh;
-  background: linear-gradient(145deg, rgb(40, 40, 40), rgb(30, 30, 30));
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -733,6 +734,11 @@ color: #2196f3;
 
 /*//////////////////////////INFO MMM//////////////////////////////////////*/
 
+.envoltorio{
+  background: linear-gradient(145deg, rgb(40, 40, 40), rgb(30, 30, 30));
+
+}
+
 .featuresCss {
   margin-top: 140vh;
 }
@@ -756,6 +762,7 @@ color: #2196f3;
 
 .features2 {
   margin-top: 10vh;
+
 }
 
 .features2 p {
@@ -981,6 +988,7 @@ background-size: 100% 90%;
   padding-top: 7vh;
   overflow: hidden;
   margin-top: 7vh;
+  
 }
 
 .item {
