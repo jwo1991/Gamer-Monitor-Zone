@@ -165,7 +165,7 @@ body {
   width: 100vw;
   max-height: 100vh;
   object-fit: cover;
-  filter: brightness(45%) saturate(120%);
+  filter: brightness(25%) saturate(120%);
   z-index: 0;
 }
 
@@ -531,13 +531,9 @@ body {
   width: 100vw;
   height: 70vh;
   position: relative;
-  background: linear-gradient(
-    to bottom right,
-    rgb(55, 55, 55),
-    rgb(41, 41, 41)
-  );
+
   animation: slideIn 1s ease-out;
-  background-image: url(img/monitorFondo.png);
+ 
   background-repeat: no-repeat;
   background-size: 46% 100%;
   background-position-x: 10%;
@@ -555,7 +551,7 @@ body {
 
 .imagePre {
   flex: 3;
-  background-size: 40vw 44vh;
+  background-size: 46vw 50vh;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px 0 0 20px;
