@@ -381,8 +381,8 @@ body {
 
 .botonCompra:hover {
   background: linear-gradient(135deg, rgb(0, 225, 255), rgb(230, 0, 169));
-  transform: scale(1.1);
-  border: 3px solid rgb(220,220,220);
+  transform: scale(1.05);
+  border: 2px solid rgb(220,220,220);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
