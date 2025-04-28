@@ -375,13 +375,12 @@ body {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .botonCompra:hover {
   background: linear-gradient(135deg, rgb(0, 225, 255), rgb(230, 0, 169));
-  border: 2px solid rgb(220,220,220);
+  border: 1px solid rgb(220,220,220);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
