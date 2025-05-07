@@ -201,9 +201,9 @@ body {
 
 .movil {
   background-image: url(img/movil2.png);
-  background-size: 100vw 25vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100vw;
   height: 25vh;
 }
@@ -477,22 +477,24 @@ body {
   height: auto;
   margin-top: 25vw;
   overflow: hidden;
-}
-
-.filtro-fondo {
   background-image: url(img/fondoMobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+}
+
+.torrePC::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(0.6);
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .torrePC p {
+  position: relative;
   text-align: center;
   font-size: 5vw;
   font-weight: 700;
@@ -500,7 +502,9 @@ body {
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 75vw;
+  z-index: 2;
 }
+
 
 /*//////////////////////////////////////////////////////////////////////////*/
 .botonesMMM {
@@ -551,6 +555,8 @@ body {
   margin-top: 25vw;
   font-size: 6vw;
   font-weight: 700;
+  background-color: rgb(34, 34, 34);
+  padding: 2vh 1vh 2vh 1vh;
 }
 
 .rawg a {
