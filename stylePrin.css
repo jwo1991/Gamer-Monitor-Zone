@@ -604,8 +604,8 @@ padding-right: 6vh;
   cursor: pointer;
   width: 4vw;
   height: 14vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #aba9a9;
+  background-color: #cac8c8;
+  color: rgba(0, 0, 0, 0.7);
   border-radius: 2vh;
   display: flex;
   font-weight: bold;
@@ -616,9 +616,9 @@ padding-right: 6vh;
 }
 
 .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: scale(1.1);
-  color: #d3d3d3;
+  background-color: #cac8c8;
+  transform: scale(1.07);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .arrow-left {
@@ -942,7 +942,7 @@ color: #2196f3;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0vh;
-  grid-row-gap: 8vh;
+  grid-row-gap: 5vh;
   padding-bottom: 7vh;
   width: 100vw;
   height: 70vh;
@@ -960,8 +960,8 @@ color: #2196f3;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 25vh;
-  width: 35vh;
+  height: 28vh;
+  width: 18vw;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
