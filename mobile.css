@@ -49,14 +49,14 @@ body {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   image-rendering: high-quality;
-  margin-top: 25vw;
+
 }
 
 .tituloMediano {
   display: inline-block;
   font-weight: 900;
   font-size: 8vw;
-  margin-top: 17vw;
+
   margin-left: 2vw;
   margin-right: 2vw;
   padding: 1vw;
