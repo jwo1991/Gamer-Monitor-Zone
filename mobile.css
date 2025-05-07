@@ -132,7 +132,7 @@ body {
 .indicators1 {
   display: flex;
   justify-content: center;
-  margin-top: 1vw;
+  margin-top: 3vw;
   margin-bottom: 3vw;
 }
 
@@ -161,6 +161,7 @@ body {
 
 .slider2 {
   position: relative;
+  background: rgb(34, 34, 34);
   width: 100vw;
   overflow: hidden;
   height: auto;
