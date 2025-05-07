@@ -31,11 +31,11 @@
   
   </div>
 
-  <div class="container2 hidden">
+  <div class="container2">
     <div class="mmm">
       <div class="slider1">
         <p translate="no" id="tituloMMM">
-          MULTI MONITOR MANAGER <br />
+          GAMER MONITOR ZONE <br />
           <span>TAKE CONTROL OF YOUR MONITORS</span>
         </p>
         <div class="slides1">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div translate="no" class="slider2 hidden">
+    <div translate="no" class="slider2">
       <div class="slides2">
         <div class="perfiles">
           <p>
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div translate="no" class="botonesMMM hidden">
+    <div translate="no" class="botonesMMM">
       <div class="boton">
         <img src="img/monitor.png" class="icono" />
         <span>TURN OFF MONITORS</span>
@@ -95,14 +95,14 @@
       <p>AND MORE FEATURES...</p>
     </div>
 
-    <div translate="no" class="ddcTest hidden">
+    <div translate="no" class="ddcTest">
       <img src="img/file52.png" />
       <p>
         DDC FREE TEST TOOL<br /><span>CHECK YOUR MONITORS' COMPATIBILITY WITH MULTI MONITOR MANAGER</span>
       </p>
     </div>
 
-    <div class="smm hidden">
+    <div class="smm">
       <div translate="no" class="tituloSMM">
         <p>
           SYSTEM MONITOR MANAGER<br />
@@ -114,7 +114,7 @@
       <div class="monitoreo"></div>
     </div>
 
-    <div class="torrePC hidden">
+    <div class="torrePC">
       <div class="filtro-fondo"></div>
       <p translate="no">
         KEEP YOUR PC RUNNING SMOOTH AND LASTING LONGER<br />DOWNLOAD NOW TO
@@ -122,14 +122,14 @@
       </p>
     </div>
 
-    <div translate="no" class="textoMedio hidden">
+    <div translate="no" class="textoMedio">
       <p>
         INTEGRATE THE ENTIRE CONTROL ECOSYSTEM WITH MULTI MONITOR MANAGER
         <br /><span> ALL IN ONE CLICK OR WITH KEYBOARD SHORTCUTS</span>
       </p>
     </div>
 
-    <div class="gcl hidden">
+    <div class="gcl">
       <div translate="no" class="tituloGCL">
         <p>
           GAMER CORE LAUNCHER<br />
@@ -142,7 +142,7 @@
       <div class="lanzador"></div>
     </div>
 
-    <div translate="no" class="rawg hidden">
+    <div translate="no" class="rawg">
       <p>GAME METADATA SOURCED FROM</p>
       <br />
       <a href="https://rawg.io/">RAWG</a>
@@ -250,26 +250,7 @@
     });
   </script>
 
-  <script>
-    const elements = document.querySelectorAll(".hidden");
-
-    function handleScroll() {
-      elements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top <= windowHeight - 50 && rect.bottom >= 0) {
-          element.classList.add("visible");
-        } else {
-          element.classList.remove("visible");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    handleScroll();
-  </script>
+ 
 </body>
 
 </html>
